@@ -26,12 +26,12 @@ const Home = () => {
 
   return (
     <main>
-      <div>
+      {/* <div>
         {renderUsername()}
       </div>
       <div>
         {renderUserList()}
-      </div>
+      </div> */}
     </main>
   );
 };
