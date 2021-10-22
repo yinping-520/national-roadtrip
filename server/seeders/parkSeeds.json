@@ -83,7 +83,7 @@
       "name": "Yellowstone National Park",
       "address": "2 Officers Row Yellowstone National Park Headquarters Yellowstone National Park, WY 82190",
       "description": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal and geologic wonders. People from around the world have been drawn to Yellowstone to witness these wonders for themselves. Now, millions of people come to Yellowstone each year.",
-      "activities": ["Explore Thermal Basins", "Hike a trail", "Watch Wildlife", "Biking", "Horseback Riding","Camping", ],
+      "activities": ["Explore Thermal Basins", "Hike a trail", "Watch Wildlife", "Biking", "Horseback Riding","Camping"],
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=44.1349&lon=-110.6663#.YXL5UxrMJPY",
       "website": "https://www.nps.gov/yell/index.htm",
       "lat": 44.423691,
