@@ -6,6 +6,7 @@ const itinerarySchema = new Schema({
           name: {
               type: String,
               required: true,
+              unique: true
           },
           address: {
               type: String,
@@ -41,7 +42,7 @@ const itinerarySchema = new Schema({
       type: Date,
       default: Date.now,
       get: (timestamp) => dateFormat(timestamp),
-  }
+  },
 });
 
 const Itinerary = model('Itinerary', itinerarySchema);

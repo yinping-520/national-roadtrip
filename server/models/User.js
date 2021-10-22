@@ -18,7 +18,13 @@ const userSchema = new Schema({
     type: String,
     required: true,
     minlength: 5,
-  }
+  },
+  itinerary: [{
+    
+    type: Schema.Types.ObjectId,
+    ref: 'Itinerary'
+
+  }]
 });
 
 userSchema.pre('save', async function (next) {
