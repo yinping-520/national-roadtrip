@@ -5,7 +5,8 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
-    password: String
+    password: String,
+    itinerary:[String]!
   }
 
   type Auth {
@@ -22,6 +23,9 @@ const typeDefs = gql`
   type Mutation {
     addUser(email:String!, username:String!, password:String!): Auth
     login(email:String!, password:String!): Auth
+
+    addItinerary(userId: ID!, itinerary: String!): User
+    removeItinerary(userId: ID!, itinerary: String!): User
   }
 `;
 
