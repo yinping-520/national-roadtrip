@@ -1,4 +1,5 @@
 import '../css/mainpage.css';
+import '../css/scroll.css';
 import React from 'react';
 import signTurn from '../assets/turn-sign.jpg';
 import something from '../assets/something.jpg';

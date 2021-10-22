@@ -7,7 +7,7 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import '../css/scroll.css';
+// import './css/scroll.css';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
@@ -63,11 +63,7 @@ function App() {
             <Route exact path="/users/:id">
               <Profile />
             </Route>
-            {/* <Route exact path="/mainpage">
-              <Mainpage />
-            </Route> */}
           </div>
-          {/* <Mainpage /> */}
           <Footer />
         </div>
       </Router>
