@@ -13,6 +13,7 @@ const typeDefs = gql`
   _id: ID
   tripDates: Int
   dateCreated: Int
+  name: String
   }
 
   type Auth {
