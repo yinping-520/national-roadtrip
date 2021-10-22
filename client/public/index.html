@@ -21,5 +21,15 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function () {
+          const scroll = $(window).scrollTop(),
+              dh = $(document).height(),
+              wh = $(window).height();
+          scrollPercent = (scroll / (dh - wh)) * 100;
+          $('#progressbar').css('height', scrollPercent + '%');
+      });
+    </script>
   </body>
 </html>
