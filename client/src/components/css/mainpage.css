@@ -135,8 +135,8 @@
     background: url(../assets/rocky-mtn.jpg);
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1600px) {
     #sites1 {
-        margin: 100px 400px;
+        margin: 100px 200px;
     }
 }
