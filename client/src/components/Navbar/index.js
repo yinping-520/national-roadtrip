@@ -28,7 +28,7 @@ function Navbar() {
           <img id="camper" src={camper}/>
         </div> */}
       <div id="rightnav">
-        <Link class="rightnav-a" to="/mainpage">
+        <Link class="rightnav-a" to="/">
           home
         </Link>
         <Link class="rightnav-a" to="/destinations">
