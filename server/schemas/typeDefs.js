@@ -11,7 +11,6 @@ const typeDefs = gql`
 
   type Itinerary{
   _id: ID
-  stops: [String]!
   tripDates: Int
   dateCreated: Int
   }
@@ -24,7 +23,7 @@ const typeDefs = gql`
   type Query {
     users: [User]
     itinerary: [Itinerary]
-    user(id: ID!): User
+    user(id: ID): User
     me: User
   }
 
@@ -32,8 +31,9 @@ const typeDefs = gql`
     addUser(email:String!, username:String!, password:String!): Auth
     login(email:String!, password:String!): Auth
 
-    addItinerary(userId: ID!, itinerary: String!): User
-    removeItinerary(userId: ID!, itinerary: String!): User
+    addItinerary(id: ID!, tripDates: Int, dateCreated: Int): Itinerary
+    removeItinerary(id: ID!, tripDates: Int, dateCreated: Int): Itinerary
+    updateItinerary(id: ID!, tripDates: Int, dateCreated: Int): Itinerary
   }
 `;
 
