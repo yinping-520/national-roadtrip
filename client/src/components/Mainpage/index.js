@@ -11,8 +11,8 @@ function Mainpage() {
         <div>
             <div id='container'>
                 <img src={container}/>
-                <h1>your <span>destination</span> is calling...</h1>
-                <h2>...let's hit the <span>road</span></h2>
+                <h1 id="main-text">your <span>destination</span> is calling...</h1>
+                <h2 id="main-text2">...let's hit the <span>road</span></h2>
             </div>
             <a href='#top'><img id='up-arrow' src={up}/></a>
             <div className='site-section'>
@@ -58,6 +58,12 @@ function Mainpage() {
                     </div>
                     <div id='sequoia' className='card'>
                         <p>Sequoia</p>
+                    </div>
+                    <div id='smokey' className='card'>
+                        <p>Smokey Mountains</p>
+                    </div>
+                    <div id='olympic' className='card'>
+                        <p>Olympic</p>
                     </div>
                 </div>
             </div>

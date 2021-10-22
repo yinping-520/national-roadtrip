@@ -1,4 +1,4 @@
-import '../css/mainpage.css';
+import '../css/destinations.css';
 import '../css/scroll.css';
 import React from 'react';
 import signTurn from '../assets/turn-sign.jpg';
@@ -10,56 +10,50 @@ function Destinations() {
     return (
         <div>
             <div id='container'>
-                <img src={container}/>
+                <img src={container} />
+                <h1 id='dest-text'>your next <span>adventure</span> is just below...</h1>
             </div>
-            <a href='#top'><img id='up-arrow' src={up}/></a>
-            <div className='site-section'>
-                <div id='sites1'>
-                    <div id='rocky-mtn' className='card'>
+            <a href='#top'><img id='up-arrow' src={up} /></a>
+            <div id='all-destinations'>
+                <div id='locs'>
+                    <div id='rocky-mtn' className='card-dest'>
                         <p>Rocky Mountain</p>
                     </div>
-                    <div id='glacier' className='card'>
+                    <div id='glacier' className='card-dest'>
                         <p>Glacier Mountain</p>
                     </div>
-                    <div id='teton' className='card'>
+                    <div id='teton' className='card-dest'>
                         <p>Teton</p>
                     </div>
-                    <div id='yosemite' className='card'>
+                    <div id='yosemite' className='card-dest'>
                         <p>Yosemite</p>
                     </div>
-                </div>
-                <div id='destinations'>
-                    <img src={signTurn} />
-                </div>
-                <div className='site-section'>
-                    <div id='sites2'>
-                        <div id='arches' className='card'>
-                            <p>Arches</p>
-                        </div>
-                        <div id='bryce' className='card'>
-                            <p>Bryce</p>
-                        </div>
-                        <div id='zion' className='card'>
-                            <p>Zion</p>                       
-                        </div>
-                        <div id='grand-canyon' className='card'>
-                            <p>Grand Canyon</p>
-                        </div>
+                    <div id='arches' className='card-dest'>
+                        <p>Arches</p>
                     </div>
-                </div>
-                <div id='something'>
-                    <img src={something} />
-                </div>
-                <div id='sites3'>
-                    <div id='yellowstone' className='card'>
+                    <div id='bryce' className='card-dest'>
+                        <p>Bryce</p>
+                    </div>
+                    <div id='zion' className='card-dest'>
+                        <p>Zion</p>
+                    </div>
+                    <div id='grand-canyon' className='card-dest'>
+                        <p>Grand Canyon</p>
+                    </div>
+                    <div id='yellowstone' className='card-dest'>
                         <p>Yellowstone</p>
                     </div>
-                    <div id='sequoia' className='card'>
+                    <div id='sequoia' className='card-dest'>
                         <p>Sequoia</p>
+                    </div>
+                    <div id='smokey' className='card-dest'>
+                        <p>Smokey Mountains</p>
+                    </div>
+                    <div id='olympic' className='card-dest'>
+                        <p>Olympic</p>
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
