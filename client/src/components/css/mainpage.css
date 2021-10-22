@@ -81,6 +81,7 @@
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+
 }
 
 .card p {
@@ -132,4 +133,10 @@
 }
 #rocky-mtn {
     background: url(../assets/rocky-mtn.jpg);
+}
+
+@media screen and (min-width: 1700px) {
+    #sites1 {
+        margin: 100px 400px;
+    }
 }
