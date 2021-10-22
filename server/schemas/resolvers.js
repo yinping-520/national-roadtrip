@@ -41,8 +41,14 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+  },
 
-    addItinerary: async(parent, { userId, itinerary }) => {
+  Mutation: {
+    addItinerary: async(parent, { stops, tripDates, dateCreated }) => {
+      return await Itinerary.create({ stops, tripDates, dateCreated });
+    },
+
+    updateItinerary: async(parent, { userId, itinerary }) => {
       return User.findOneAndUpdate(
         {_id: userId},
         {
@@ -61,8 +67,12 @@ const resolvers = {
         { $pull: { itinerary: itinerary }},
         { new: true }
       )
-    }
+    }, 
+
+
   }
+
 };
+
 
 module.exports = resolvers;

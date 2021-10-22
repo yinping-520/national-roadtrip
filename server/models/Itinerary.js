@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const itinerarySchema = new Schema({
+
     name: {
         type: String,
         required: true,
@@ -23,6 +24,7 @@ const itinerarySchema = new Schema({
             },
         },
     ],
+
 });
 
 const Itinerary = model('Itinerary', itinerarySchema);
