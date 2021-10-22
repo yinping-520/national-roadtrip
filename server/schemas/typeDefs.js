@@ -5,8 +5,15 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
-    password: String,
-    itinerary:[String]!
+    password: String
+    itinerary:[Itinerary]
+  }
+
+  type Itinerary{
+  _id: ID
+  stops: [String]!
+  tripDates: Int
+  dateCreated: Int
   }
 
   type Auth {
@@ -16,6 +23,7 @@ const typeDefs = gql`
 
   type Query {
     users: [User]
+    itinerary: [Itinerary]
     user(id: ID!): User
     me: User
   }
