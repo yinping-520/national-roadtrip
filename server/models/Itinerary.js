@@ -24,6 +24,12 @@ const itinerarySchema = new Schema({
             },
         },
     ],
+    lat: { 
+        type: Number 
+    },
+    long: { 
+        type: Number 
+    },
 
 });
 

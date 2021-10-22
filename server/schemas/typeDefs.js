@@ -11,8 +11,13 @@ const typeDefs = gql`
 
   type Itinerary{
   _id: ID
-  tripDates: Int
-  dateCreated: Int
+  name: String
+  address: String
+  description: String
+  weatherInfo: String
+  activities: String
+  lat: Float
+  long: Float
   }
 
   type Auth {
