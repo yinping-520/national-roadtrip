@@ -14,6 +14,9 @@ const itinerarySchema = new Schema({
           description: {
               type: String,
           },
+          weatherInfo: {
+            type: String,
+          },
           activities: [
               {
                   name: {
