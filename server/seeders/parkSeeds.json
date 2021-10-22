@@ -1,0 +1,123 @@
+[
+    {
+      "name": "Rocky Mountain National Park",
+      "address": "1000 US Hwy 36 Estes Park, CO 80517",
+      "description": "Rocky Mountain National Park’s 415 square miles encompass and protect spectacular mountain environments. Enjoy Trail Ridge Road – which crests at over 12,000 feet including many overlooks to experience the subalpine and alpine worlds – along with over 300 miles of hiking trails, wildflowers, wildlife, starry nights, and fun times. In a world of superlatives, Rocky is on top!",
+      "activities": ["Hiking", "Senic Drives", "Wildlife Watching", "Picnicking", "Camping", "Fishing", "Horseback Riding", "Ranger-led Programs", "Visitors Centers"],
+      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=40.3333&lon=-105.7089#.YXLvEBrMJPY",
+      "website": "https://www.nps.gov/romo/index.htm",
+      "lat": 40.343182,
+      "long": -105.688103
+    }
+    {
+      "name": "Grand Teton",
+      "address": "P.O. Box 170 Moose, WY 83012",
+      "description": "Rising above a scene rich with extraordinary wildlife, pristine lakes, and alpine terrain, the Teton Range stands as a monument to the people who fought to protect it. These are mountains of the imagination. Mountains that led to the creation of Grand Teton National Park where you can explore over two hundred miles of trails, float the Snake River, and enjoy the serenity of this remarkable place.",
+      "activities": ["Hiking", "Boating", "Fishing", "Climbing", "Biking", "Scenic Drives", "Wildlife Viewing", "Camping"],
+      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=43.8673&lon=-110.5719#.YXLwdhrMJPY",
+      "website": "https://www.nps.gov/grte/index.htm",
+      "lat": 43.8332687,
+      "long": -110.7007671
+    },
+    {
+      "name": "Glacier National Park",
+      "address": "PO Box 128 West Glacier, MT 59936",
+      "description": "Come and experience Glacier's pristine forests, alpine meadows, rugged mountains, and spectacular lakes. With over 700 miles of trails, Glacier is a hiker's paradise for adventurous visitors seeking wilderness and solitude. Relive the days of old through historic chalets, lodges, and the famous Going-to-the-Sun Road. Explore Glacier National Park and discover what awaits you.",
+      "activities": ["Hiking", "Backcountry Camping", "Ranger-led Programs", "Guided Tours", "Going-to-the-sun Road", "Cross-country skiing"],
+      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=48.6961&lon=-113.8071#.YXLxdRrMJPY",
+      "website": "https://www.nps.gov/glac/index.htm",
+      "lat": 48.6960847,
+      "long": -113.8070624
+    },
+    {
+      "name": "Yosemite National Park",
+      "address": "Tioga Rd Hwy 120 & Hwy 140 Yosemite National Park, CA 95389",
+      "description": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra. First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
+      "activities": ["Camping", "Hiking", "Wilderness Tours", "Ranger Programs", "Biking", "Bird Watching", "Winter Sports", "Stargazing"],
+      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=37.8499&lon=-119.5677#.YXLycBrMJPY",
+      "website": "https://www.nps.gov/yose/index.htm",
+      "lat": 37.865101,
+      "long": -119.538330
+    },
+    {
+      "name": "Arches National Park",
+      "address": "PO Box 907 Moab, UT 84532",
+      "description": "Visit Arches to discover a landscape of contrasting colors, land forms, and textures unlike any other in the world. The park has over 2,000 natural stone arches and hundreds of soaring pinnacles, massive rock fins, and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets. ",
+      "activities": ["Auto Touring", "Backpacking", "Camping", "Canyoneering", "Commercial Tours", "hiking", "Rock Climbing"],
+      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=38.6166&lon=-109.6162#.YXLzMhrMJPY",
+      "website": "https://www.nps.gov/arch/index.htm",
+      "lat":  38.733082,
+      "long": -109.592514
+    },
+    {
+      "name": "Bryce Canyon National Park",
+      "address": "P.O Box 640201 Bryce, UT 84764",
+      "description": "Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's high elevations include numerous life communities, fantastic dark skies, and geological wonders that defy description.",
+      "activities": ["Stargazing", "Visitors Center", "Ranger Program", "Drive to viewpoints", "Hiking"],
+      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=37.6283&lon=-112.1677#.YXLz_RrMJPY",
+      "website": "https://www.nps.gov/brca/index.htm",
+      "lat": 37.619431,
+      "long": -112.166504
+    },
+    {
+      "name": "Zion National Park",
+      "address": "",
+      "description": "",
+      "activities": [],
+      "weatherInfo": "",
+      "website": "",
+      "lat": 1,
+      "long": 2
+    },
+    {
+      "name": "",
+      "address": "",
+      "description": "",
+      "activities": [],
+      "weatherInfo": "",
+      "website": "",
+      "lat": 1,
+      "long": 2
+    },
+    {
+      "name": "",
+      "address": "",
+      "description": "",
+      "activities": [],
+      "weatherInfo": "",
+      "website": "",
+      "lat": 1,
+      "long": 2
+    },
+    {
+      "name": "",
+      "address": "",
+      "description": "",
+      "activities": [],
+      "weatherInfo": "",
+      "website": "",
+      "lat": 1,
+      "long": 2
+    },
+    {
+      "name": "",
+      "address": "",
+      "description": "",
+      "activities": [],
+      "weatherInfo": "",
+      "website": "",
+      "lat": 1,
+      "long": 2
+    },
+    {
+      "name": "",
+      "address": "",
+      "description": "",
+      "activities": [],
+      "weatherInfo": "",
+      "website": "",
+      "lat": 1,
+      "long": 2
+    }
+  ]
+  
