@@ -31,6 +31,18 @@ const itinerarySchema = new Schema({
         type: Number 
     },
 
+    website: {
+        type: String,
+    },
+    lat:{
+        type: Number,
+    },
+    long:{
+        type: Number,
+    },
+
+
+
 });
 
 const Itinerary = model('Itinerary', itinerarySchema);
