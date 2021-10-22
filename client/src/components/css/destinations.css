@@ -1,0 +1,57 @@
+#container img {
+    max-width: 100%;
+    z-index: -50;
+    /* transition: all ease-in-out 0.6s; */
+}
+
+#dest-text {
+    font-size: 32px;
+    color: orange;
+    z-index: 5;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    margin: -450px 0px 0px 825px;
+}
+
+#all-destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+#locs {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-top: -100px;
+}
+
+.card-dest {
+        height: 200px;
+        width: 405px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin: 15px 0px;
+}
+    
+.card-dest p {
+    font-size: 40px;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100%;
+    opacity: 0;
+    transition: ease 0.6s;
+    text-align: center;
+}
+
+.card-dest p:hover {
+    opacity: 1;
+    cursor: pointer;
+}

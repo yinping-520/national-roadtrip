@@ -1,10 +1,19 @@
+body {
+    background: url(../assets/escent-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
 #container img {
     max-width: 100%;
     z-index: -50;
     /* transition: all ease-in-out 0.6s; */
 }
 
-#container h1 {
+#main-text {
     font-size: 32px;
     color: orange;
     z-index: 5;
@@ -13,7 +22,7 @@
     margin: -500px 0px 0px 125px;
 }
 
-#container h2 {
+#main-text2 {
     font-size: 32px;
     color: orange;
     z-index: 5;
@@ -82,7 +91,6 @@
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-
 }
 
 .card p {
@@ -107,33 +115,51 @@
 
 #yellowstone {
     background: url(../assets/yellowstone.jpg);
+    background-size: 100%;
 }
 #sequoia {
     background: url(../assets/sequoia.jpg);
+    background-size: 100%;
 }
 #grand-canyon {
     background: url(../assets/grand-canyon.jpg);
+    background-size: 100%;
 }
 #zion {
     background: url(../assets/zion.jpg);
+    background-size: 100%;
 }
 #bryce {
     background: url(../assets/bryce.jpg);
+    background-size: 100%;
 }
 #arches {
     background: url(../assets/arches.jpg);
+    background-size: 100%;
 }
 #yosemite {
     background: url(../assets/yosemite.jpg);
+    background-size: 100%;
 }
 #teton {
     background: url(../assets/teton.jpg);
+    background-size: 100%;
 }
 #glacier {
     background: url(../assets/glacier.jpg);
+    background-size: 100%;
 }
 #rocky-mtn {
     background: url(../assets/rocky-mtn.jpg);
+    background-size: 100%;
+}
+#smokey {
+    background: url(../assets/smokey.jpg);
+    background-size: 100%;
+}
+#olympic {
+    background: url(../assets/olympic.jpg);
+    background-size: 100%;
 }
 
 @media screen and (min-width: 1600px) {

@@ -34,12 +34,12 @@ function Navbar() {
         <Link class="rightnav-a" to="/destinations">
           destinations
         </Link>
-        <Link class="rightnav-a" to="/journey">
-          journey
-        </Link>
         <Link class="rightnav-a" to="/shop">
           shop
         </Link>
+        {/* <Link class="rightnav-a" to="/journey">
+          your trips
+        </Link> */}
         <Link class="rightnav-a" to="/login">
           login
         </Link>
