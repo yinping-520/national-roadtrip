@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <header>
       <div>
-        <Link to="/">
+        {/* <Link to="/">
           <h1>User List</h1>
-        </Link>
+        </Link> */}
       </div>
       <div>
-        <p>Simple App to View Users.</p>
+        {/* <p>Simple App to View Users.</p> */}
         <Navbar />
       </div>
     </header>
