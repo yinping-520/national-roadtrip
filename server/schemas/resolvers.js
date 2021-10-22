@@ -1,5 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User } = require('../models');
+const { signToken } = require('../utils/auth');
+
 
 const resolvers = {
   Query: {
@@ -23,7 +25,7 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    login: async (_, { email, password }) => {
+    login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
       if (!user) {
@@ -33,12 +35,32 @@ const resolvers = {
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError('Incorrect password');
       }
 
       const token = signToken(user);
-
       return { token, user };
+    },
+
+    addItinerary: async(parent, { userId, itinerary }) => {
+      return User.findOneAndUpdate(
+        {_id: userId},
+        {
+          $addToSet: { itinerary: itinerary },
+        },
+        {
+          new: true,
+          runValidators: true,
+        }
+      );
+    },
+
+    removeItinerary: async(parent, { userId, itinerary }) => {
+      return User.findOneAndUpdate(
+        { _id: userId },
+        { $pull: { itinerary: itinerary }},
+        { new: true }
+      )
     }
   }
 };
