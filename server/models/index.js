@@ -1,5 +1,5 @@
 const User = require('./User');
-const Trips = require('./Trips');
+const Itinerary = require('./Itinerary');
 
 module.exports = { User };
-module.exports = { Trips };
+module.exports = { Itinerary };
