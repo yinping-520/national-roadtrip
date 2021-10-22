@@ -10,11 +10,14 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import './css/scroll.css';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
-import Login from './pages/Login';
+// import Login from './pages/Login';
+import Destinations from './components/Destinations';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Mainpage from './components/Mainpage';
+import Journey from './components/Journey';
+import Shop from './components/Shop';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -51,14 +54,14 @@ function App() {
             <Route exact path="/">
               <Mainpage />
             </Route>
-            <Route exact path="/login">
-              <Login />
+            <Route exact path="/destinations">
+              <Destinations />
             </Route>
-            <Route exact path="/signup">
-              <Signup />
+            <Route exact path="/journey">
+              <Journey />
             </Route>
-            <Route exact path="/me">
-              <Profile />
+            <Route exact path="/shop">
+              <Shop />
             </Route>
             <Route exact path="/users/:id">
               <Profile />
