@@ -19,13 +19,13 @@
     font-size: 50px;
     margin-top: 25px;
     color: rgb(189, 123, 0);
-    opacity: 0.75;
+    opacity: 1;
     transition: ease 1.25s;
 }
 
 #camper:hover {
-    opacity: 1;
-    transform: rotate(50deg);
+    color: rgb(233, 151, 0);
+    transform: rotate(7.5deg);
 }
 
 #rightnav {

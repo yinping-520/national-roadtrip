@@ -1,0 +1,74 @@
+#center-all {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.park-name {
+    text-align: center;
+    padding: 100px 0px 25px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slider {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 50px;
+     width: 60%;
+}
+
+.current-and-index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image {
+    width: 750px; 
+    height: 450px;
+    border-radius: 10px;
+}
+
+.image-small {
+    width: 150px;
+    height: 90px;
+}
+
+.slider-icon  {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    transition: ease 0.5s;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.right-arrow {
+    right: 0px;
+}
+
+.left-arrow {
+    left: 0px;  
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+    transform: scale(1.06);
+    background-color: orange;
+}
+
+.slide {
+    opacity: 0.65;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.01);
+}
