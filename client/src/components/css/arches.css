@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .park-name {
-    text-align: center;
     padding: 100px 0px 25px 0px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
 }
 
 .slider {
@@ -71,4 +72,8 @@
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.01);
+}
+/*******************************/
+.activity-header {
+    font-size: 36px;
 }

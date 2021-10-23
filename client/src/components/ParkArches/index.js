@@ -28,6 +28,7 @@ function Arches() {
 return (
     <div id='center-all'>
         <h1 className='park-name'>Arches National Park</h1>
+        <p>Utah, USA</p>
         <div className='slider'>
             <FaArrowAltCircleLeft className='slider-icon left-arrow' onClick={prevSlide} />
             <FaArrowAltCircleRight className='slider-icon right-arrow' onClick={nextSlide} />
@@ -48,8 +49,11 @@ return (
             })}
         </div>
         <a href='#top'><img id='up-arrow' src={up} /></a>
+        <div className='activities'>
+            <h2 className='activity-header'>Activities</h2>
+            {/* BUNCH OF PICS WITH ACTIVITY TITLES? */}
+        </div>
     </div>
-);
-};
+)};
 
 export default Arches;

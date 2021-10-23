@@ -25,17 +25,39 @@ function Navbar() {
   return (
     <div id='nav' name='top'>
       <div id='leftnav'>
-      <Link to='/'>
-        <i id='camper' class='fas fa-route'></i>
+        <Link to='/'>
+          <i id='camper' className='fas fa-route'></i>
         </Link>
       </div>
       <div id='rightnav'>
-        <Link class='rightnav-a' to='/'>
+        <Link className='rightnav-a' to='/'>
           home
         </Link>
-        <Link class='rightnav-a' to='/destinations'>
-          destinations
-        </Link>
+        <span className='dropdown'>
+          <Link className='rightnav-a' to='/destinations'>
+            destinations
+          </Link>
+          <div className='dropdown-content'>
+            <div id='dropdown-set1'>
+              <Link className='rightnav-dropdown' to='/arches'>Arches</Link>
+              <p>Bryce Canyon</p>
+              <p>Glacier Mtn</p>
+              <p>Grand Canyon</p>
+            </div>
+            <div id='dropdown-set2'>
+              <p>Olympic Natl</p>
+              <p>Rocky Mtn</p>
+              <p>Sequoia</p>
+              <p>Smokey Mtn</p>
+            </div>
+            <div id='dropdown-set3'>
+              <p>Teton Natl</p>
+              <p>Yellowstone</p>
+              <p>Yosemite</p>
+              <p>Zion Natl</p>
+            </div>
+          </div>
+        </span>
         <Link class='rightnav-a' to='/shop'>
           shop
         </Link>

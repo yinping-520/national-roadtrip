@@ -27,7 +27,7 @@ function Arches() {
 
 return (
     <div id='center-all'>
-        <h1 className='park-name'>Arches National Park</h1>
+        <h1 className='park-name'>Bryce Canyon National Park</h1>
         <div className='slider'>
             <FaArrowAltCircleLeft className='slider-icon left-arrow' onClick={prevSlide} />
             <FaArrowAltCircleRight className='slider-icon right-arrow' onClick={nextSlide} />

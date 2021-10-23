@@ -28,7 +28,7 @@ function Destinations() {
                     </Link>
                     <Link to="/" style={styles.underlineRemove}>
                         <div id='bryce' className='card-dest'>
-                            <p>Bryce</p>
+                            <p>Bryce Canyon</p>
                         </div>
                     </Link>
                     <Link to="/" style={styles.underlineRemove}>

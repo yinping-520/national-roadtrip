@@ -49,7 +49,7 @@ function Mainpage() {
                             </div>
                         </Link>
                         <div id='bryce' className='card'>
-                            <p>Bryce</p>
+                            <p>Bryce Canyon</p>
                         </div>
                         <div id='zion' className='card'>
                             <p>Zion</p>
