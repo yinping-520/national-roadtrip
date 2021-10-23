@@ -20,6 +20,12 @@
     margin-top: 25px;
     color: rgb(189, 123, 0);
     opacity: 0.75;
+    transition: ease 1.25s;
+}
+
+#camper:hover {
+    opacity: 1;
+    transform: rotate(50deg);
 }
 
 #rightnav {
