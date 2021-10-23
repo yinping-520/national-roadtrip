@@ -35,15 +35,15 @@
 }
 
 .card-dest {
-        height: 200px;
-        width: 405px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        margin: 15px 0px;
+    height: 200px;
+    width: 405px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 15px 0px;
 }
     
 .card-dest p {

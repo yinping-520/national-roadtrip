@@ -25,7 +25,9 @@ function Navbar() {
   return (
     <div id='nav' name='top'>
       <div id='leftnav'>
+      <Link to='/'>
         <i id='camper' class='fas fa-route'></i>
+        </Link>
       </div>
       <div id='rightnav'>
         <Link class='rightnav-a' to='/'>

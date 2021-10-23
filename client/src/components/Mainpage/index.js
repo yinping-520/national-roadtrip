@@ -1,10 +1,15 @@
 import '../css/mainpage.css';
 import '../css/scroll.css';
 import React from 'react';
-import something from '../assets/something.jpg';
 import up from '../assets/up-arrow.jpg';
 import container from '../assets/pine.jpg';
 import { Link } from 'react-router-dom';
+
+const styles = {
+    underlineRemove: {
+        textDecoration: 'none',
+    }
+}
 
 function Mainpage() {
     return (
@@ -38,9 +43,11 @@ function Mainpage() {
                 </div>
                 <div className='site-section'>
                     <div id='sites2'>
-                        <div id='arches' className='card'>
-                            <p>Arches</p>
-                        </div>
+                        <Link to="/arches" style={styles.underlineRemove}>
+                            <div id='arches' className='card'>
+                                <p>Arches</p>
+                            </div>
+                        </Link>
                         <div id='bryce' className='card'>
                             <p>Bryce</p>
                         </div>
@@ -53,7 +60,7 @@ function Mainpage() {
                     </div>
                 </div>
                 <div id='something'>
-                    <img src={something} />
+                    <p>enough waiting, let's <span className='span2'>go</span>...</p>
                 </div>
                 <div id='sites3'>
                     <div id='yellowstone' className='card'>
