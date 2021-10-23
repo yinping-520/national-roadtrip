@@ -1,7 +1,6 @@
 import '../css/mainpage.css';
 import '../css/scroll.css';
 import React from 'react';
-// import signTurn from '../assets/turn-sign.jpg';
 import something from '../assets/something.jpg';
 import up from '../assets/up-arrow.jpg';
 import container from '../assets/pine.jpg';
@@ -35,7 +34,6 @@ function Mainpage() {
                     </div>
                 </div>
                 <div id='destinations'>
-                    {/* <img src={signTurn} /> */}
                     <p>...<span className='span2'>adventure</span> is around every corner</p>
                 </div>
                 <div className='site-section'>

@@ -92,7 +92,7 @@ body {
     padding: 150px 0px 0px 100px;
     background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
-    transition: 1.25s ease;
+    transition: 0.85s ease-in;
     opacity: 0;
 }
 
@@ -214,5 +214,18 @@ body {
     #sites2,
     #sites3 {
         margin: 100px 200px;
+    }
+}
+@media screen and (min-width: 1750px) {
+    #main-text {
+        font-size: 40px;
+        margin: -900px 0px 0px 125px;
+    }
+    #destin-span {
+        font-size: 40px;
+    }
+    #main-text2 {
+        font-size: 40px;
+        margin: -675px 0px 0px 1450px;    
     }
 }
