@@ -1,8 +1,6 @@
 import '../css/destinations.css';
 import '../css/scroll.css';
 import React from 'react';
-import signTurn from '../assets/turn-sign.jpg';
-import something from '../assets/something.jpg';
 import up from '../assets/up-arrow.jpg';
 import container from '../assets/destinations-bg.jpg';
 
@@ -11,7 +9,7 @@ function Destinations() {
         <div>
             <div id='container'>
                 <img src={container} />
-                <h1 id='dest-text'>your next <span>adventure</span> is just below...</h1>
+                <h1 id='dest-text'>your next <span className='span2'>adventure</span> is a scroll away...</h1>
             </div>
             <a href='#top'><img id='up-arrow' src={up} /></a>
             <div id='all-destinations'>

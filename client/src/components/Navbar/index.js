@@ -13,7 +13,7 @@ function Navbar() {
   // if (Auth.loggedIn()) {
   //   return (
   //     <>
-  //       <Link to="/me">
+  //       <Link to='/me'>
   //         {Auth.getProfile().data.username}'s profile
   //       </Link>
   //       <button onClick={logout}>
@@ -23,24 +23,24 @@ function Navbar() {
   //   );
   // }
   return (
-    <div id="nav" name="top">
-      {/* <div id="leftnav">
-          <img id="camper" src={camper}/>
-        </div> */}
-      <div id="rightnav">
-        <Link class="rightnav-a" to="/">
+    <div id='nav' name='top'>
+      <div id='leftnav'>
+        <i id='camper' class='fas fa-route'></i>
+      </div>
+      <div id='rightnav'>
+        <Link class='rightnav-a' to='/'>
           home
         </Link>
-        <Link class="rightnav-a" to="/destinations">
+        <Link class='rightnav-a' to='/destinations'>
           destinations
         </Link>
-        <Link class="rightnav-a" to="/shop">
+        <Link class='rightnav-a' to='/shop'>
           shop
         </Link>
-        {/* <Link class="rightnav-a" to="/journey">
+        {/* <Link class='rightnav-a' to='/journey'>
           your trips
         </Link> */}
-        <Link class="rightnav-a" to="/login">
+        <Link class='rightnav-a' to='/login'>
           login
         </Link>
       </div>

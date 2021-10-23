@@ -20,6 +20,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     margin: -500px 0px 0px 125px;
+    animation: 1.3s ease-in 0s 1 appearOnLoad;
 }
 
 #main-text2 {
@@ -29,11 +30,28 @@ body {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     margin: -650px 0px 0px 1100px;
+    animation: 2.1s ease-in 0s 1 appearOnLoad;
 }
 
-#container span {
-    /* text-decoration: underline; */
+.span2 {
     color: #fff;
+}
+
+#destin-span {
+    font-size: 32px;
+    background: linear-gradient(to right, orange, orange 50%, white 50%);
+    font-weight: 600;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.4s ease;
+    text-decoration: none;
+}
+
+#destin-span:hover {
+    background-position: 0 100%;
 }
 
 #up-arrow {
@@ -58,8 +76,28 @@ body {
     flex-wrap: wrap;
 }
 
-#destinations img {
+/* #destinations img {
     width: 100%;
+} */
+
+#destinations {
+    background: url(../assets/turn-sign.jpg);
+    height: 700px;
+    min-width: 100%;
+}
+
+#destinations p {
+    font-size: 42px;
+    color: orange;
+    padding: 150px 0px 0px 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: 1.25s ease;
+    opacity: 0;
+}
+
+#destinations p:hover {
+    opacity: 1;
 }
 
 #sites2 {
@@ -162,8 +200,19 @@ body {
     background-size: 100%;
 }
 
+@keyframes appearOnLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media screen and (min-width: 1600px) {
-    #sites1 {
+    #sites1,
+    #sites2,
+    #sites3 {
         margin: 100px 200px;
     }
 }

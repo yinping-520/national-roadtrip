@@ -1,20 +1,24 @@
 import '../css/mainpage.css';
 import '../css/scroll.css';
 import React from 'react';
-import signTurn from '../assets/turn-sign.jpg';
+// import signTurn from '../assets/turn-sign.jpg';
 import something from '../assets/something.jpg';
 import up from '../assets/up-arrow.jpg';
 import container from '../assets/pine.jpg';
+import { Link } from 'react-router-dom';
 
 function Mainpage() {
     return (
         <div>
             <div id='container'>
-                <img src={container}/>
-                <h1 id="main-text">your <span>destination</span> is calling...</h1>
-                <h2 id="main-text2">...let's hit the <span>road</span></h2>
+                <img src={container} />
+                <h1 id="main-text">your
+                    <span id="destin-span">{/*space needed*/} <Link to="/destinations">
+                        destination
+                    </Link></span> is calling...</h1>
+                <h2 id="main-text2">...let's hit the <span className='span2'>road</span></h2>
             </div>
-            <a href='#top'><img id='up-arrow' src={up}/></a>
+            <a href='#top'><img id='up-arrow' src={up} /></a>
             <div className='site-section'>
                 <div id='sites1'>
                     <div id='rocky-mtn' className='card'>
@@ -31,7 +35,8 @@ function Mainpage() {
                     </div>
                 </div>
                 <div id='destinations'>
-                    <img src={signTurn} />
+                    {/* <img src={signTurn} /> */}
+                    <p>...<span className='span2'>adventure</span> is around every corner</p>
                 </div>
                 <div className='site-section'>
                     <div id='sites2'>
@@ -42,7 +47,7 @@ function Mainpage() {
                             <p>Bryce</p>
                         </div>
                         <div id='zion' className='card'>
-                            <p>Zion</p>                       
+                            <p>Zion</p>
                         </div>
                         <div id='grand-canyon' className='card'>
                             <p>Grand Canyon</p>
