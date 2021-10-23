@@ -5,6 +5,12 @@ import up from '../assets/up-arrow.jpg';
 import container from '../assets/pine.jpg';
 import { Link } from 'react-router-dom';
 
+const styles = {
+    underlineRemove: {
+        textDecoration: 'none',
+    }
+}
+
 function Mainpage() {
     return (
         <div>
@@ -37,9 +43,11 @@ function Mainpage() {
                 </div>
                 <div className='site-section'>
                     <div id='sites2'>
-                        <div id='arches' className='card'>
-                            <p>Arches</p>
-                        </div>
+                        <Link to="/arches" style={styles.underlineRemove}>
+                            <div id='arches' className='card'>
+                                <p>Arches</p>
+                            </div>
+                        </Link>
                         <div id='bryce' className='card'>
                             <p>Bryce</p>
                         </div>

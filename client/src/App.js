@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 import Mainpage from './components/Mainpage';
 import Journey from './components/Journey';
 import Shop from './components/Shop';
-import Arches from './components/Arches';
+import Arches from './components/ParkArches';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
