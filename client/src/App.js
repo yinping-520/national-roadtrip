@@ -16,7 +16,9 @@ import Footer from './components/Footer';
 import Mainpage from './components/Mainpage';
 import Journey from './components/Journey';
 import Shop from './components/Shop';
+import Trips from './components/Trips';
 import Arches from './components/ParkArches';
+
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -61,6 +63,9 @@ function App() {
             </Route>
             <Route exact path="/shop">
               <Shop />
+            </Route>
+            <Route exact path="/trips">
+              <Trips />
             </Route>
             <Route exact path="/login">
               <Login />
