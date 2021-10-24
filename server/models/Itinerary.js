@@ -1,41 +1,17 @@
 const { Schema, model } = require('mongoose');
 
-const itinerarySchema = new Schema({
+const itinerary = new Schema({
 
-    name: {
-        type: String,
-        required: true,
-        unique: true
-    },
-    address: {
-        type: String,
-        required: true,
-    },
-    description: {
-        type: String,
-    },
-    weatherInfo: {
-        type: String,
-    },
-    activities: [{
-           type: String,
-        }
-    ],
-
-    website: {
-        type: String,
-    },
-    lat:{
-        type: Number,
-    },
-    long:{
-        type: Number,
-    },
-
+    parks: [
+        {
+          type: Schema.Types.ObjectId,
+          ref: 'Park',
+        },
+      ]
 
 
 });
 
-const Itinerary = model('Itinerary', itinerarySchema);
+const Itinerary = model('Itinerary', itinerary);
 
 module.exports = Itinerary;
