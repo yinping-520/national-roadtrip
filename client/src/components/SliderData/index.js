@@ -15,3 +15,21 @@ export const SliderDataArches = [
         image: 'https://mocah.org/uploads/posts/352081-4k-wallpaper.jpg'
     }
 ];
+
+export const SliderDataBryce = [
+    {
+        image: 'https://www.wendyperrin.com/wp-content/uploads/2016/09/bryce-canyon-national-park-vista2-utah-mark-campbell-1000x667.jpg'
+    },
+    {
+        image: 'http://res.cloudinary.com/simpleview/image/upload/v1579555265/clients/garfieldcountyut/Bryce_Canyon_Winter_459af879-99b6-4c15-8438-8d215f79aa36.jpg'
+    },
+    {
+        image: 'https://images.squarespace-cdn.com/content/v1/5346a846e4b0101b157468cf/1520439596100-ONL5JGPOUBVTXDSZ9XNF/DSC01710-2.jpg?format=1000w'
+    },
+    {
+        image: 'https://497tsv9okf5vwjia1smxzaz5-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/20-13-Bryce-Canyon-Winter-Operations-NPS-Photo-Keith-Moore.jpg'
+    },
+    {
+        image: 'https://images.squarespace-cdn.com/content/v1/5a67cfcca803bba6eefdc538/1548613283619-NSEGZ27TP2ENCXV35MKB/Hiking+the+Fairyland+Loop+in+Winter+in+Bryce+Canyon?format=1000w'
+    },
+]

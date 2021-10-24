@@ -18,6 +18,7 @@ import Journey from './components/Journey';
 import Shop from './components/Shop';
 import Trips from './components/Trips';
 import Arches from './components/ParkArches';
+import Bryce from './components/ParkBryce';
 
 
 // Construct our main GraphQL API endpoint
@@ -78,6 +79,9 @@ function App() {
             </Route> */}
             <Route exact path="/arches">
               <Arches />
+            </Route>
+            <Route exact path="/bryce">
+              <Bryce />
             </Route>
           </div>
           <Footer />

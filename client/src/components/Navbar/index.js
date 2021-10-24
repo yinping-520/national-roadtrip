@@ -4,6 +4,19 @@ import '../css/nav.css';
 import Auth from '../../utils/auth';
 // import camper from '../assets/camper.png';
 
+const styles = {
+  dropContent: {
+    display: 'flex',
+
+  },
+  dropdownLinks: {
+    textDecoration: 'none',
+    fontSize: '18px',
+    color: 'orange',
+    margin: '0px 0px 15px 0px'
+  }
+}
+
 function Navbar() {
   const logout = (event) => {
     event.preventDefault();
@@ -39,22 +52,24 @@ function Navbar() {
           </Link>
           <div className='dropdown-content'>
             <div id='dropdown-set1'>
-              <Link className='rightnav-dropdown' to='/arches'>Arches</Link>
+              {/* <Link style={styles.dropdownLinks} to='/arches'>Arches</Link> */}
+              <p>Arches</p>
+              {/* <Link style={styles.dropdownLinks} to='/arches'>Bryce Canyon</Link> */}
               <p>Bryce Canyon</p>
               <p>Glacier Mtn</p>
               <p>Grand Canyon</p>
             </div>
             <div id='dropdown-set2'>
-              <p>Olympic Natl</p>
+              <p>Olympic</p>
               <p>Rocky Mtn</p>
               <p>Sequoia</p>
               <p>Smokey Mtn</p>
             </div>
             <div id='dropdown-set3'>
-              <p>Teton Natl</p>
+              <p>Teton</p>
               <p>Yellowstone</p>
               <p>Yosemite</p>
-              <p>Zion Natl</p>
+              <p>Zion</p>
             </div>
           </div>
         </span>

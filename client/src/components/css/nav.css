@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    z-index: 10;
+    z-index: 100;
 }
 
 .dropdown {
@@ -36,21 +36,17 @@
     justify-content: space-around;
 }
 
-.rightnav-dropdown {
-    font-size: 18px;
-    color: orange;
-    text-decoration: none;
-}
 
 .dropdown p {
     font-size: 18px;
     color: orange;
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
-.rightnav-dropdown p:hover {
+/* .rightnav-dropdown p:hover {
     color: white;
-}
+} */
 
 .dropdown p:hover {
     color:white;
