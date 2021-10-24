@@ -134,3 +134,71 @@ export const SliderDataSmokey = [
         image: 'https://www.pinkadventuretours.com/Media/2734/shutterstock_255621250-1.jpg?width=600&height=401&mode=max'
     },
 ]
+export const SliderDataTeton = [
+    {
+        image: 'https://www.twowanderingsoles.com/wp-content/uploads/2021/07/img_60ee6cedb97f0.jpg'
+    },
+    {
+        image: 'https://www.dirtinmyshoes.com/wp-content/uploads/2020/06/Grand-Teton-North-Fork-Cascade-Canyon-2015-e1591121134861-800x543.jpg'
+    },
+    {
+        image: 'https://www.cruiseamerica.com/getattachment/84fbfd8c-2de0-4284-8568-cc36ac7f6710/attachment.aspx'
+    },
+    {
+        image: 'http://jacksonhole-traveler-production.s3.amazonaws.com/wp-content/uploads/2016/10/18155720/trianglex-winter-grand-teton-1280x854.jpg'
+    },
+    {
+        image: 'https://s1.1zoom.me/big0/419/286951-svetik.jpg'
+    },
+]
+export const SliderDataYellowstone = [
+    {
+        image: 'https://www.outsideonline.com/wp-content/uploads/2019/10/23/geyser-yelowstone-burst_h.jpg'
+    },
+    {
+        image: 'https://www.gannett-cdn.com/-mm-/b448c4bd0e6486684d5809dd0c1f1ad5460cad27/c=0-254-4928-3026/local/-/media/2017/05/18/USATODAY/usatsports/B9327681055Z.1_20170518174842_000_GCPI2D0G9.1-0.jpg'
+    },
+    {
+        image: 'https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/a5/2a.jpg'
+    },
+    {
+        image: 'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F60a77f30768434735cc94924%2FGrand-Prismatic-Spring---Yellowstone-National-Park%2F960x0.jpg%3Ffit%3Dscale'
+    },
+    {
+        image: 'https://www.nps.gov/yell/learn/news/images/Economic-Benefits_1.jpg'
+    },
+]
+export const SliderDataYosemite = [
+    {
+        image: 'https://images.foxtv.com/static.foxla.com/www.foxla.com/content/uploads/2021/04/1280/720/GettyImages-1225945432.jpg?ve=1&tl=1'
+    },
+    {
+        image: 'https://activerain.com/image_store/uploads/9/0/3/4/5/ar130878990854309.JPG'
+    },
+    {
+        image: 'https://media.tegna-media.com/assets/WBNS/images/9e856dca-33ca-45e7-aca4-a4d62bbd3a84/9e856dca-33ca-45e7-aca4-a4d62bbd3a84_750x422.jpg'
+    },
+    {
+        image: 'https://blog.assets.thediscoverer.com/2019/09/Yosemite-National-Park.jpg'
+    },
+    {
+        image: 'https://magazine.northeast.aaa.com/wp-content/uploads/2017/11/yosemite-national-park-guide-1-640x423.jpg'
+    },
+]
+export const SliderDataZion = [
+    {
+        image: 'https://www.gousa.in/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-10/Zion_0.jpg?h=345ab7ac&itok=2wsz6mCP'
+    },
+    {
+        image: 'https://ca-times.brightspotcdn.com/dims4/default/0d8fadc/2147483647/strip/true/crop/2145x1205+0+0/resize/1486x835!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F93%2Fe3%2Fdb8ab77b47bca9562e4605d48985%2Fla-tr-zion-utah-009.JPG'
+    },
+    {
+        image: 'https://bearfoottheory.com/wp-content/uploads/2013/05/Zion-National-Park-Guide.jpg'
+    },
+    {
+        image: 'https://cdn.britannica.com/45/100645-050-50E906A9/Angels-Landing-Zion-National-Park-Utah.jpg'
+    },
+    {
+        image: 'https://www.lancebcarter.com/images/xl/UT_YA0222_226.jpg'
+    },
+]
