@@ -83,3 +83,20 @@ export const SliderDataOlympic = [
         image: 'https://i.pinimg.com/originals/53/43/db/5343dbfd23f4a0bc6489fa28a1e22c7b.jpg'
     },
 ]
+export const SliderDataRockyMtn = [
+    {
+        image: 'https://www.outsideonline.com/wp-content/uploads/2020/03/12/gem-lake-and-longs-peak-sunset_h.jpg'
+    },
+    {
+        image: 'https://cdn.farmjournal.com/s3fs-public/styles/840x600/public/2021-01/landscape-1843128_1920.jpg?itok=8rhjbX3U'
+    },
+    {
+        image: 'https://www.mycoloradoparks.com/wp-content/uploads/2020/05/RM-Entrance-sign_DP_2400.jpg'
+    },
+    {
+        image: 'https://www.jellystoneofestes.com/wp-content/uploads/2016/12/rockymountain.jpg'
+    },
+    {
+        image: 'https://i.natgeofe.com/k/caf9703e-c4e2-44e6-8b82-2c8b480cacc8/black-bear-cubs.jpg'
+    },
+]
