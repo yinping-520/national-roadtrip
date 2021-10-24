@@ -18,6 +18,13 @@ import Journey from './components/Journey';
 import Shop from './components/Shop';
 import Trips from './components/Trips';
 import Arches from './components/ParkArches';
+import Bryce from './components/ParkBryce';
+import Glacier from './components/ParkGlacier';
+import GrandCanyon from './components/ParkGrandCanyon';
+import Olympic from './components/ParkOlympic';
+import RockyMtn from './components/ParkRockyMtn';
+import Sequoia from './components/ParkSequoia';
+import Smokey from './components/ParkSmokeyMtn';
 
 
 // Construct our main GraphQL API endpoint
@@ -78,6 +85,27 @@ function App() {
             </Route> */}
             <Route exact path="/arches">
               <Arches />
+            </Route>
+            <Route exact path="/bryce">
+              <Bryce />
+            </Route>
+            <Route exact path="/glacier">
+              <Glacier />
+            </Route>
+            <Route exact path="/grandcanyon">
+              <GrandCanyon />
+            </Route>
+            <Route exact path="/olympic">
+              <Olympic />
+            </Route>
+            <Route exact path="/rockymtn">
+              <RockyMtn />
+            </Route>
+            <Route exact path="/sequoia">
+              <Sequoia />
+            </Route>
+            <Route exact path="/smokey">
+              <Smokey />
             </Route>
           </div>
           <Footer />

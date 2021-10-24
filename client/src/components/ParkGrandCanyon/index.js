@@ -2,13 +2,13 @@ import '../css/arches.css';
 import '../css/scroll.css';
 import React, { useState } from 'react';
 import up from '../assets/up-arrow.jpg';
-import { SliderDataBryce } from '../SliderData';
+import { SliderDataGrandCanyon } from '../SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-import hike from '../assets/hike-bryce.jpg';
+import glass from '../assets/glass-floor.jpg';
 
-function Bryce() {
+function Grandcanyon() {
     const [current, setCurrent] = useState(0); // for next & prev slides
-    const length = SliderDataBryce.length;
+    const length = SliderDataGrandCanyon.length;
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1)
@@ -29,12 +29,12 @@ function Bryce() {
     return (
         <div>
             <div id='center-all'>
-            <h1 className='park-name'>Bryce Canyon National Park</h1>
-            <h2 className='city'>Utah, USA</h2>
+            <h1 className='park-name'>The Grand Canyon</h1>
+            <h2 className='city'>Arizona, USA</h2>
             <div className='slider'>
                 <FaArrowAltCircleLeft className='slider-icon left-arrow' onClick={prevSlide} />
                 <FaArrowAltCircleRight className='slider-icon right-arrow' onClick={nextSlide} />
-                {SliderDataBryce.map((slide, index) => {
+                {SliderDataGrandCanyon.map((slide, index) => {
                     return (
                         <div className='current-and-index'>
                             <div className={index === current ? 'slide active' : 'slide'} key=
@@ -54,7 +54,7 @@ function Bryce() {
             <a href='#top'><img id='up-arrow' src={up} /></a>
             <div className='activities'>
                 <h3 className='activity-header'>Activities</h3>
-                <img id='bike' src={hike} />
+                <img id='bike' src={glass} />
                 <div className='split-act'>
                     <ul className='activity-list'>
                         <div className='act-left'>
@@ -90,4 +90,4 @@ function Bryce() {
     )
 };
 
-export default Bryce;
+export default Grandcanyon;

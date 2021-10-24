@@ -26,37 +26,37 @@ function Destinations() {
                             <p>Arches</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/bryce" style={styles.underlineRemove}>
                         <div id='bryce' className='card-dest'>
-                            <p>Bryce</p>
+                            <p>Bryce Canyon</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/glacier" style={styles.underlineRemove}>
                         <div id='glacier' className='card-dest'>
-                            <p>Glacier Mountain</p>
+                            <p>Glacier</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/grandcanyon" style={styles.underlineRemove}>
                         <div id='grand-canyon' className='card-dest'>
                             <p>Grand Canyon</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/olympic" style={styles.underlineRemove}>
                         <div id='olympic' className='card-dest'>
                             <p>Olympic</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/rockymtn" style={styles.underlineRemove}>
                         <div id='rocky-mtn' className='card-dest'>
                             <p>Rocky Mountain</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/sequoia" style={styles.underlineRemove}>
                         <div id='sequoia' className='card-dest'>
                             <p>Sequoia</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/smokey" style={styles.underlineRemove}>
                         <div id='smokey' className='card-dest'>
                             <p>Smokey Mountains</p>
                         </div>
