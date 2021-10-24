@@ -117,7 +117,7 @@ body {
 #something p {
     font-size: 46px;
     color: orange;
-    padding: 330px 0px 0px 200px;
+    padding: 330px 0px 0px 600px;
     background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
     transition: 1.4s ease-in;
