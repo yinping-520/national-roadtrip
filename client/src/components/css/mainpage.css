@@ -115,19 +115,18 @@ body {
 }
 
 #something p {
-    font-size: 80px;
+    font-size: 46px;
     color: orange;
-    padding: 530px 0px 0px 400px;
+    padding: 330px 0px 0px 200px;
     background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
-    transition: 1.25s ease-in;
+    transition: 1.4s ease-in;
     opacity: 0;
 }
 
 #something p:hover {
     opacity: 1;
-    font-size: 46px;
-    padding: 330px 0px 0px 680px;
+    padding: 330px 0px 0px 850px;
 }
 
 
