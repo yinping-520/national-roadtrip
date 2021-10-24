@@ -23,3 +23,22 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_ITINERARY = gql`
+  mutation addItinerary($parks: Schema.Types.ObjectId!) {
+    updateItinerary($parks: Schema.Types.ObjectId!) {
+      token
+      parks {
+        _id
+        name
+        address
+        description
+        weatherInfo
+        activities
+        website
+        lat
+        long
+      }
+    }
+  }
+`;
