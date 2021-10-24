@@ -29,7 +29,7 @@ function Mainpage() {
                         <p>Rocky Mountain</p>
                     </div>
                     <div id='glacier' className='card'>
-                        <p>Glacier Mountain</p>
+                        <p>Glacier</p>
                     </div>
                     <div id='teton' className='card'>
                         <p>Teton</p>

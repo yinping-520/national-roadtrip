@@ -75,7 +75,7 @@ function Arches() {
                 </div>
             </div>
             <div className='weather-section'>
-                <h4 className='weather-headline'>Seasonal Weather?</h4>
+                <h4 className='weather-headline'>Seasonal Weather</h4>
                 <div className='weather-block'>
                     <p>spring</p>                    
                     <p>summer</p>
@@ -84,7 +84,7 @@ function Arches() {
                 </div>
             </div>
             <div className='official-link'>
-                <a href='https://www.nps.gov/arch/index.htm' target='_'>arches.gov Offical Site</a>
+                <a href='https://www.nps.gov/arch/index.htm' target='_'>insert Offical Site</a>
             </div>
         </div>
     )

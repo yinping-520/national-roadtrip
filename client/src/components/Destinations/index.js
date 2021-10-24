@@ -31,17 +31,17 @@ function Destinations() {
                             <p>Bryce Canyon</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/glacier" style={styles.underlineRemove}>
                         <div id='glacier' className='card-dest'>
-                            <p>Glacier Mountain</p>
+                            <p>Glacier</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/grandcanyon" style={styles.underlineRemove}>
                         <div id='grand-canyon' className='card-dest'>
                             <p>Grand Canyon</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/olympic" style={styles.underlineRemove}>
                         <div id='olympic' className='card-dest'>
                             <p>Olympic</p>
                         </div>

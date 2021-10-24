@@ -15,7 +15,6 @@ export const SliderDataArches = [
         image: 'https://mocah.org/uploads/posts/352081-4k-wallpaper.jpg'
     }
 ];
-
 export const SliderDataBryce = [
     {
         image: 'https://www.wendyperrin.com/wp-content/uploads/2016/09/bryce-canyon-national-park-vista2-utah-mark-campbell-1000x667.jpg'
@@ -31,5 +30,56 @@ export const SliderDataBryce = [
     },
     {
         image: 'https://images.squarespace-cdn.com/content/v1/5a67cfcca803bba6eefdc538/1548613283619-NSEGZ27TP2ENCXV35MKB/Hiking+the+Fairyland+Loop+in+Winter+in+Bryce+Canyon?format=1000w'
+    },
+]
+export const SliderDataGlacier = [
+    {
+        image: 'https://npca.s3.amazonaws.com/images/9761/a9cc980c-c406-4a55-a6ea-cc77d13113ba-banner.jpg?1456501698'
+    },
+    {
+        image: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Mountain_Goat_%284455603396%29.jpg'
+    },
+    {
+        image: 'https://wallpaperaccess.com/full/2478407.jpg'
+    },
+    {
+        image: 'https://cdn.elebase.io/bfe7dca8-ded7-4599-acba-034c8945acf8/fe3b3a3d-077f-4683-8374-dface0003443-cotcf008c742b6b16cfd.jpg?w=680&h=382&fit=crop&rot=auto&dpr=2&q=75'
+    },
+    {
+        image: 'https://www.mattandkaren.com/wp-content/uploads/2019/12/65F8370D-36C2-4777-A200-10ADEA6912DB-1882x1200.jpg'
+    },
+]
+export const SliderDataGrandCanyon = [
+    {
+        image: 'https://cdn.tourcms.com/a/11676/796/1/large.jpg'
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
+    },
+    {
+        image: 'https://media.deseretdigital.com/file/aa89988589?type=jpeg&quality=55&c=15&a=4379240d'
+    },
+    {
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Canyon_River_Tree_%28165872763%29.jpeg/1200px-Canyon_River_Tree_%28165872763%29.jpeg'
+    },
+    {
+        image: 'https://i0.wp.com/yaleclimateconnections.org/wp-content/uploads/2021/07/072021_GrandCanyon_1600.jpg?fit=1600%2C900&ssl=1'
+    },
+]
+export const SliderDataOlympic = [
+    {
+        image: 'https://i1.wp.com/morethanjustparks.com/wp-content/uploads/2020/10/2Q3A0484.jpg?fit=1800%2C1200&ssl=1'
+    },
+    {
+        image: 'https://westcoastwayfarers.com/wp-content/uploads/2021/02/image-11-1024x682.jpeg'
+    },
+    {
+        image: 'https://www.rei.com/adventures/assets/adventures/images/trip/core/northamerica/oly_hero'
+    },
+    {
+        image: 'https://bearfoottheory.com/wp-content/uploads/2016/06/Olympic-National-park.jpg'
+    },
+    {
+        image: 'https://i.pinimg.com/originals/53/43/db/5343dbfd23f4a0bc6489fa28a1e22c7b.jpg'
     },
 ]
