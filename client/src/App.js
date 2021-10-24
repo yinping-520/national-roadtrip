@@ -23,6 +23,8 @@ import Glacier from './components/ParkGlacier';
 import GrandCanyon from './components/ParkGrandCanyon';
 import Olympic from './components/ParkOlympic';
 import RockyMtn from './components/ParkRockyMtn';
+import Sequoia from './components/ParkSequoia';
+import Smokey from './components/ParkSmokeyMtn';
 
 
 // Construct our main GraphQL API endpoint
@@ -98,6 +100,12 @@ function App() {
             </Route>
             <Route exact path="/rockymtn">
               <RockyMtn />
+            </Route>
+            <Route exact path="/sequoia">
+              <Sequoia />
+            </Route>
+            <Route exact path="/smokey">
+              <Smokey />
             </Route>
           </div>
           <Footer />

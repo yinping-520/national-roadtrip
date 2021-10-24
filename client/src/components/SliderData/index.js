@@ -100,3 +100,37 @@ export const SliderDataRockyMtn = [
         image: 'https://i.natgeofe.com/k/caf9703e-c4e2-44e6-8b82-2c8b480cacc8/black-bear-cubs.jpg'
     },
 ]
+export const SliderDataSequoia = [
+    {
+        image: 'https://drupal8-prod.visitcalifornia.com/sites/drupal8-prod.visitcalifornia.com/files/styles/fluid_1200/public/vc_ca101_nationalparks_sequoiakingsnationalparks_rf_673066812_1280x640.jpg?itok=EVBZ0WOL'
+    },
+    {
+        image: 'https://localadventurer.com/wp-content/uploads/2015/11/things-to-do-in-sequoia-national-park.jpg'
+    },
+    {
+        image: 'https://images.squarespace-cdn.com/content/v1/5a4dbe45ace864a4b106ce3e/1579565865859-VEYHZNUC9N1J6GK9M3QS/Earth+Coco+Sequoia+National+Park-1.JPG'
+    },
+    {
+        image: 'https://sierraflyfisher.com/wp-content/uploads/2019/07/Sequoia-National-Park.jpg'
+    },
+    {
+        image: 'https://i.ytimg.com/vi/dz4r0WhG3G4/maxresdefault.jpg'
+    },
+]
+export const SliderDataSmokey = [
+    {
+        image: 'https://www.nps.gov/grsm/learn/news/images/Mingus-Mill_Photo-by-Tom-Haxby.jpg'
+    },
+    {
+        image: 'https://wgno.com/wp-content/uploads/sites/2/2020/04/hypatia-h_d43cebf10258e14c41633c59f595bf83-h_6cae19e7bbd593cbd356f248fec73a8c.jpg?w=2072&h=1166&crop=1'
+    },
+    {
+        image: 'https://www.thesmokies.com/wp-content/uploads/2020/12/Clingmans-Dome-Observation-Tower.jpg'
+    },
+    {
+        image: 'http://i.imgur.com/kjo5y8N.jpg'
+    },
+    {
+        image: 'https://www.pinkadventuretours.com/Media/2734/shutterstock_255621250-1.jpg?width=600&height=401&mode=max'
+    },
+]

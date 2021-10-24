@@ -51,12 +51,12 @@ function Destinations() {
                             <p>Rocky Mountain</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/sequoia" style={styles.underlineRemove}>
                         <div id='sequoia' className='card-dest'>
                             <p>Sequoia</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/smokey" style={styles.underlineRemove}>
                         <div id='smokey' className='card-dest'>
                             <p>Smokey Mountains</p>
                         </div>
