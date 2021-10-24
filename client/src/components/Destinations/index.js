@@ -61,22 +61,22 @@ function Destinations() {
                             <p>Smokey Mountains</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/teton" style={styles.underlineRemove}>
                         <div id='teton' className='card-dest'>
-                            <p>Teton</p>
+                            <p>Grand Teton</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/yellowstone" style={styles.underlineRemove}>
                         <div id='yellowstone' className='card-dest'>
                             <p>Yellowstone</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/yosemite" style={styles.underlineRemove}>
                         <div id='yosemite' className='card-dest'>
                             <p>Yosemite</p>
                         </div>
                     </Link>
-                    <Link to="/" style={styles.underlineRemove}>
+                    <Link to="/zion" style={styles.underlineRemove}>
                         <div id='zion' className='card-dest'>
                             <p>Zion</p>
                         </div>

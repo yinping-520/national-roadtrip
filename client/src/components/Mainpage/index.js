@@ -32,7 +32,7 @@ function Mainpage() {
                         <p>Glacier</p>
                     </div>
                     <div id='teton' className='card'>
-                        <p>Teton</p>
+                        <p>Grand Teton</p>
                     </div>
                     <div id='yosemite' className='card'>
                         <p>Yosemite</p>
