@@ -29,6 +29,7 @@ import Teton from './components/ParkTeton';
 import Yellowstone from './components/ParkYellowstone';
 import Yosemite from './components/ParkYosemite';
 import Zion from './components/ParkZion';
+import ScrollToTop from './components/ScrollToTop';
 
 
 // Construct our main GraphQL API endpoint
@@ -59,6 +60,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+        <ScrollToTop />
         <div>
         <div id="progressbar"></div>
           <Header />
