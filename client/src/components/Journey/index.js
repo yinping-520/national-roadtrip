@@ -29,7 +29,7 @@ function Journey() {
                     </div>
                 </div>
                 <div id='destinations'>
-                    <img src={signTurn} />
+                    <img src={signTurn} alt={signTurn}/>
                 </div>
                 <div className='site-section'>
                     <div id='sites2'>
@@ -48,7 +48,7 @@ function Journey() {
                     </div>
                 </div>
                 <div id='something'>
-                    <img src={something} />
+                    <img src={something} alt={something}/>
                 </div>
                 <div id='sites3'>
                     <div id='yellowstone' className='card'>

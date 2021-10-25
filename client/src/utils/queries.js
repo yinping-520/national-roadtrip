@@ -6,6 +6,9 @@ export const QUERY_USERS = gql`
       _id
       username
       email
+      itinerary{
+        name
+       }
     }
   }
 `;
@@ -19,8 +22,9 @@ export const QUERY_USER = gql`
     }
   }`
   ;
-export const QUERY_PARK = gql`
-  query getPark {
+
+export const QUERY_PARKS = gql`
+  query getParks {
     parks {
       _id
       name 
@@ -34,9 +38,11 @@ export const QUERY_PARK = gql`
       } 
   }`;
 
+
 export const QUERY_PARK_BY_ID = gql`
   query getParkById($parkId: ID) {
     park(parkId: $parkId) {
+
       _id
       name 
       address
@@ -48,3 +54,4 @@ export const QUERY_PARK_BY_ID = gql`
       long
       } 
   }`;
+

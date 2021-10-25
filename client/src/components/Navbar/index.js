@@ -17,23 +17,22 @@ const styles = {
 }
 
 function Navbar() {
-  const logout = (event) => {
-    event.preventDefault();
-    Auth.logout();
-  };
+  const showNavigation = () => {
+    if (Auth.loggedIn()) {
+      return (
+        <Link class="rightnav-a" to="/logout">
+          logout
+        </Link>
+      )
+    }
+    return (
+      <Link class="rightnav-a" to="/login">
+        login
+      </Link>
+    )
 
-  // if (Auth.loggedIn()) {
-  //   return (
-  //     <>
-  //       <Link to='/me'>
-  //         {Auth.getProfile().data.username}'s profile
-  //       </Link>
-  //       <button onClick={logout}>
-  //         Logout
-  //       </button>
-  //     </>
-  //   );
-  // }
+  }
+
   return (
     <div id='nav' name='top'>
       <div id='leftnav'>
@@ -85,12 +84,7 @@ function Navbar() {
         <Link class='rightnav-a' to='/shop'>
           shop
         </Link>
-        {/* <Link class='rightnav-a' to='/journey'>
-          your trips
-        </Link> */}
-        <Link class='rightnav-a' to='/login'>
-          login
-        </Link>
+        {showNavigation()}
       </div>
     </div>
   );

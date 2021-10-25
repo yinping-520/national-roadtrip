@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Itinerary, Park} = require('../models');
+const { User, Itinerary, Park } = require('../models');
 const { signToken } = require('../utils/auth');
 
 
@@ -14,9 +14,9 @@ const resolvers = {
     parks: async () => {
       return Park.find()
     },
-    
-    park: async (parent, {parkId}) => {
-      return Park.findOne({_id: parkId})
+
+    park: async (parent, { parkId }) => {
+      return Park.findOne({ _id: parkId })
     },
   },
 
@@ -44,31 +44,33 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-  
-    // addItinerary: async(parent, { stops, tripDates, dateCreated }) => {
+
+    // addItinerary: async (parent, { stops, tripDates, dateCreated }) => {
     //   return await Itinerary.create({ stops, tripDates, dateCreated });
     // },
 
-    updateItinerary: async(parent, { parks, name }) => {
-      return Itinerary.findOneAndUpdate(
-        {_id: parks},
-        {
-          $addToSet: { parks: name },
-        },
-        {
-          new: true,
-          runValidators: true,
-        }
-      );
+    addItinerary: async (parent, { parks }, context) => {
+      if (context.user) {
+        return User.findOneAndUpdate(
+          { _id: context.user._id },
+          {
+            $addToSet: { itinerary: parks },
+          },
+          {
+            new: true,
+            runValidators: true,
+          }
+        )
+      };
     },
 
-    removeItinerary: async(parent, { userId, itinerary }) => {
+    removeItinerary: async (parent, { itinerary }, context) => {
       return User.findOneAndUpdate(
-        { _id: userId },
-        { $pull: { itinerary: itinerary }},
+        { _id: context.user._id },
+        { $pull: { itinerary: itinerary } },
         { new: true }
       )
-    }, 
+    },
   }
 
 }

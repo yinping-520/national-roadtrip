@@ -19,8 +19,13 @@ const parkSchema = new Schema({
     },
     activities: [{
            type: String,
-        }
-    ],
+    }],
+    lat: { 
+        type: Number 
+    },
+    long: { 
+        type: Number 
+    },
 
     website: {
         type: String,

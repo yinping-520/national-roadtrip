@@ -6,7 +6,7 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    itinerary:[Itinerary]
+    itinerary:[Park]
   }
 
   type Park {
@@ -21,11 +21,6 @@ const typeDefs = gql`
     long: Float
   }
 
-  type Itinerary {
-    _id: ID
-    parks: [Park]
-  }
-
   type Auth {
     token: ID!
     user: User
@@ -33,20 +28,16 @@ const typeDefs = gql`
 
   type Query {
     users: [User]
-    itinerary: [Itinerary]
     user(id: ID): User
-    me: User
     parks: [Park]
-    park(parkId: ID): Park
+    park(id: ID): Park
   }
 
   type Mutation {
     addUser(email:String!, username:String!, password:String!): Auth
     login(email:String!, password:String!): Auth
-
-    addItinerary(id: ID!, tripDates: Int, dateCreated: Int): Itinerary
-    removeItinerary(id: ID!, tripDates: Int, dateCreated: Int): Itinerary
-    updateItinerary(id: ID!, tripDates: Int, dateCreated: Int): Itinerary
+    addItinerary(id: ID!): User
+    removeItinerary(id: ID!): User
   }
 `;
 
