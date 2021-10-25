@@ -45,11 +45,11 @@ const resolvers = {
       return { token, user };
     },
 
-    addItinerary: async (parent, { stops, tripDates, dateCreated }) => {
-      return await Itinerary.create({ stops, tripDates, dateCreated });
-    },
+    // addItinerary: async (parent, { stops, tripDates, dateCreated }) => {
+    //   return await Itinerary.create({ stops, tripDates, dateCreated });
+    // },
 
-    updateItinerary: async (parent, { parks }, context) => {
+    addItinerary: async (parent, { parks }, context) => {
       if (context.user) {
         return User.findOneAndUpdate(
           { _id: context.user._id },
