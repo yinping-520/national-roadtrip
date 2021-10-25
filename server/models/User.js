@@ -20,10 +20,8 @@ const userSchema = new Schema({
     minlength: 5,
   },
   itinerary: [{
-    
     type: Schema.Types.ObjectId,
     ref: 'Park'
-
   }]
 });
 

@@ -22,9 +22,25 @@ export const QUERY_USER = gql`
     }
   }`
   ;
-export const QUERY_PARK = gql`
-  query getPark {
+
+export const QUERY_PARKS = gql`
+  query getParks {
     parks {
+      _id
+      name 
+      address
+      description
+      weatherInfo
+      activities
+      website
+      lat
+      long
+      } 
+  }`;
+
+export const QUERY_PARK = gql`
+  query getPark($id: ID!) {
+    park(id: $id) {
       _id
       name 
       address
