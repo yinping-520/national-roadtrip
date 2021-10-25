@@ -6,6 +6,9 @@ export const QUERY_USERS = gql`
       _id
       username
       email
+      itinerary{
+        name
+       }
     }
   }
 `;
@@ -17,15 +20,20 @@ export const QUERY_USER = gql`
       username
       email
     }
-  }
-`;
-
-export const QUERY_ME = gql`
-  query me {
-    me {
+  }`
+  ;
+export const QUERY_PARK = gql`
+  query getPark {
+    parks {
       _id
-      username
-      email
-    }
-  }
-`;
+      name 
+      address
+      description
+      weatherInfo
+      activities
+      website
+      lat
+      long
+      } 
+  }`;
+

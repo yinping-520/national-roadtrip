@@ -1,5 +1,5 @@
 const User = require('./User');
-const Itinerary = require('./Itinerary');
+const Park = require('./Park');
 
-module.exports = { User, Itinerary };
+module.exports = { User, Park };
 

@@ -6,9 +6,54 @@
     box-shadow: 0px 0px 17px 25px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
-    z-index: 10;
+    z-index: 100;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 523px;
+    height: 125px !important;
+    padding: 11px;
+    margin: 0px 0px 0px -200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    background-color: #1b1b1bde;
+    z-index: 100;
+    border-radius: 5px;
+    /* transition: ease 1s !important; */
+}
+
+#dropdown-set1,
+#dropdown-set2,
+#dropdown-set3 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dropDownLink {
+    font-size: 18px;
+    color: orange;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.dropDownLink:hover {
+    color:white;
 }
 
 #leftnav {
@@ -16,7 +61,16 @@
 }
 
 #camper {
-    width: 0px;
+    font-size: 50px;
+    margin-top: 25px;
+    color: rgb(189, 123, 0);
+    opacity: 1;
+    transition: ease 1.25s;
+}
+
+#camper:hover {
+    color: rgb(233, 151, 0);
+    transform: rotate(7.5deg);
 }
 
 #rightnav {

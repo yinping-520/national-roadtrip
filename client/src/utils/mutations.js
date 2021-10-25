@@ -23,3 +23,21 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_ITINERARY = gql`
+  mutation addItinerary($parks: [ID]!) {
+    updateItinerary(parks: $parks) {
+      parks {
+        _id
+        name
+        address
+        description
+        weatherInfo
+        activities
+        website
+        lat
+        long
+      }
+    }
+  }
+`;

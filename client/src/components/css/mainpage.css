@@ -20,6 +20,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     margin: -500px 0px 0px 125px;
+    animation: 1.3s ease-in 0s 1 appearOnLoad;
 }
 
 #main-text2 {
@@ -29,11 +30,28 @@ body {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     margin: -650px 0px 0px 1100px;
+    animation: 2.1s ease-in 0s 1 appearOnLoad;
 }
 
-#container span {
-    /* text-decoration: underline; */
+.span2 {
     color: #fff;
+}
+
+#destin-span {
+    font-size: 32px;
+    background: linear-gradient(to right, orange, orange 50%, white 50%);
+    font-weight: 600;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.4s ease;
+    text-decoration: none;
+}
+
+#destin-span:hover {
+    background-position: 0 100%;
 }
 
 #up-arrow {
@@ -41,14 +59,18 @@ body {
     bottom: 50px;
     right: 50px;
     z-index: 100;
-    width: 50px;
-    opacity: 0.5;
+    width: 40px;
     transition: ease 0.4s;
+    opacity: 0.5;
 }
 
 #up-arrow:hover {
     opacity: 1;
 }
+
+/* .showBtn {
+    opacity: 0.5;
+} */
 
 #sites1 {
     display: flex;
@@ -58,8 +80,28 @@ body {
     flex-wrap: wrap;
 }
 
-#destinations img {
+/* #destinations img {
     width: 100%;
+} */
+
+#destinations {
+    background: url(../assets/turn-sign.jpg);
+    height: 700px;
+    min-width: 100%;
+}
+
+#destinations p {
+    font-size: 42px;
+    color: orange;
+    padding: 150px 0px 0px 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: 0.85s ease-in;
+    opacity: 0;
+}
+
+#destinations p:hover {
+    opacity: 1;
 }
 
 #sites2 {
@@ -70,9 +112,27 @@ body {
     flex-wrap: wrap;
 }
 
-#something img {
-    width: 100%;
+#something {
+    background: url(../assets/something.jpg);
+    height: 700px;
+    min-width: 100%;
 }
+
+#something p {
+    font-size: 46px;
+    color: orange;
+    padding: 330px 0px 0px 600px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    transition: 1.4s ease-in;
+    opacity: 0;
+}
+
+#something p:hover {
+    opacity: 1;
+    padding: 330px 0px 0px 850px;
+}
+
 
 #sites3 {
     display: flex;
@@ -95,6 +155,7 @@ body {
 
 .card p {
     font-size: 60px;
+    
     color: orange;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 100%;
@@ -162,8 +223,32 @@ body {
     background-size: 100%;
 }
 
+@keyframes appearOnLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media screen and (min-width: 1600px) {
-    #sites1 {
+    #sites1,
+    #sites2,
+    #sites3 {
         margin: 100px 200px;
+    }
+}
+@media screen and (min-width: 1750px) {
+    #main-text {
+        font-size: 40px;
+        margin: -900px 0px 0px 125px;
+    }
+    #destin-span {
+        font-size: 40px;
+    }
+    #main-text2 {
+        font-size: 40px;
+        margin: -675px 0px 0px 1450px;    
     }
 }
