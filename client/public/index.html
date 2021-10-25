@@ -31,6 +31,10 @@
           scrollPercent = (scroll / (dh - wh)) * 100;
           $('#progressbar').css('height', scrollPercent + '%');
       });
+      window.addEventListener('scroll', function(){
+        const scroll = document.querySelector('#up-arrow');
+        scroll.classList.toggle('active', window.scrollY > 350)
+      })
     </script>
   </body>
 </html>

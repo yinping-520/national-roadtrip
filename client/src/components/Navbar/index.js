@@ -33,21 +33,6 @@ function Navbar() {
 
   }
 
-<<<<<<< HEAD
-  // if (Auth.loggedIn()) {
-  //   return (
-  //     <>
-  //       <Link to='/me'>
-  //         {Auth.getProfile().data.username}'s profile
-  //       </Link>
-  //       <button onClick={logout}>
-  //         Logout
-  //       </button>
-  //     </>
-  //   );
-  // }
-=======
->>>>>>> 9df0376 (updated login)
   return (
     <div id='nav' name='top'>
       <div id='leftnav'>
@@ -99,16 +84,7 @@ function Navbar() {
         <Link class='rightnav-a' to='/shop'>
           shop
         </Link>
-<<<<<<< HEAD
-        {/* <Link class='rightnav-a' to='/journey'>
-          your trips
-        </Link> */}
-        <Link class='rightnav-a' to='/login'>
-          login
-        </Link>
-=======
         {showNavigation()}
->>>>>>> 9df0376 (updated login)
       </div>
     </div>
   );
