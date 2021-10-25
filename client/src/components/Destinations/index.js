@@ -4,6 +4,11 @@ import React from 'react';
 import up from '../assets/up-arrow.jpg';
 import container from '../assets/destinations-bg.jpg';
 import { Link } from 'react-router-dom';
+// import { useQuery } from '@apollo/client';
+// import {QUERY_PARK} from './utils/queries'
+// const {loading, data} = useQuery(QUERY_PARK)
+//   const parks = data?.parks || [];
+
 
 const styles = {
     underlineRemove: {

@@ -25,8 +25,8 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_ITINERARY = gql`
-  mutation addItinerary($parks: Schema.Types.ObjectId!) {
-    updateItinerary($parks: Schema.Types.ObjectId!) {
+  mutation addItinerary($parks: ID) {
+    updateItinerary(parks: $parks) {
       token
       parks {
         _id

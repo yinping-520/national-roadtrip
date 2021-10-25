@@ -1,6 +1,8 @@
 import '../css/arches.css';
 import '../css/scroll.css';
 import React, { useState } from 'react';
+import {useQuery} from '@apollo/client';
+import { QUERY_PARK } from '../../utils/queries'
 import up from '../assets/up-arrow.jpg';
 import { SliderDataArches } from '../SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
@@ -25,6 +27,7 @@ function Arches() {
     //     return () => clearInterval(interval);
     //   }
     // );
+    // const {loading, data} = useQuery()
 
     return (
         <div>
