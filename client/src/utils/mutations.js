@@ -24,9 +24,9 @@ export const ADD_USER = gql`
   }
 `;
 
-export const ADD_ITINERARY = gql`
-  mutation addItinerary($parks: [ID]!) {
-    updateItinerary(parks: $parks) {
+export const UPDATE_ITINERARY = gql`
+  mutation updateItinerary($park: [ID]!) {
+    updateItinerary(parks: $park) {
       parks {
         _id
         name
@@ -41,4 +41,16 @@ export const ADD_ITINERARY = gql`
     }
   }
 `;
+
+
+export const DELETE_ITINERARY = gql`
+  mutation deleteItinerary($park: [ID]!) {
+    deleteItinerary(parks: $park) {
+      park {
+        _id
+      }
+    }
+  }
+`;
+
 
