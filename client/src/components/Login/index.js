@@ -28,6 +28,8 @@ const Login = () => {
         variables: { ...formState },
       });
 
+      console.log('Data', data);
+
       Auth.login(data.login.token);
     } catch (e) {
       console.error(e);
@@ -85,7 +87,6 @@ const Login = () => {
         {renderForm()}
         {error && <div>{error.message}</div>}
       </div>
-      
     </main>
   );
 };

@@ -42,6 +42,7 @@ export const UPDATE_ITINERARY = gql`
   }
 `;
 
+
 export const DELETE_ITINERARY = gql`
   mutation deleteItinerary($park: [ID]!) {
     deleteItinerary(parks: $park) {
@@ -51,3 +52,5 @@ export const DELETE_ITINERARY = gql`
     }
   }
 `;
+
+
