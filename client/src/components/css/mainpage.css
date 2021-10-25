@@ -351,6 +351,7 @@ body {
     }
     .card p {
         font-size: 25px;
+        opacity: 1;
     }
     #destinations,
     #something {

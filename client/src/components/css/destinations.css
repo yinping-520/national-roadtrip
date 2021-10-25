@@ -109,6 +109,11 @@
     }
 }
 @media screen and (max-width: 575px) {
+    .card-dest p {
+        opacity: 1;
+        font-size: 22px;
+}   }
+@media screen and (max-width: 575px) {
     #dest-text {
         font-size: 16px;
     }
