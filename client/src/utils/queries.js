@@ -34,3 +34,17 @@ export const QUERY_PARK = gql`
       } 
   }`;
 
+export const QUERY_PARK_BY_ID = gql`
+  query getParkById($parkId: ID) {
+    park(parkId: $parkId) {
+      _id
+      name 
+      address
+      description
+      weatherInfo
+      activities
+      website
+      lat
+      long
+      } 
+  }`;

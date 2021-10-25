@@ -74,6 +74,7 @@ const client = new ApolloClient({
 // document.addEventListener('scroll', handleScroll);
 
 function App() {
+  
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -107,7 +108,7 @@ function App() {
             {/* <Route exact path='/users/:id'>
               <Profile />
             </Route> */}
-            <Route exact path='/arches'>
+            <Route exact path='/arches/:parkId'>
               <Arches />
             </Route>
             <Route exact path='/bryce'>

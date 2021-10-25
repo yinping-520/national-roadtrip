@@ -2,13 +2,23 @@ import '../css/arches.css';
 import '../css/scroll.css';
 import React, { useState } from 'react';
 import {useQuery} from '@apollo/client';
-import { QUERY_PARK } from '../../utils/queries'
+import { QUERY_PARK_BY_ID } from '../../utils/queries'
+import { useParams } from 'react-router-dom';
 import up from '../assets/up-arrow.jpg';
 import { SliderDataArches } from '../SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import bikingArches from '../assets/biking-arches.jpg';
 
 function Arches() {
+    const {parkId} = useParams();
+
+    const {loading, data} = useQuery(QUERY_PARK_BY_ID, {
+        variables: {parkId: parkId}
+    })
+    const activities = data?.park.activities || [];
+    const park = data?.park || {};
+    
+
     const [current, setCurrent] = useState(0); // for next & prev slides
     const length = SliderDataArches.length;
 
@@ -58,32 +68,29 @@ function Arches() {
             <div className='activities'>
                 <h3 className='activity-header'>Activities</h3>
                 <img id='bike' src={bikingArches} />
+                {activities.map((activity) => (
+
                 <div className='split-act'>
                     <ul className='activity-list'>
                         <div className='act-left'>
-                            <li><i class="fas fa-campground"></i> Mountain Biking</li>
-                            <li><i class="fas fa-campground"></i> Hiking</li>
-                            <li><i class="fas fa-campground"></i> River Rafting</li>
-                            <li><i class="fas fa-campground"></i> Camping</li>
-                            <li><i class="fas fa-campground"></i> Canyoneering</li>
+                            <li key={activity}><i class="fas fa-campground"></i>{activity}</li>
+                       
                         </div>
                         <div className='act-right'>
-                            <li><i class="fas fa-campground"></i> Hot Air Ballooning</li>
-                            <li><i class="fas fa-campground"></i> Golfing</li>
-                            <li><i class="fas fa-campground"></i> Rock Climbing</li>
-                            <li><i class="fas fa-campground"></i> Skydiving</li>
-                            <li><i class="fas fa-campground"></i> Horseback Riding</li>
+                        
                         </div>
                     </ul>
                 </div>
+                ))}
             </div>
             <div className='weather-section'>
                 <h4 className='weather-headline'>Seasonal Weather</h4>
                 <div className='weather-block'>
-                    <p>spring</p>                    
-                    <p>summer</p>
-                    <p>fall</p>
-                    <p>winter</p>
+                    <p>{park.weatherInfo}</p>
+                    <p>{park.address}</p>          
+                    <p>{park.description}</p>          
+                    <p>lat:{park.lat}, long:{park.long}</p>                              
+                    
                 </div>
             </div>
             <div className='official-link'>
