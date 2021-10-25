@@ -28,6 +28,8 @@ const Login = () => {
         variables: { ...formState },
       });
 
+      console.log('Data', data);
+
       Auth.login(data.login.token);
     } catch (e) {
       console.error(e);
