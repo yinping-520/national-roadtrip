@@ -14,6 +14,7 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    /* transition: all ease 1s; */
 }
 
 .dropdown-content {
@@ -24,10 +25,9 @@
     padding: 11px;
     margin: 0px 0px 0px -200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-    background-color: #1b1b1bde;
+    background-color: #1b1b1bce;
     z-index: 100;
     border-radius: 5px;
-    /* transition: ease 1s !important; */
 }
 
 #dropdown-set1,
@@ -35,7 +35,7 @@
 #dropdown-set3 {
     width: 30%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -93,4 +93,52 @@
 
 .rightnav-a:hover {
     background-position: 0 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .rightnav-a {
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 500px) {
+    #nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: sticky;
+        background-color: black;
+        box-shadow: none;
+        border: none;
+        height: 120px;
+    }
+    #leftnav {
+        margin: 0px 0px 0px 0px;
+    }
+    #rightnav {
+        margin-right: 10px;
+    }
+    #rightnav-a {
+        font-size: 16px;
+        margin: 0px 0px 0px 0px;
+    }
+    #camper {
+        font-size: 42px;
+        margin-top: 5px;
+    }
+    .dropdown-content {
+        height: 105px !important;
+        width: 375px;
+        margin: 0px 0px 0px -75px;        
+    }
+    #dropdown-set1,
+    #dropdown-set2,
+    #dropdown-set3 {
+        width: 100%;
+    }
+    .dropDownLink {
+        font-size: 14px;
+    }
 }

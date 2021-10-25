@@ -85,7 +85,6 @@ const Login = () => {
         {renderForm()}
         {error && <div>{error.message}</div>}
       </div>
-      
     </main>
   );
 };
