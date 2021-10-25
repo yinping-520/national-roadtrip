@@ -22,7 +22,7 @@ const userSchema = new Schema({
   itinerary: [{
     
     type: Schema.Types.ObjectId,
-    ref: 'Itinerary'
+    ref: 'Park'
 
   }]
 });

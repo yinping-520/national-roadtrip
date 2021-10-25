@@ -49,22 +49,23 @@ const resolvers = {
     //   return await Itinerary.create({ stops, tripDates, dateCreated });
     // },
 
-    updateItinerary: async(parent, { parks, name }) => {
-      return Itinerary.findOneAndUpdate(
-        {_id: parks},
+    updateItinerary: async(parent, { parks }, context) => {
+      if(context.user){
+      return User.findOneAndUpdate(
+        {_id: context.user._id},
         {
-          $addToSet: { parks: name },
+          $addToSet: { itinerary: parks },
         },
         {
           new: true,
           runValidators: true,
         }
-      );
+      )};
     },
 
-    removeItinerary: async(parent, { userId, itinerary }) => {
+    removeItinerary: async(parent, { itinerary }, context) => {
       return User.findOneAndUpdate(
-        { _id: userId },
+        { _id: context.user._id },
         { $pull: { itinerary: itinerary }},
         { new: true }
       )
