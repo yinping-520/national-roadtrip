@@ -2,12 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/nav.css';
 import Auth from '../../utils/auth';
-// import camper from '../assets/camper.png';
 
 const styles = {
   dropContent: {
     display: 'flex',
-
+    
   },
   dropdownLinks: {
     textDecoration: 'none',
@@ -52,24 +51,34 @@ function Navbar() {
           </Link>
           <div className='dropdown-content'>
             <div id='dropdown-set1'>
-              {/* <Link style={styles.dropdownLinks} to='/arches'>Arches</Link> */}
-              <p>Arches</p>
-              {/* <Link style={styles.dropdownLinks} to='/arches'>Bryce Canyon</Link> */}
-              <p>Bryce Canyon</p>
-              <p>Glacier Mtn</p>
-              <p>Grand Canyon</p>
+              <Link className='dropDownLink' to='/arches'>Arches</Link>
+              {/* <p>Arches</p> */}
+              <Link className='dropDownLink' to='/bryce'>Bryce Canyon</Link>
+              {/* <p>Bryce Canyon</p> */}
+              <Link className='dropDownLink' to='/glacier'>Glacier Mtn</Link>
+              {/* <p>Glacier Mtn</p> */}
+              <Link className='dropDownLink' to='/grandcanyon'>Grand Canyon</Link>
+              {/* <p>Grand Canyon</p> */}
             </div>
             <div id='dropdown-set2'>
-              <p>Olympic</p>
-              <p>Rocky Mtn</p>
-              <p>Sequoia</p>
-              <p>Smokey Mtn</p>
+              {/* <p>Olympic</p> */}
+              <Link className='dropDownLink' to='/olympic'>Olympic</Link>
+              {/* <p>Rocky Mtn</p> */}
+              <Link className='dropDownLink' to='/rockymtn'>Rocky Mtn</Link>
+              {/* <p>Sequoia</p> */}
+              <Link className='dropDownLink' to='/sequoia'>Sequoia</Link>
+              {/* <p>Smokey Mtn</p> */}
+              <Link className='dropDownLink' to='/smokey'>Smokey Mtn</Link>
             </div>
             <div id='dropdown-set3'>
-              <p>Teton</p>
-              <p>Yellowstone</p>
-              <p>Yosemite</p>
-              <p>Zion</p>
+              {/* <p>Teton</p> */}
+              <Link className='dropDownLink' to='/teton'>Teton</Link>
+              {/* <p>Yellowstone</p> */}
+              <Link className='dropDownLink' to='/yellowstone'>Yellowstone</Link>
+              {/* <p>Yosemite</p> */}
+              <Link className='dropDownLink' to='/yosemite'>Yosemite</Link>
+              {/* <p>Zion</p> */}
+              <Link className='dropDownLink' to='/zion'>Zion</Link>
             </div>
           </div>
         </span>

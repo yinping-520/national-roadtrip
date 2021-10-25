@@ -30,18 +30,16 @@ import Yellowstone from './components/ParkYellowstone';
 import Yosemite from './components/ParkYosemite';
 import Zion from './components/ParkZion';
 import ScrollToTop from './components/ScrollToTop';
+import up from './components/assets/up-arrow.jpg';
+import './components/css/mainpage.css';
 
 
-// Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
 
-// Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
-  // get the authentication token from local storage if it exists
   const token = localStorage.getItem('id_token');
-  // return the headers to the context so httpLink can read them
   return {
     headers: {
       ...headers,
@@ -51,10 +49,29 @@ const authLink = setContext((_, { headers }) => {
 });
 
 const client = new ApolloClient({
-  // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
+
+// const styles = {
+//   showBtn: {
+//       opacity: 0.5
+//   }
+// }
+
+// const scrollToTopBtn = document.getElementById('up-arrow');
+// const rootElement = document.documentElement;
+// function handleScroll() {
+//   const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+
+//   if ((rootElement.scrollTop / scrollTotal ) > 0.40 ) {
+//     scrollToTopBtn.className.add('showBtn');
+//   } else {
+//     // scrollToTopBtn.className.remove('showBtn')
+//     scrollToTopBtn.classList.remove(styles={style.showBtn});
+//   }
+// };
+// document.addEventListener('scroll', handleScroll);
 
 function App() {
   return (
@@ -62,67 +79,68 @@ function App() {
       <Router>
         <ScrollToTop />
         <div>
-        <div id="progressbar"></div>
+        <div id='progressbar'></div>
+        <a href='#top'><img id='up-arrow' src={up} /></a>
           <Header />
           <div>
-            <Route exact path="/">
+            <Route exact path='/'>
               <Mainpage />
             </Route>
-            <Route exact path="/destinations">
+            <Route exact path='/destinations'>
               <Destinations />
             </Route>
-            <Route exact path="/journey">
+            <Route exact path='/journey'>
               <Journey />
             </Route>
-            <Route exact path="/shop">
+            <Route exact path='/shop'>
               <Shop />
             </Route>
-            <Route exact path="/trips">
+            <Route exact path='/trips'>
               <Trips />
             </Route>
-            <Route exact path="/login">
+            <Route exact path='/login'>
               <Login />
             </Route>
-            <Route exact path="/signup">
+            <Route exact path='/signup'>
               <Signup />
             </Route>
-            {/* <Route exact path="/users/:id">
+            {/* <Route exact path='/users/:id'>
               <Profile />
             </Route> */}
-            <Route exact path="/arches">
+            <Route exact path='/arches'>
               <Arches />
             </Route>
-            <Route exact path="/bryce">
+            <Route exact path='/bryce'>
               <Bryce />
             </Route>
-            <Route exact path="/glacier">
+            <Route exact path='/glacier'>
               <Glacier />
             </Route>
-            <Route exact path="/grandcanyon">
+            <Route exact path='/grandcanyon'>
               <GrandCanyon />
             </Route>
-            <Route exact path="/olympic">
+            <Route exact path='/olympic'>
               <Olympic />
             </Route>
-            <Route exact path="/rockymtn">
+            <Route exact path='/rockymtn'>
               <RockyMtn />
             </Route>
-            <Route exact path="/sequoia">
+            <Route exact path='/sequoia'>
               <Sequoia />
             </Route>
-            <Route exact path="/smokey">
+            <Route exact path='/smokey'>
               <Smokey />
             </Route>
-            <Route exact path="/teton">
+            <Route exact path='/teton'>
               <Teton />
             </Route>
-            <Route exact path="/yellowstone">
+            <Route exact path='/yellowstone'>
               <Yellowstone />
             </Route>
-            <Route exact path="/yosemite">
+            <Route exact path='/yosemite'>
               <Yosemite />
             </Route>
-            <Route exact path="/zion">
+            <Route exact path='/zion'>
               <Zion />
             </Route>
           </div>

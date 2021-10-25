@@ -59,14 +59,18 @@ body {
     bottom: 50px;
     right: 50px;
     z-index: 100;
-    width: 50px;
-    opacity: 0.5;
+    width: 40px;
     transition: ease 0.4s;
+    opacity: 0.5;
 }
 
 #up-arrow:hover {
     opacity: 1;
 }
+
+/* .showBtn {
+    opacity: 0.5;
+} */
 
 #sites1 {
     display: flex;
