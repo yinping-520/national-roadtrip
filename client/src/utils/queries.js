@@ -38,9 +38,11 @@ export const QUERY_PARKS = gql`
       } 
   }`;
 
-export const QUERY_PARK = gql`
-  query getPark($id: ID!) {
-    park(id: $id) {
+
+export const QUERY_PARK_BY_ID = gql`
+  query getParkById($parkId: ID) {
+    park(parkId: $parkId) {
+
       _id
       name 
       address
