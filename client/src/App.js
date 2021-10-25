@@ -111,7 +111,7 @@ function App() {
             <Route exact path='/arches/:parkId'>
               <Arches />
             </Route>
-            <Route exact path='/bryce'>
+            <Route exact path='/bryce/:parkId'>
               <Bryce />
             </Route>
             <Route exact path='/glacier'>
