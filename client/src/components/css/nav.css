@@ -30,25 +30,29 @@
     /* transition: ease 1s !important; */
 }
 
+#dropdown-set1,
+#dropdown-set2,
+#dropdown-set3 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .dropdown:hover .dropdown-content {
     display: flex ;
     align-items: center;
     justify-content: space-around;
 }
 
-
-.dropdown p {
+.dropDownLink {
     font-size: 18px;
     color: orange;
     text-decoration: none;
     margin-bottom: 5px;
 }
 
-/* .rightnav-dropdown p:hover {
-    color: white;
-} */
-
-.dropdown p:hover {
+.dropDownLink:hover {
     color:white;
 }
 

@@ -1,13 +1,31 @@
 footer {
     width: 100%;
     background-color: black;
-    height: 100px;
+    height: 75px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 footer p {
     color: orange;
-    font-size: 22px;
+    font-size: 18px;
+}
+
+#foot-left {
+    margin-left: 25px;    
+}
+
+#foot-right {
+    margin-right: 100px;
+}
+
+#foot-right span {   
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+}
+
+#foot-right:hover span {   
+    opacity: 1;
 }
