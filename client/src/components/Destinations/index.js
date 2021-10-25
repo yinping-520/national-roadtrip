@@ -19,7 +19,7 @@ const styles = {
 function Destinations() {
     return (
         <div>
-            <div id='container'>
+            <div id='container2'>
                 <img src={container} />
                 <h1 id='dest-text'>your next <span className='span2'>adventure</span> is a scroll away...</h1>
             </div>

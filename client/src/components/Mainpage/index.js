@@ -3,6 +3,7 @@ import '../css/scroll.css';
 import React from 'react';
 import up from '../assets/up-arrow.jpg';
 import container from '../assets/pine.jpg';
+import road2 from '../assets/road2.jpg';
 import { Link } from 'react-router-dom';
 
 const styles = {
