@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
   type User {
@@ -9,11 +9,21 @@ const typeDefs = gql`
     itinerary:[Itinerary]
   }
 
-  type Itinerary{
-  _id: ID
-  tripDates: Int
-  dateCreated: Int
-  name: String
+  type Park {
+    _id: ID
+    name: String
+    address: String
+    description: String
+    weatherInfo: String
+    activities: [String]
+    website: String
+    lat: Float
+    long: Float
+  }
+
+  type Itinerary {
+    _id: ID
+    parks: [Park]
   }
 
   type Auth {
@@ -26,6 +36,8 @@ const typeDefs = gql`
     itinerary: [Itinerary]
     user(id: ID): User
     me: User
+    parks: [Park]
+    park(parkId: ID): Park
   }
 
   type Mutation {
