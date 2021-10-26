@@ -108,12 +108,18 @@ function App() {
             {/* <Route exact path='/users/:id'>
               <Profile />
             </Route> */}
-            <Route exact path='/arches/:parkId'>
+            <Route exact path='/arches'>
+              <Arches />
+            </Route>
+            <Route exact path='/bryce'>
+              <Bryce />
+            </Route>
+            {/* <Route exact path='/arches/:parkId'>
               <Arches />
             </Route>
             <Route exact path='/bryce/:parkId'>
               <Bryce />
-            </Route>
+            </Route> */}
             <Route exact path='/glacier'>
               <Glacier />
             </Route>
