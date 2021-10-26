@@ -45,28 +45,25 @@ const resolvers = {
       return { token, user };
     },
 
-    // addItinerary: async (parent, { stops, tripDates, dateCreated }) => {
-    //   return await Itinerary.create({ stops, tripDates, dateCreated });
-    // },
-
-    addItinerary: async (parent, { parks }, context) => {
-      if (context.user) {
+    addItinerary: async (parent, { ids }, context) => {
+      console.log(ids, context.user);
+      // if (context.user) {
         return User.findOneAndUpdate(
-          { _id: context.user._id },
+          { _id: '617836192ea25a280a495b63' },
           {
-            $addToSet: { itinerary: parks },
+            $addToSet: { itinerary: ids },
           },
           {
             new: true,
             runValidators: true,
           }
         )
-      };
+      // };
     },
 
-    removeItinerary: async (parent, { itinerary }, context) => {
+    deleteItinerary: async (parent, { itinerary }, context) => {
       return User.findOneAndUpdate(
-        { _id: context.user._id },
+        { _id: '617836192ea25a280a495b63' },
         { $pull: { itinerary: itinerary } },
         { new: true }
       )
