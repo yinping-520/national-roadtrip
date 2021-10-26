@@ -5,7 +5,20 @@ import {useQuery} from '@apollo/client';
 import { QUERY_PARK_BY_ID } from '../../utils/queries'
 import { useParams } from 'react-router-dom';
 import up from '../../components/assets/up-arrow.jpg';
-import { SliderDataArches } from '../../components/SliderData';
+import { 
+    SliderDataArches,
+    SliderDataBryce,
+    SliderDataGlacier,
+    SliderDataGrandCanyon,
+    SliderDataOlympic,
+    SliderDataRockyMtn,
+    SliderDataSequoia,
+    SliderDataSmokey,
+    SliderDataTeton,
+    SliderDataYellowstone,
+    SliderDataYosemite,
+    SliderDataZion
+    } from '../../components/SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import bikingArches from '../../components/assets/biking-arches.jpg';
 
@@ -20,8 +33,22 @@ function Park() {
     const park = data?.park || {};
     console.log(park)
 
+    // function slider(){
+    //     switch (park.name) {
+    //         case "Arches National Park":
+    //             return SliderDataArches;
+
+    //         default:
+    //             break;
+    //     }
+    // }
+    
+    //const parkImage = slider()
+    //console.log(parkImage)
+    console.log(SliderDataArches)
+    
     const [current, setCurrent] = useState(0); // for next & prev slides
-    const length = SliderDataArches.length;
+    const length = 5;
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1)
@@ -43,8 +70,8 @@ function Park() {
     return (
         <div>
             <div id='center-all'>
-            <h1 className='park-name'>Arches National Park</h1>
-            <h2 className='city'>Utah, USA</h2>
+            <h1 className='park-name'>{park.name}</h1>
+            <h2 className='city'>{park.address}</h2>
             <div className='slider'>
                 <FaArrowAltCircleLeft className='slider-icon left-arrow' onClick={prevSlide} />
                 <FaArrowAltCircleRight className='slider-icon right-arrow' onClick={nextSlide} />
@@ -89,7 +116,7 @@ function Park() {
                 <div className='weather-block'>
                     <p>{park.weatherInfo}</p>   
                 </div>
-                <p>address:{park.address}</p>          
+                       
                 <p>park description:{park.description}</p>          
                 <p>lat:{park.lat}, long:{park.long}</p>         
             </div>

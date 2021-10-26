@@ -8,7 +8,15 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=40.3333&lon=-105.7089#.YXLvEBrMJPY",
       "website": "https://www.nps.gov/romo/index.htm",
       "lat": 40.343182,
-      "long": -105.688103
+      "long": -105.688103,
+      "images": [
+        "https://www.outsideonline.com/wp-content/uploads/2020/03/12/gem-lake-and-longs-peak-sunset_h.jpg",
+        "https://cdn.farmjournal.com/s3fs-public/styles/840x600/public/2021-01/landscape-1843128_1920.jpg?itok=8rhjbX3U",
+        "https://www.mycoloradoparks.com/wp-content/uploads/2020/05/RM-Entrance-sign_DP_2400.jpg",
+        "https://www.jellystoneofestes.com/wp-content/uploads/2016/12/rockymountain.jpg",
+        "https://i.natgeofe.com/k/caf9703e-c4e2-44e6-8b82-2c8b480cacc8/black-bear-cubs.jpg"
+      ]
+
     },
     {
       "name": "Grand Teton National Park",
@@ -19,7 +27,16 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=43.8673&lon=-110.5719#.YXLwdhrMJPY",
       "website": "https://www.nps.gov/grte/index.htm",
       "lat": 43.8332687,
-      "long": -110.7007671
+      "long": -110.7007671,
+      "images": [
+        "https://www.twowanderingsoles.com/wp-content/uploads/2021/07/img_60ee6cedb97",
+        "https://www.dirtinmyshoes.com/wp-content/uploads/2020/06/Grand-Teton-North-Fork-Cascade-Canyon-2015-e1591121134861-800x5",
+        "https://www.cruiseamerica.com/getattachment/84fbfd8c-2de0-4284-8568-cc36ac7f6710/attachmen",
+        "http://jacksonhole-traveler-production.s3.amazonaws.com/wp-content/uploads/2016/10/18155720/trianglex-winter-grand-teton-1280x8",
+        "https://s1.1zoom.me/big0/419/286951-svetik.jpg"
+
+      ]
+
     },
     {
       "name": "Glacier National Park",
@@ -30,7 +47,15 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=48.6961&lon=-113.8071#.YXLxdRrMJPY",
       "website": "https://www.nps.gov/glac/index.htm",
       "lat": 48.6960847,
-      "long": -113.8070624
+      "long": -113.8070624,
+      "images": [
+        "https://npca.s3.amazonaws.com/images/9761/a9cc980c-c406-4a55-a6ea-cc77d13113ba-banner.jpg?1456501698",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mountain_Goat_%284455603396%29.jpg",
+        "https://wallpaperaccess.com/full/2478407.jpg",
+        "https://cdn.elebase.io/bfe7dca8-ded7-4599-acba-034c8945acf8/fe3b3a3d-077f-4683-8374-dface0003443-cotcf008c742b6b16cfd.jpg?w=680&h=382&fit=crop&rot=auto&dpr=2&q=75",
+        "https://www.mattandkaren.com/wp-content/uploads/2019/12/65F8370D-36C2-4777-A200-10ADEA6912DB-1882x1200.jpg"
+
+      ]
     },
     {
       "name": "Yosemite National Park",
@@ -41,7 +66,15 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=37.8499&lon=-119.5677#.YXLycBrMJPY",
       "website": "https://www.nps.gov/yose/index.htm",
       "lat": 37.865101,
-      "long": -119.538330
+      "long": -119.538330,
+      "images": [
+        "https://images.foxtv.com/static.foxla.com/www.foxla.com/content/uploads/2021/04/1280/720/GettyImages-1225945432.jpg?ve=1&tl=1",
+        "https://activerain.com/image_store/uploads/9/0/3/4/5/ar130878990854309.JPG",
+        "https://media.tegna-media.com/assets/WBNS/images/9e856dca-33ca-45e7-aca4-a4d62bbd3a84/9e856dca-33ca-45e7-aca4-a4d62bbd3a84_750x422.jpg",
+        "https://blog.assets.thediscoverer.com/2019/09/Yosemite-National-Park.jpg",
+        "https://magazine.northeast.aaa.com/wp-content/uploads/2017/11/yosemite-national-park-guide-1-640x423.jpg"
+
+      ]
     },
     {
       "name": "Arches National Park",
@@ -52,7 +85,14 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=38.6166&lon=-109.6162#.YXLzMhrMJPY",
       "website": "https://www.nps.gov/arch/index.htm",
       "lat":  38.733082,
-      "long": -109.592514
+      "long": -109.592514,
+      "images": [
+        "https://images4.alphacoders.com/663/thumb-1920-663219.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/957/830/337/5bd35f233e23d-wallpaper-preview.jpg",
+        "https://img1.wallspic.com/originals/3/3/2/4/5/154233-sunset_moab-arches_national_park-zion_national_park-bryce_canyon_national_park-national_park-3840x2160.jpg",
+        "https://www.wallpapertip.com/wmimgs/15-154754_california-wallpaper-arches-national-park.jpg",
+        "https://mocah.org/uploads/posts/352081-4k-wallpaper.jpg"
+      ]
     },
     {
       "name": "Bryce Canyon National Park",
@@ -63,7 +103,14 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=37.6283&lon=-112.1677#.YXLz_RrMJPY",
       "website": "https://www.nps.gov/brca/index.htm",
       "lat": 37.619431,
-      "long": -112.166504
+      "long": -112.166504,
+      "images": [
+        "https://www.wendyperrin.com/wp-content/uploads/2016/09/bryce-canyon-national-park-vista2-utah-mark-campbell-1000x667.jpg",
+        "http://res.cloudinary.com/simpleview/image/upload/v1579555265/clients/garfieldcountyut/Bryce_Canyon_Winter_459af879-99b6-4c15-8438-8d215f79aa36.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5346a846e4b0101b157468cf/1520439596100-ONL5JGPOUBVTXDSZ9XNF/DSC01710-2.jpg?format=1000w",
+        "https://497tsv9okf5vwjia1smxzaz5-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/20-13-Bryce-Canyon-Winter-Operations-NPS-Photo-Keith-Moore.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5a67cfcca803bba6eefdc538/1548613283619-NSEGZ27TP2ENCXV35MKB/Hiking+the+Fairyland+Loop+in+Winter+in+Bryce+Canyon?format=1000w"
+      ]
     },
     {
       "name": "Zion National Park",
@@ -74,7 +121,14 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=37.3&lon=-113.0508#.YXL2wRrMJPY",
       "website": "https://www.nps.gov/zion/index.htm",
       "lat": 37.297817,
-      "long": -113.028770
+      "long": -113.028770,
+      "images": [
+        "https://www.gousa.in/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-10/Zion_0.jpg?h=345ab7ac&itok=2wsz6mCP",
+        "https://ca-times.brightspotcdn.com/dims4/default/0d8fadc/2147483647/strip/true/crop/2145x1205+0+0/resize/1486x835!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F93%2Fe3%2Fdb8ab77b47bca9562e4605d48985%2Fla-tr-zion-utah-009.JPG",
+        "https://bearfoottheory.com/wp-content/uploads/2013/05/Zion-National-Park-Guide.jpg",
+        "https://cdn.britannica.com/45/100645-050-50E906A9/Angels-Landing-Zion-National-Park-Utah.jpg",
+        "https://www.lancebcarter.com/images/xl/UT_YA0222_226.jpg"
+      ]
     },
     {
       "name": "The Grand Canyon",
@@ -85,7 +139,15 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=36.0573&lon=-112.1096#.YXL3zxrMJPY",
       "website": "https://www.nps.gov/grca/index.htm",
       "lat": 36.056198,
-      "long": -112.125198
+      "long": -112.125198,
+      "images":[
+        "https://cdn.tourcms.com/a/11676/796/1/large.jpg",
+        "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        "https://media.deseretdigital.com/file/aa89988589?type=jpeg&quality=55&c=15&a=4379240d",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Canyon_River_Tree_%28165872763%29.jpeg/1200px-Canyon_River_Tree_%28165872763%29.jpeg",
+        "https://i0.wp.com/yaleclimateconnections.org/wp-content/uploads/2021/07/072021_GrandCanyon_1600.jpg?fit=1600%2C900&ssl=1"
+
+      ]
     },
     {
       "name": "Yellowstone National Park",
@@ -96,7 +158,14 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=44.1349&lon=-110.6663#.YXL5UxrMJPY",
       "website": "https://www.nps.gov/yell/index.htm",
       "lat": 44.423691,
-      "long": -110.588516
+      "long": -110.588516,
+      "images": [
+        "https://www.outsideonline.com/wp-content/uploads/2019/10/23/geyser-yelowstone-burst_h.jpg",
+        "https://www.gannett-cdn.com/-mm-/b448c4bd0e6486684d5809dd0c1f1ad5460cad27/c=0-254-4928-3026/local/-/media/2017/05/18/USATODAY/usatsports/B9327681055Z.1_20170518174842_000_GCPI2D0G9.1-0.jpg",
+        "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/a5/2a.jpg",
+        "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F60a77f30768434735cc94924%2FGrand-Prismatic-Spring---Yellowstone-National-Park%2F960x0.jpg%3Ffit%3Dscale",
+        "https://www.nps.gov/yell/learn/news/images/Economic-Benefits_1.jpg"
+      ]
     },
     {
       "name": "Sequoia National Park",
@@ -107,7 +176,14 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=36.045&lon=-118.5168#.YXL8nxrMJPY",
       "website": "https://www.nps.gov/seki/index.htm",
       "lat": 36.486366,
-      "long": -118.565750
+      "long": -118.565750,
+      "images": [
+        "https://drupal8-prod.visitcalifornia.com/sites/drupal8-prod.visitcalifornia.com/files/styles/fluid_1200/public/vc_ca101_nationalparks_sequoiakingsnationalparks_rf_673066812_1280x640.jpg?itok=EVBZ0WOL",
+        "https://localadventurer.com/wp-content/uploads/2015/11/things-to-do-in-sequoia-national-park.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5a4dbe45ace864a4b106ce3e/1579565865859-VEYHZNUC9N1J6GK9M3QS/Earth+Coco+Sequoia+National+Park-1.JPG",
+        "https://sierraflyfisher.com/wp-content/uploads/2019/07/Sequoia-National-Park.jpg",
+        "https://i.ytimg.com/vi/dz4r0WhG3G4/maxresdefault.jpg"
+      ]
     },
     {
       "name": "Olympic National Park",
@@ -118,7 +194,15 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=48.0999&lon=-123.4264#.YXL7ydbMJz8",
       "website": "https://www.nps.gov/olym/index.htm",
       "lat": 1,
-      "long": 2
+      "long": 2,
+      "images": [
+        "https://i1.wp.com/morethanjustparks.com/wp-content/uploads/2020/10/2Q3A0484.jpg?fit=1800%2C1200&ssl=1",
+        "https://westcoastwayfarers.com/wp-content/uploads/2021/02/image-11-1024x682.jpeg",
+        "https://www.rei.com/adventures/assets/adventures/images/trip/core/northamerica/oly_hero",
+        "https://bearfoottheory.com/wp-content/uploads/2016/06/Olympic-National-park.jpg",
+        "https://i.pinimg.com/originals/53/43/db/5343dbfd23f4a0bc6489fa28a1e22c7b.jpg"
+
+      ]
     },
     {
       "name": "Great Smokey Mountains National Park",
@@ -129,7 +213,15 @@
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=35.7125&lon=-83.5158#.YXL7nNbMJz8",
       "website": "https://www.nps.gov/grsm/index.htm",
       "lat": 47.802109,
-      "long": -123.604355
+      "long": -123.604355,
+      "images": [
+        "https://www.nps.gov/grsm/learn/news/images/Mingus-Mill_Photo-by-Tom-Haxby.jpg",
+        "https://wgno.com/wp-content/uploads/sites/2/2020/04/hypatia-h_d43cebf10258e14c41633c59f595bf83-h_6cae19e7bbd593cbd356f248fec73a8c.jpg?w=2072&h=1166&crop=1",
+        "https://www.thesmokies.com/wp-content/uploads/2020/12/Clingmans-Dome-Observation-Tower.jpg",
+        "http://i.imgur.com/kjo5y8N.jpg",
+        "https://www.pinkadventuretours.com/Media/2734/shutterstock_255621250-1.jpg?width=600&height=401&mode=max"
+
+      ]
     }
   ]
   
