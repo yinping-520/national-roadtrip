@@ -5,7 +5,7 @@ import up from '../assets/up-arrow.jpg';
 import container from '../assets/destinations-bg.jpg';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import {QUERY_PARK} from '../../utils/queries'
+import {QUERY_PARKS} from '../../utils/queries'
 
 
 
@@ -16,7 +16,7 @@ const styles = {
 }
 
 function Destinations() {
-    const {loading, data} = useQuery(QUERY_PARK)
+    const {loading, data} = useQuery(QUERY_PARKS)
     const parks = data?.parks || [];
 
     if (loading){
