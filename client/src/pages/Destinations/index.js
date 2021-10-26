@@ -1,11 +1,11 @@
-import '../css/destinations.css';
-import '../css/scroll.css';
+import '../../components/css/destinations.css';
+import '../../components/css/scroll.css';
 import React from 'react';
-import up from '../assets/up-arrow.jpg';
-import container from '../assets/destinations-bg.jpg';
+import up from '../../components/assets/up-arrow.jpg';
+import container from '../../components/assets/destinations-bg.jpg';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import {QUERY_PARK} from '../../utils/queries'
+import {QUERY_PARKS} from '../../utils/queries'
 
 
 
@@ -16,7 +16,7 @@ const styles = {
 }
 
 function Destinations() {
-    const {loading, data} = useQuery(QUERY_PARK)
+    const {loading, data} = useQuery(QUERY_PARKS)
     const parks = data?.parks || [];
 
     if (loading){
@@ -32,8 +32,7 @@ function Destinations() {
             <div id='all-destinations'>
                 <div id='locs'>
                     {parks && parks.map((park) => (
-
-                    <Link to={`/arches/${park._id}`} style={styles.underlineRemove}>
+                    <Link to={`/parks/${park._id}`} style={styles.underlineRemove}>
                         <div id='arches' className='card-dest'>
                             <p>{park.name}</p>
                         </div>

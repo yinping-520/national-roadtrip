@@ -1,11 +1,11 @@
-import '../css/shop.css';
-import '../css/scroll.css';
+import '../../components/css/shop.css';
+import '../../components/css/scroll.css';
 import React from 'react';
-import up from '../assets/up-arrow.jpg';
-import mug from '../assets/mug.jpg';
-import hat from '../assets/postcard.jpg';
-import stamps from '../assets/stamps.jpg';
-import book from '../assets/bird.jpg';
+import up from '../../components/assets/up-arrow.jpg';
+import mug from '../../components/assets/mug.jpg';
+import hat from '../../components/assets/postcard.jpg';
+import stamps from '../../components/assets/stamps.jpg';
+import book from '../../components/assets/bird.jpg';
 
 function Shop() {
     return (

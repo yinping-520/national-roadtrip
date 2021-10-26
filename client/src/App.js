@@ -9,15 +9,15 @@ import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import './css/scroll.css';
 import Signup from './components/Signup';
-import Login from './components/Login';
-import Destinations from './components/Destinations';
+import Login from './pages/Login';
+import Destinations from './pages/Destinations';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Mainpage from './components/Mainpage';
+import Mainpage from './pages/Mainpage';
 import Journey from './components/Journey';
-import Shop from './components/Shop';
+import Shop from './pages/Shop';
 import Trips from './components/Trips';
-import Arches from './components/ParkArches';
+import Park from './pages/Park';
 import Bryce from './components/ParkBryce';
 import Glacier from './components/ParkGlacier';
 import GrandCanyon from './components/ParkGrandCanyon';
@@ -108,41 +108,8 @@ function App() {
             {/* <Route exact path='/users/:id'>
               <Profile />
             </Route> */}
-            <Route exact path='/arches/:parkId'>
-              <Arches />
-            </Route>
-            <Route exact path='/bryce/:parkId'>
-              <Bryce />
-            </Route>
-            <Route exact path='/glacier'>
-              <Glacier />
-            </Route>
-            <Route exact path='/grandcanyon'>
-              <GrandCanyon />
-            </Route>
-            <Route exact path='/olympic'>
-              <Olympic />
-            </Route>
-            <Route exact path='/rockymtn'>
-              <RockyMtn />
-            </Route>
-            <Route exact path='/sequoia'>
-              <Sequoia />
-            </Route>
-            <Route exact path='/smokey'>
-              <Smokey />
-            </Route>
-            <Route exact path='/teton'>
-              <Teton />
-            </Route>
-            <Route exact path='/yellowstone'>
-              <Yellowstone />
-            </Route>
-            <Route exact path='/yosemite'>
-              <Yosemite />
-            </Route>
-            <Route exact path='/zion'>
-              <Zion />
+            <Route exact path='/parks/:parkId'>
+              <Park />
             </Route>
           </div>
           <Footer />

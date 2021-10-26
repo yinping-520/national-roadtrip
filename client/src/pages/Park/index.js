@@ -1,23 +1,24 @@
-import '../css/arches.css';
-import '../css/scroll.css';
+import '../../components/css/arches.css';
+import '../../components/css/scroll.css';
 import React, { useState } from 'react';
 import {useQuery} from '@apollo/client';
 import { QUERY_PARK_BY_ID } from '../../utils/queries'
 import { useParams } from 'react-router-dom';
-import up from '../assets/up-arrow.jpg';
-import { SliderDataArches } from '../SliderData';
+import up from '../../components/assets/up-arrow.jpg';
+import { SliderDataArches } from '../../components/SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-import bikingArches from '../assets/biking-arches.jpg';
+import bikingArches from '../../components/assets/biking-arches.jpg';
 
-function Arches() {
-    const {parkId} = useParams();
+function Park() {
+    const { parkId } = useParams();
+    console.log(parkId)
 
     const {loading, data} = useQuery(QUERY_PARK_BY_ID, {
-        variables: {parkId: parkId}
+        variables: {parkId: parkId},
     })
     const activities = data?.park.activities || [];
     const park = data?.park || {};
-    
+    console.log(park)
 
     const [current, setCurrent] = useState(0); // for next & prev slides
     const length = SliderDataArches.length;
@@ -86,13 +87,16 @@ function Arches() {
             <div className='weather-section'>
                 <h4 className='weather-headline'>Seasonal Weather</h4>
                 <div className='weather-block'>
-                    <p>{park.weatherInfo}</p>
-                    <p>{park.address}</p>          
-                    <p>{park.description}</p>          
-                    <p>lat:{park.lat}, long:{park.long}</p>                              
-                    
+                    <p>{park.weatherInfo}</p>   
                 </div>
+                <p>address:{park.address}</p>          
+                <p>park description:{park.description}</p>          
+                <p>lat:{park.lat}, long:{park.long}</p>         
             </div>
+            <>
+                <button>Click me</button>
+
+            </>
             <div className='official-link'>
                 <a href='https://www.nps.gov/arch/index.htm' target='_'>insert Offical Site</a>
             </div>
@@ -100,4 +104,4 @@ function Arches() {
     )
 };
 
-export default Arches;
+export default Park;
