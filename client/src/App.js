@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ApolloClient,
   InMemoryCache,
@@ -53,35 +53,27 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-// const styles = {
-//   showBtn: {
-//       opacity: 0.5
-//   }
-// }
-
-// const scrollToTopBtn = document.getElementById('up-arrow');
-// const rootElement = document.documentElement;
-// function handleScroll() {
-//   const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-
-//   if ((rootElement.scrollTop / scrollTotal ) > 0.40 ) {
-//     scrollToTopBtn.className.add('showBtn');
-//   } else {
-//     // scrollToTopBtn.className.remove('showBtn')
-//     scrollToTopBtn.classList.remove(styles={style.showBtn});
-//   }
-// };
-// document.addEventListener('scroll', handleScroll);
-
 function App() {
-  
+  const [scrollActive, setScrollActive] = useState(false);
+  const [progessHeight, setProgressHeight] = useState(0);
+  useEffect(() => {
+    window.addEventListener('scroll', function () {
+      const pos = window.scrollY;
+      const dh = document.body.scrollHeight;
+      const wh = window.innerHeight;
+      const scrollPercent = (pos / (dh - wh)) * 100;
+      setProgressHeight(scrollPercent);
+      setScrollActive(this.window.scrollY > 350);
+    });
+  }, [])
+
   return (
     <ApolloProvider client={client}>
       <Router>
         <ScrollToTop />
         <div>
-        <div id='progressbar'></div>
-        <a href='#top'><img id='up-arrow' src={up} /></a>
+          <div id='progressbar' style={{height:`${progessHeight}%`}}></div>
+          <a href='#top'><img id='up-arrow' className={scrollActive && 'active'} src={up} /></a>
           <Header />
           <div>
             <Route exact path='/'>
