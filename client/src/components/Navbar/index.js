@@ -20,34 +20,38 @@ function Navbar() {
   const showNavigation = () => {
     if (Auth.loggedIn()) {
       return (
-        <Link class="rightnav-a" to="/logout">
-          logout
-        </Link>
-      )
+        <div>
+          <div className="rightnav-a">
+            <Link to="/trips">
+              your trips
+            </Link>
+          </div>
+          <div className="rightnav-a">
+            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+            <a href="/" onClick={() => Auth.logout()}>
+              logout
+            </a>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <div className="rightnav-a">
+            <Link to="/signup">
+              signup
+            </Link>
+          </div>
+          <div className="rightnav-a">
+            <Link to="/login">
+              login
+            </Link>
+          </div>
+        </div>
+      );
     }
-    return (
-      <Link class="rightnav-a" to="/login">
-        login
-      </Link>
-    )
-
   }
 
-<<<<<<< HEAD
-  // if (Auth.loggedIn()) {
-  //   return (
-  //     <>
-  //       <Link to='/me'>
-  //         {Auth.getProfile().data.username}'s profile
-  //       </Link>
-  //       <button onClick={logout}>
-  //         Logout
-  //       </button>
-  //     </>
-  //   );
-  // }
-=======
->>>>>>> 9df0376 (updated login)
   return (
     <div id='nav' name='top'>
       <div id='leftnav'>
@@ -99,19 +103,9 @@ function Navbar() {
         <Link class='rightnav-a' to='/shop'>
           shop
         </Link>
-<<<<<<< HEAD
-        {/* <Link class='rightnav-a' to='/journey'>
-          your trips
-        </Link> */}
-        <Link class='rightnav-a' to='/login'>
-          login
-        </Link>
-=======
         {showNavigation()}
->>>>>>> 9df0376 (updated login)
       </div>
     </div>
-  );
-};
-
+  )
+} 
 export default Navbar;
