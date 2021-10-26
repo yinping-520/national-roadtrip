@@ -14,12 +14,12 @@ const styles = {
 }
 
 function Destinations() {
-    // const { loading, data } = useQuery(QUERY_PARKS)
-    // const parks = data?.parks || [];
+    const { loading, data } = useQuery(QUERY_PARKS)
+    const parks = data?.parks || [];
 
-    // if (loading) {
-    //     return <div>Loading ... </div>
-    // }
+    if (loading) {
+        return <div>Loading ... </div>
+    }
     return (
         <div>
             <div id='container2'>
