@@ -18,7 +18,6 @@ function Arches() {
     const activities = data?.park.activities || [];
     const park = data?.park || {};
     
-
     const [current, setCurrent] = useState(0); // for next & prev slides
     const length = SliderDataArches.length;
 
