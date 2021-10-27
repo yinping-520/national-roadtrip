@@ -89,8 +89,8 @@
       "activities2": ["Hoh Rain Forest", "Lake Crescent", "Sol Duc Falls", "Seaplane Tours" ,"Lake Lodging"],
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=48.0999&lon=-123.4264#.YXL7ydbMJz8",
       "website": "https://www.nps.gov/olym/index.htm",
-      "lat": 1,
-      "long": 2,
+      "lat": 47.802109,
+      "long": -123.604355,
       "images": [
         "https://i1.wp.com/morethanjustparks.com/wp-content/uploads/2020/10/2Q3A0484.jpg?fit=1800%2C1200&ssl=1",
         "https://westcoastwayfarers.com/wp-content/uploads/2021/02/image-11-1024x682.jpeg",
