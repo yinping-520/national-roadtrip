@@ -28,6 +28,7 @@ export const QUERY_PARKS = gql`
     parks {
       _id
       name 
+      state
       address
       description
       weatherInfo
@@ -37,6 +38,7 @@ export const QUERY_PARKS = gql`
       lat
       long
       images
+      id
       } 
   }`;
 
@@ -46,6 +48,7 @@ export const QUERY_PARK_BY_ID = gql`
     park(parkId: $parkId){
       _id
       name 
+      state
       address
       description
       weatherInfo
@@ -55,6 +58,7 @@ export const QUERY_PARK_BY_ID = gql`
       lat
       long
       images
+      id
       } 
   }`;
 

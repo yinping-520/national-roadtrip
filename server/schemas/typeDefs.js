@@ -11,6 +11,7 @@ const typeDefs = gql`
 
   type Park {
     _id: ID
+    state: String
     name: String
     address: String
     description: String
@@ -21,6 +22,7 @@ const typeDefs = gql`
     lat: Float
     long: Float
     images: [String]
+    id: String
   }
 
   type Auth {
