@@ -11,6 +11,7 @@ const typeDefs = gql`
 
   type Park {
     _id: ID
+    state: String
     name: String
     address: String
     description: String
@@ -21,6 +22,7 @@ const typeDefs = gql`
     lat: Float
     long: Float
     images: [String]
+    id: String
   }
 
   type Auth {
@@ -32,7 +34,7 @@ const typeDefs = gql`
     users: [User]
     user(id: ID): User
     parks: [Park]
-    park(parkId: ID!): Park
+    park(parkId: String): Park
   }
 
   type Mutation {

@@ -39,11 +39,12 @@ const parkSchema = new Schema({
     long:{
         type: Number,
     },
-    images:[{
-        type: String
+    images: [{
+        type: String,
     }],
-
-
+    id: {
+        type: String,
+    }
 });
 
 const Park = model('Park', parkSchema);
