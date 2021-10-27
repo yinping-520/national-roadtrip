@@ -35,6 +35,7 @@ export const QUERY_PARKS = gql`
       website
       lat
       long
+      images
       } 
   }`;
 
@@ -51,6 +52,7 @@ export const QUERY_PARK_BY_ID = gql`
       website
       lat
       long
+      images
       } 
   }`;
 

@@ -19,6 +19,7 @@ const typeDefs = gql`
     website: String
     lat: Float
     long: Float
+    images: [String]
   }
 
   type Auth {
