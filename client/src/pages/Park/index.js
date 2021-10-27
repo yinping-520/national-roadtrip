@@ -20,8 +20,8 @@ function Park() {
   const activities2 = park.activities2 || [];
   const image = park.images || [];
 
-  console.log(activities1)
-  console.log(activities2)
+  console.log(activities1);
+  console.log(activities2);
 
   const [current, setCurrent] = useState(0); // for next & prev slides
   const length = image.length;
@@ -82,24 +82,26 @@ function Park() {
       <div className="activities">
         <h3 className="activity-header">Activities</h3>
         <img id="bike" src={bikingArches} />
-          <div className="split-act">
-            <ul className="activity-list">
-                {activities1.map((activity, index) => (
-                      <div className="act-left">
-                        <li key={index}>
-                          <i class="fas fa-campground"></i>
-                          {activity}
-                        </li> 
-                     </div>))}
-                {activities2.map((activity, index) => (
-                    <div className="act-right">
-                        <li key={index}>
-                          <i class="fas fa-campground"></i>
-                          {activity}
-                         </li>
-                  </div>))}
-            </ul>   
-      </div>
+        <div className="split-act">
+          <ul className="activity-list">
+            {activities1.map((activity, index) => (
+              <div className="act-left">
+                <li key={index}>
+                  <i class="fas fa-campground"></i>
+                  {activity}
+                </li>
+              </div>
+            ))}
+            {activities2.map((activity, index) => (
+              <div className="act-right">
+                <li key={index}>
+                  <i class="fas fa-campground"></i>
+                  {activity}
+                </li>
+              </div>
+            ))}
+          </ul>
+        </div>
       </div>
       <div className="weather-section">
         <h4 className="weather-headline">Seasonal Weather</h4>
