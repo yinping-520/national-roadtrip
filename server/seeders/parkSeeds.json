@@ -40,27 +40,6 @@
       "id":"teton"
     },
     {
-      "name": "Yosemite",
-      "state": "California, USA",
-      "address": "Tioga Rd Hwy 120 & Hwy 140 Yosemite National Park, CA 95389",
-      "description": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra. First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
-      "activities1": ["Yosemite Falls", "Rock Climbing", "Wilderness Tours", "Ranger Programs"],
-      "activities2": ["Biking", "Bird Watching", "Winter Sports", "Stargazing", "Camping", "Hiking"],
-      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=37.8499&lon=-119.5677#.YXLycBrMJPY",
-      "website": "https://www.nps.gov/yose/index.htm",
-      "lat": 37.865101,
-      "long": -119.538330,
-      "images": [
-        "https://images.foxtv.com/static.foxla.com/www.foxla.com/content/uploads/2021/04/1280/720/GettyImages-1225945432.jpg?ve=1&tl=1",
-        "https://activerain.com/image_store/uploads/9/0/3/4/5/ar130878990854309.JPG",
-        "https://media.tegna-media.com/assets/WBNS/images/9e856dca-33ca-45e7-aca4-a4d62bbd3a84/9e856dca-33ca-45e7-aca4-a4d62bbd3a84_750x422.jpg",
-        "https://blog.assets.thediscoverer.com/2019/09/Yosemite-National-Park.jpg",
-        "https://magazine.northeast.aaa.com/wp-content/uploads/2017/11/yosemite-national-park-guide-1-640x423.jpg"
-
-      ],
-      "id":"yosemite"
-    },
-    {
       "name": "Arches",
       "state": "Utah, USA",
       "address": "Salt Valley Rd, Moab, UT 84532",
@@ -163,26 +142,6 @@
       "id":"olympic"
     },
     {
-      "name": "Rocky Mountain",
-      "state": "Colorado, USA",
-      "address": "1000 US Hwy 36 Estes Park, CO 80517",
-      "description": "Rocky Mountain National Park’s 415 square miles encompass and protect spectacular mountain environments. Enjoy Trail Ridge Road – which crests at over 12,000 feet including many overlooks to experience the subalpine and alpine worlds – along with over 300 miles of hiking trails, wildflowers, wildlife, starry nights, and fun times. In a world of superlatives, Rocky is on top!",
-      "activities1": ["Hiking", "Senic Drives", "Wildlife Watching", "Picnicking", "Camping"],
-      "activities2": ["Fishing", "Horseback Riding", "Ranger-led Programs", "Visitors Centers", "Religous Sites"],
-      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=40.3333&lon=-105.7089#.YXLvEBrMJPY",
-      "website": "https://www.nps.gov/romo/index.htm",
-      "lat": 40.343182,
-      "long": -105.688103,
-      "images": [
-        "https://www.outsideonline.com/wp-content/uploads/2020/03/12/gem-lake-and-longs-peak-sunset_h.jpg",
-        "https://cdn.farmjournal.com/s3fs-public/styles/840x600/public/2021-01/landscape-1843128_1920.jpg?itok=8rhjbX3U",
-        "https://www.mycoloradoparks.com/wp-content/uploads/2020/05/RM-Entrance-sign_DP_2400.jpg",
-        "https://www.jellystoneofestes.com/wp-content/uploads/2016/12/rockymountain.jpg",
-        "https://i.natgeofe.com/k/caf9703e-c4e2-44e6-8b82-2c8b480cacc8/black-bear-cubs.jpg"
-      ],
-      "id":"rocky-mtn"
-    },
-    {
       "name": "Sequoia",
       "state": "California, USA",
       "address": "47050 Generals Highway Three Rivers, CA 93271",
@@ -222,26 +181,6 @@
 
       ],
       "id":"smokey"
-    },
-    {
-      "name": "Grand Teton",
-      "state": "Wyoming, USA",
-      "address": "103 Headquarters Loop Moose, WY 83012",
-      "description": "Rising above a scene rich with extraordinary wildlife, pristine lakes, and alpine terrain, the Teton Range stands as a monument to the people who fought to protect it. These are mountains of the imagination. Mountains that led to the creation of Grand Teton National Park where you can explore over two hundred miles of trails, float the Snake River, and enjoy the serenity of this remarkable place.",
-      "activities1": ["Hiking", "Boat Cruises", "Rafting", "Fishing", "Golf"],
-      "activities2": ["Climbing", "Biking", "Scenic Drives", "Wildlife Viewing", "Camping"],
-      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=43.8673&lon=-110.5719#.YXLwdhrMJPY",
-      "website": "https://www.nps.gov/grte/index.htm",
-      "lat": 43.8332687,
-      "long": -110.7007671,
-      "images": [
-        "https://www.twowanderingsoles.com/wp-content/uploads/2021/07/img_60ee6cedb97",
-        "https://www.dirtinmyshoes.com/wp-content/uploads/2020/06/Grand-Teton-North-Fork-Cascade-Canyon-2015-e1591121134861-800x5",
-        "https://www.cruiseamerica.com/getattachment/84fbfd8c-2de0-4284-8568-cc36ac7f6710/attachmen",
-        "http://jacksonhole-traveler-production.s3.amazonaws.com/wp-content/uploads/2016/10/18155720/trianglex-winter-grand-teton-1280x8",
-        "https://s1.1zoom.me/big0/419/286951-svetik.jpg"
-      ],
-      "id":"teton"
     },
     {
       "name": "Yellowstone",
