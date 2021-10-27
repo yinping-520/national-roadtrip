@@ -13,7 +13,7 @@ function Park() {
   console.log(parkId)
 
   const { loading, data } = useQuery(QUERY_PARK_BY_ID, {
-    variables: { parkId: parkId },
+    variables: { parkId: parkId},
   });
   const park = data?.park || {};
   console.log(park)
