@@ -1,9 +1,9 @@
-import '../css/mainpage.css';
-import '../css/scroll.css';
+import '../../components/css/mainpage.css';
+import '../../components/css/scroll.css';
 import React from 'react';
-import up from '../assets/up-arrow.jpg';
-import container from '../assets/pine.jpg';
-import road2 from '../assets/road2.jpg';
+import up from '../../components/assets/up-arrow.jpg';
+import container from '../../components/assets/pine.jpg';
+import road2 from '../../components/assets/road2.jpg';
 import { Link } from 'react-router-dom';
 
 const styles = {

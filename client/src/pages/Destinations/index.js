@@ -1,8 +1,8 @@
-import '../css/destinations.css';
-import '../css/scroll.css';
+import '../../components/css/destinations.css';
+import '../../components/css/scroll.css';
 import React from 'react';
-import up from '../assets/up-arrow.jpg';
-import container from '../assets/destinations-bg.jpg';
+import up from '../../components/assets/up-arrow.jpg';
+import container from '../../components/assets/destinations-bg.jpg';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import {QUERY_PARKS} from '../../utils/queries'
