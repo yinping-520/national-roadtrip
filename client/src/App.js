@@ -17,7 +17,7 @@ import Mainpage from './components/Mainpage';
 import Journey from './components/Journey';
 import Shop from './components/Shop';
 import Trips from './components/Trips';
-import Park from './components/Park';
+// import Park from './components/Park';
 import Bryce from './components/ParkBryce';
 import Glacier from './components/ParkGlacier';
 import GrandCanyon from './components/ParkGrandCanyon';
@@ -32,7 +32,6 @@ import Zion from './components/ParkZion';
 import ScrollToTop from './components/ScrollToTop';
 import up from './components/assets/up-arrow.jpg';
 import './components/css/mainpage.css';
-
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -101,9 +100,9 @@ function App() {
             {/* <Route exact path='/users/:id'>
               <Profile />
             </Route> */}
-            <Route exact path='/arches'>
+            {/* <Route exact path='/arches'>
               <Arches />
-            </Route>
+            </Route> */}
             <Route exact path='/bryce'>
               <Bryce />
             </Route>
