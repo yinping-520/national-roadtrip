@@ -40,27 +40,6 @@
       "id":"teton"
     },
     {
-      "name": "Glacier",
-      "state": "Montana, USA",
-      "address": "64 Grinnell Drive Glacier National Park Headquarters West Glacier, MT 59936",
-      "description": "Come and experience Glacier's pristine forests, alpine meadows, rugged mountains, and spectacular lakes. With over 700 miles of trails, Glacier is a hiker's paradise for adventurous visitors seeking wilderness and solitude. Relive the days of old through historic chalets, lodges, and the famous Going-to-the-Sun Road. Explore Glacier National Park and discover what awaits you.",
-      "activities1": ["Hiking", "Ziplines", "Camping", "Ranger-led Programs", "Guided Tours"],
-      "activities2": ["Horse-Back Riding", "Skiing", "Biking", "Kayaking", "Highline Trails"],
-      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=48.6961&lon=-113.8071#.YXLxdRrMJPY",
-      "website": "https://www.nps.gov/glac/index.htm",
-      "lat": 48.6960847,
-      "long": -113.8070624,
-      "images": [
-        "https://npca.s3.amazonaws.com/images/9761/a9cc980c-c406-4a55-a6ea-cc77d13113ba-banner.jpg?1456501698",
-        "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mountain_Goat_%284455603396%29.jpg",
-        "https://wallpaperaccess.com/full/2478407.jpg",
-        "https://cdn.elebase.io/bfe7dca8-ded7-4599-acba-034c8945acf8/fe3b3a3d-077f-4683-8374-dface0003443-cotcf008c742b6b16cfd.jpg?w=680&h=382&fit=crop&rot=auto&dpr=2&q=75",
-        "https://www.mattandkaren.com/wp-content/uploads/2019/12/65F8370D-36C2-4777-A200-10ADEA6912DB-1882x1200.jpg"
-
-      ],
-      "id":"glacier"
-    },
-    {
       "name": "Yosemite",
       "state": "California, USA",
       "address": "Tioga Rd Hwy 120 & Hwy 140 Yosemite National Park, CA 95389",
