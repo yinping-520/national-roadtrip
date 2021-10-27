@@ -17,8 +17,11 @@ const parkSchema = new Schema({
     weatherInfo: {
         type: String,
     },
-    activities: [{
+    activities1: [{
            type: String,
+    }],
+    activities2: [{
+        type: String,
     }],
     lat: { 
         type: Number 

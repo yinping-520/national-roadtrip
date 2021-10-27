@@ -5,7 +5,6 @@ import { useQuery } from "@apollo/client";
 import { QUERY_PARK_BY_ID } from "../../utils/queries";
 import { useParams } from "react-router-dom";
 import up from "../../components/assets/up-arrow.jpg";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import bikingArches from "../../components/assets/biking-arches.jpg";
 
@@ -17,8 +16,12 @@ function Park() {
   });
 
   const park = data?.park || {};
-  const activities = park.activities || [];
+  const activities1 = park.activities1 || [];
+  const activities2 = park.activities2 || [];
   const image = park.images || [];
+
+  console.log(activities1)
+  console.log(activities2)
 
   const [current, setCurrent] = useState(0); // for next & prev slides
   const length = image.length;
@@ -76,21 +79,27 @@ function Park() {
       <a href="#top">
         <img id="up-arrow" src={up} />
       </a>
-      <div className="activities container">
+      <div className="activities">
         <h3 className="activity-header">Activities</h3>
         <img id="bike" src={bikingArches} />
-        {activities.map((activity, index) => (
-          <div className="row split-act">
-            <div className="col activity-list">
-              <div className=" act-left">
-                <li key={index}>
-                  <i class="fas fa-campground"></i>
-                  {activity}
-                </li>
-              </div>
-            </div>
-          </div>
-        ))}
+          <div className="split-act">
+            <ul className="activity-list">
+                {activities1.map((activity, index) => (
+                      <div className="act-left">
+                        <li key={index}>
+                          <i class="fas fa-campground"></i>
+                          {activity}
+                        </li> 
+                     </div>))}
+                {activities2.map((activity, index) => (
+                    <div className="act-right">
+                        <li key={index}>
+                          <i class="fas fa-campground"></i>
+                          {activity}
+                         </li>
+                  </div>))}
+            </ul>   
+      </div>
       </div>
       <div className="weather-section">
         <h4 className="weather-headline">Seasonal Weather</h4>

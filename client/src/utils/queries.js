@@ -31,7 +31,8 @@ export const QUERY_PARKS = gql`
       address
       description
       weatherInfo
-      activities
+      activities1
+      activities2
       website
       lat
       long
@@ -48,7 +49,8 @@ export const QUERY_PARK_BY_ID = gql`
       address
       description
       weatherInfo
-      activities
+      activities1
+      activities2
       website
       lat
       long

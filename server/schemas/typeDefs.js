@@ -15,7 +15,8 @@ const typeDefs = gql`
     address: String
     description: String
     weatherInfo: String
-    activities: [String]
+    activities1: [String],
+    activities2: [String]
     website: String
     lat: Float
     long: Float
