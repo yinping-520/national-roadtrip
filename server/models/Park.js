@@ -7,6 +7,9 @@ const parkSchema = new Schema({
         required: true,
         unique: true
     },
+    state: {
+        type: String,
+    },
     address: {
         type: String,
         required: true,
