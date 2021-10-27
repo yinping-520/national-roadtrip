@@ -17,7 +17,7 @@ import Mainpage from './components/Mainpage';
 import Journey from './components/Journey';
 import Shop from './components/Shop';
 import Trips from './components/Trips';
-import Arches from './components/ParkArches';
+import Park from './components/Park';
 import Bryce from './components/ParkBryce';
 import Glacier from './components/ParkGlacier';
 import GrandCanyon from './components/ParkGrandCanyon';

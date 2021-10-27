@@ -15,5 +15,12 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+<<<<<<< HEAD
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.5.0",
+    "react-icons": "^4.3.1"
+=======
+>>>>>>> main
   }
 }

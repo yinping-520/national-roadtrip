@@ -15,10 +15,12 @@ const typeDefs = gql`
     address: String
     description: String
     weatherInfo: String
-    activities: [String]
+    activities1: [String],
+    activities2: [String]
     website: String
     lat: Float
     long: Float
+    images: [String]
   }
 
   type Auth {
@@ -30,7 +32,7 @@ const typeDefs = gql`
     users: [User]
     user(id: ID): User
     parks: [Park]
-    park(id: ID): Park
+    park(parkId: ID!): Park
   }
 
   type Mutation {

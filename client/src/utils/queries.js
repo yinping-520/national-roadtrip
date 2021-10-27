@@ -31,7 +31,8 @@ export const QUERY_PARKS = gql`
       address
       description
       weatherInfo
-      activities
+      activities1
+      activities2
       website
       lat
       long
@@ -41,15 +42,15 @@ export const QUERY_PARKS = gql`
 
 
 export const QUERY_PARK_BY_ID = gql`
-  query getParkById($parkId: ID) {
-    park(parkId: $parkId) {
-
+  query getParkById($parkId: ID!) {
+    park(parkId: $parkId){
       _id
       name 
       address
       description
       weatherInfo
-      activities
+      activities1
+      activities2
       website
       lat
       long
