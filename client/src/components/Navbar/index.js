@@ -17,6 +17,7 @@ const styles = {
 }
 
 function Navbar() {
+  
   const showNavigation = () => {
     if (Auth.loggedIn()) {
       return (

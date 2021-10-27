@@ -12,7 +12,7 @@ const styles = {
     }
 }
 
-function Mainpage() {
+function Mainpage({parks}) {
     return (
         <div>
             <div id='container'>

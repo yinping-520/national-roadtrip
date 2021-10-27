@@ -22,6 +22,8 @@ import ScrollToTop from './components/ScrollToTop';
 import up from './components/assets/up-arrow.jpg';
 import './components/css/mainpage.css';
 
+
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -43,6 +45,7 @@ const client = new ApolloClient({
 });
 
 function App() {
+  
   const [scrollActive, setScrollActive] = useState(false);
   const [progessHeight, setProgressHeight] = useState(0);
   useEffect(() => {
@@ -56,14 +59,16 @@ function App() {
     });
   }, [])
 
+
   return (
     <ApolloProvider client={client}>
+      
       <Router>
         <ScrollToTop />
         <div>
           <div id='progressbar' style={{height:`${progessHeight}%`}}></div>
           <a href='#top'><img id='up-arrow' className={scrollActive && 'active'} src={up} /></a>
-          <Header />
+          <Header/>
           <div>
             <Route exact path='/'>
               <Mainpage />
@@ -95,6 +100,9 @@ function App() {
       </Router>
     </ApolloProvider>
   );
+  
 }
 
 export default App;
+
+ 
