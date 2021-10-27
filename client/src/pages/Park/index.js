@@ -14,8 +14,8 @@ function Park() {
   const { loading, data } = useQuery(QUERY_PARK_BY_ID, {
     variables: { parkId: parkId },
   });
-
   const park = data?.park || {};
+  console.log(park)
   const activities1 = park.activities1 || [];
   const activities2 = park.activities2 || [];
   const image = park.images || [];

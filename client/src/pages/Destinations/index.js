@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import {QUERY_PARKS} from '../../utils/queries'
 
+
 const styles = {
     underlineRemove: {
         textDecoration: 'none',
@@ -16,6 +17,7 @@ const styles = {
 function Destinations() {
     const {loading, data} = useQuery(QUERY_PARKS)
     const parks = data?.parks || [];
+    
 
     if (loading) {
         return <div>Loading ... </div>
@@ -29,18 +31,18 @@ function Destinations() {
             <a href='#top'><img id='up-arrow' src={up} /></a>
             <div id='all-destinations'>
                 <div id='locs'>
-                    {/* <div>
+                    <div>
                         {parks && parks.map((park) => (
-                            <Link to={`/arches/${park._id}`} style={styles.underlineRemove}>
+                            <Link to={`/park/${park._id}`} style={styles.underlineRemove}>
                                 <div id='arches' className='card-dest'>
-                                    <p>Arches</p>
+                                    <p>{park.name}</p>
                                 </div>
                             </Link>
                         ))}
-                    </div> */}
-                    <Link to='/arches' style={styles.underlineRemove}>
+                    </div>
+                    {/* <Link to={`/park/${park._id}`} style={styles.underlineRemove}>
                         <div id='arches' className='card-dest'>
-                            <p>Arches</p>
+                            <p>{parks.name}</p>
                         </div>
                     </Link>
                     <Link to='/bryce' style={styles.underlineRemove}>
@@ -97,7 +99,7 @@ function Destinations() {
                         <div id='zion' className='card-dest'>
                             <p>Zion</p>
                         </div>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>
