@@ -38,11 +38,6 @@ function Navbar() {
       return (
         <div>
           <div className="rightnav-a">
-            <Link to="/signup">
-              signup
-            </Link>
-          </div>
-          <div className="rightnav-a">
             <Link to="/login">
               login
             </Link>
