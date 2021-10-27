@@ -252,7 +252,7 @@ body {
         margin: 100px 200px;
     }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1350px) {
     #container {
         display: flex;
         align-items: center;
