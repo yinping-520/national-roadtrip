@@ -45,13 +45,13 @@ const resolvers = {
       return { token, user };
     },
 
-    addItinerary: async (parent, { ids }, context) => {
-      console.log(ids, context.user);
+    addItinerary: async (parent, { id }, context) => {
+      console.log(id, context.user);
       // if (context.user) {
-        return User.findOneAndUpdate(
-          { _id: '617836192ea25a280a495b63' },
+        return await User.findOneAndUpdate(
+          { _id: context.user._id },
           {
-            $addToSet: { itinerary: ids },
+            $push: { itinerary: id },
           },
           {
             new: true,
@@ -62,7 +62,7 @@ const resolvers = {
     },
 
     deleteItinerary: async (parent, { itinerary }, context) => {
-      return User.findOneAndUpdate(
+      return await User.findOneAndUpdate(
         { _id: '617836192ea25a280a495b63' },
         { $pull: { itinerary: itinerary } },
         { new: true }

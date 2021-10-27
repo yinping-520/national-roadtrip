@@ -21,9 +21,7 @@ import Park from './pages/Park';
 import ScrollToTop from './components/ScrollToTop';
 import up from './components/assets/up-arrow.jpg';
 import './components/css/mainpage.css';
-import {QUERY_PARKS} from './utils/queries'
-import { useQuery } from '@apollo/client';
-import Main from './Main'
+
 
 
 const httpLink = createHttpLink({
@@ -65,14 +63,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       
-      <Main />
-    </ApolloProvider>
-  );
-}
-
-export default App;
-
-{/* <Router>
+      <Router>
         <ScrollToTop />
         <div>
           <div id='progressbar' style={{height:`${progessHeight}%`}}></div>
@@ -100,14 +91,18 @@ export default App;
             <Route exact path='/signup'>
               <Signup />
             </Route>
-            {/* <Route exact path='/users/:id'>
-              <Profile />
-            </Route> */}
-      //       <Route exact path='/park/:parkId'>
-      //         <Park />
-      //       </Route>
-          
-      //     </div>
-      //     <Footer />
-      //   </div>
-      // </Router> */}
+            <Route exact path='/:parkId'>
+              <Park />
+            </Route>
+          </div>
+          <Footer />
+        </div>
+      </Router>
+    </ApolloProvider>
+  );
+  
+}
+
+export default App;
+
+ 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar';
 
-const Header = ({parks}) => {
+const Header = () => {
   return (
     <header>
       <div>
@@ -12,7 +12,7 @@ const Header = ({parks}) => {
       </div>
       <div>
         {/* <p>Simple App to View Users.</p> */}
-        <Navbar parks={parks}/>
+        <Navbar />
       </div>
     </header>
   );
