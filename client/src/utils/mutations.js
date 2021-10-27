@@ -24,28 +24,18 @@ export const ADD_USER = gql`
   }
 `;
 
-export const UPDATE_ITINERARY = gql`
-  mutation updateItinerary($park: [ID]!) {
-    updateItinerary(parks: $park) {
-      parks {
-        _id
-        name
-        address
-        description
-        weatherInfo
-        activities
-        website
-        lat
-        long
-      }
-    }
+export const ADD_ITINERARY = gql`
+  mutation addItinerary($ids: [ID]!) {
+  addItinerary(ids: $ids) {
+    itinerary 
   }
+}
 `;
 
 
 export const DELETE_ITINERARY = gql`
-  mutation deleteItinerary($park: [ID]!) {
-    deleteItinerary(parks: $park) {
+  mutation deleteItinerary($id: ID!) {
+    deleteItinerary(id: $id) {
       park {
         _id
       }

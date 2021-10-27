@@ -39,9 +39,15 @@ const parkSchema = new Schema({
     long:{
         type: Number,
     },
+<<<<<<< HEAD
     images:[{
         type: String
     }],
+=======
+    images: [{
+        type: String,
+    }]
+>>>>>>> main
 
 
 

@@ -20,17 +20,31 @@ function Navbar() {
   const showNavigation = () => {
     if (Auth.loggedIn()) {
       return (
-        <Link class="rightnav-a" to="/logout">
-          logout
-        </Link>
-      )
+        <div>
+          <div className="rightnav-a">
+            <Link to="/trips">
+              your trips
+            </Link>
+          </div>
+          <div className="rightnav-a">
+            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+            <a href="/" onClick={() => Auth.logout()}>
+              logout
+            </a>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <div className="rightnav-a">
+            <Link to="/login">
+              login
+            </Link>
+          </div>
+        </div>
+      );
     }
-    return (
-      <Link class="rightnav-a" to="/login">
-        login
-      </Link>
-    )
-
   }
 
   return (
@@ -87,7 +101,6 @@ function Navbar() {
         {showNavigation()}
       </div>
     </div>
-  );
-};
-
+  )
+} 
 export default Navbar;

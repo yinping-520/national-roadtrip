@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ApolloClient,
   InMemoryCache,
@@ -40,6 +40,7 @@ const httpLink = createHttpLink({
 
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
+  console.log(token);
   return {
     headers: {
       ...headers,
@@ -53,35 +54,27 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-// const styles = {
-//   showBtn: {
-//       opacity: 0.5
-//   }
-// }
-
-// const scrollToTopBtn = document.getElementById('up-arrow');
-// const rootElement = document.documentElement;
-// function handleScroll() {
-//   const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-
-//   if ((rootElement.scrollTop / scrollTotal ) > 0.40 ) {
-//     scrollToTopBtn.className.add('showBtn');
-//   } else {
-//     // scrollToTopBtn.className.remove('showBtn')
-//     scrollToTopBtn.classList.remove(styles={style.showBtn});
-//   }
-// };
-// document.addEventListener('scroll', handleScroll);
-
 function App() {
-  
+  const [scrollActive, setScrollActive] = useState(false);
+  const [progessHeight, setProgressHeight] = useState(0);
+  useEffect(() => {
+    window.addEventListener('scroll', function () {
+      const pos = window.scrollY;
+      const dh = document.body.scrollHeight;
+      const wh = window.innerHeight;
+      const scrollPercent = (pos / (dh - wh)) * 100;
+      setProgressHeight(scrollPercent);
+      setScrollActive(this.window.scrollY > 350);
+    });
+  }, [])
+
   return (
     <ApolloProvider client={client}>
       <Router>
         <ScrollToTop />
         <div>
-        <div id='progressbar'></div>
-        <a href='#top'><img id='up-arrow' src={up} /></a>
+          <div id='progressbar' style={{height:`${progessHeight}%`}}></div>
+          <a href='#top'><img id='up-arrow' className={scrollActive && 'active'} src={up} /></a>
           <Header />
           <div>
             <Route exact path='/'>
@@ -108,8 +101,47 @@ function App() {
             {/* <Route exact path='/users/:id'>
               <Profile />
             </Route> */}
-            <Route exact path='/parks/:parkId'>
-              <Park />
+            <Route exact path='/arches'>
+              <Arches />
+            </Route>
+            <Route exact path='/bryce'>
+              <Bryce />
+            </Route>
+            {/* <Route exact path='/arches/:parkId'>
+              <Arches />
+            </Route>
+            <Route exact path='/bryce/:parkId'>
+              <Bryce />
+            </Route> */}
+            <Route exact path='/glacier'>
+              <Glacier />
+            </Route>
+            <Route exact path='/grandcanyon'>
+              <GrandCanyon />
+            </Route>
+            <Route exact path='/olympic'>
+              <Olympic />
+            </Route>
+            <Route exact path='/rockymtn'>
+              <RockyMtn />
+            </Route>
+            <Route exact path='/sequoia'>
+              <Sequoia />
+            </Route>
+            <Route exact path='/smokey'>
+              <Smokey />
+            </Route>
+            <Route exact path='/teton'>
+              <Teton />
+            </Route>
+            <Route exact path='/yellowstone'>
+              <Yellowstone />
+            </Route>
+            <Route exact path='/yosemite'>
+              <Yosemite />
+            </Route>
+            <Route exact path='/zion'>
+              <Zion />
             </Route>
           </div>
           <Footer />
