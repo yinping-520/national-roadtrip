@@ -1,6 +1,6 @@
 [
     {
-      "name": "Rocky Mountain National Park",
+      "name": "Rocky Mountain",
       "state": "Colorado, USA",
       "address": "1000 US Hwy 36 Estes Park, CO 80517",
       "description": "Rocky Mountain National Park’s 415 square miles encompass and protect spectacular mountain environments. Enjoy Trail Ridge Road – which crests at over 12,000 feet including many overlooks to experience the subalpine and alpine worlds – along with over 300 miles of hiking trails, wildflowers, wildlife, starry nights, and fun times. In a world of superlatives, Rocky is on top!",
@@ -16,10 +16,11 @@
         "https://www.mycoloradoparks.com/wp-content/uploads/2020/05/RM-Entrance-sign_DP_2400.jpg",
         "https://www.jellystoneofestes.com/wp-content/uploads/2016/12/rockymountain.jpg",
         "https://i.natgeofe.com/k/caf9703e-c4e2-44e6-8b82-2c8b480cacc8/black-bear-cubs.jpg"
-      ]
+      ],
+      "id":"rocky-mtn"
     },
     {
-      "name": "Grand Teton National Park",
+      "name": "Grand Teton",
       "state": "Wyoming, USA",
       "address": "103 Headquarters Loop Moose, WY 83012",
       "description": "Rising above a scene rich with extraordinary wildlife, pristine lakes, and alpine terrain, the Teton Range stands as a monument to the people who fought to protect it. These are mountains of the imagination. Mountains that led to the creation of Grand Teton National Park where you can explore over two hundred miles of trails, float the Snake River, and enjoy the serenity of this remarkable place.",
@@ -35,12 +36,11 @@
         "https://www.cruiseamerica.com/getattachment/84fbfd8c-2de0-4284-8568-cc36ac7f6710/attachmen",
         "http://jacksonhole-traveler-production.s3.amazonaws.com/wp-content/uploads/2016/10/18155720/trianglex-winter-grand-teton-1280x8",
         "https://s1.1zoom.me/big0/419/286951-svetik.jpg"
-
-      ]
-
+      ],
+      "id":"teton"
     },
     {
-      "name": "Glacier National Park",
+      "name": "Glacier",
       "state": "Montana, USA",
       "address": "64 Grinnell Drive Glacier National Park Headquarters West Glacier, MT 59936",
       "description": "Come and experience Glacier's pristine forests, alpine meadows, rugged mountains, and spectacular lakes. With over 700 miles of trails, Glacier is a hiker's paradise for adventurous visitors seeking wilderness and solitude. Relive the days of old through historic chalets, lodges, and the famous Going-to-the-Sun Road. Explore Glacier National Park and discover what awaits you.",
@@ -57,10 +57,11 @@
         "https://cdn.elebase.io/bfe7dca8-ded7-4599-acba-034c8945acf8/fe3b3a3d-077f-4683-8374-dface0003443-cotcf008c742b6b16cfd.jpg?w=680&h=382&fit=crop&rot=auto&dpr=2&q=75",
         "https://www.mattandkaren.com/wp-content/uploads/2019/12/65F8370D-36C2-4777-A200-10ADEA6912DB-1882x1200.jpg"
 
-      ]
+      ],
+      "id":"glacier"
     },
     {
-      "name": "Yosemite National Park",
+      "name": "Yosemite",
       "state": "California, USA",
       "address": "Tioga Rd Hwy 120 & Hwy 140 Yosemite National Park, CA 95389",
       "description": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra. First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
@@ -77,10 +78,11 @@
         "https://blog.assets.thediscoverer.com/2019/09/Yosemite-National-Park.jpg",
         "https://magazine.northeast.aaa.com/wp-content/uploads/2017/11/yosemite-national-park-guide-1-640x423.jpg"
 
-      ]
+      ],
+      "id":"yosemite"
     },
     {
-      "name": "Arches National Park",
+      "name": "Arches",
       "state": "Utah, USA",
       "address": "Salt Valley Rd, Moab, UT 84532",
       "description": "Visit Arches to discover a landscape of contrasting colors, land forms, and textures unlike any other in the world. The park has over 2,000 natural stone arches and hundreds of soaring pinnacles, massive rock fins, and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets. ",
@@ -96,10 +98,11 @@
         "https://img1.wallspic.com/originals/3/3/2/4/5/154233-sunset_moab-arches_national_park-zion_national_park-bryce_canyon_national_park-national_park-3840x2160.jpg",
         "https://www.wallpapertip.com/wmimgs/15-154754_california-wallpaper-arches-national-park.jpg",
         "https://mocah.org/uploads/posts/352081-4k-wallpaper.jpg"
-      ]
+      ],
+      "id":"arches"
     },
     {
-      "name": "Bryce Canyon National Park",
+      "name": "Bryce Canyon",
       "state": "Utah, USA",
       "address": "Highway 63 Bryce Canyon National Park Bryce, UT 84764",
       "description": "Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's high elevations include numerous life communities, fantastic dark skies, and geological wonders that defy description.",
@@ -115,10 +118,11 @@
         "https://images.squarespace-cdn.com/content/v1/5346a846e4b0101b157468cf/1520439596100-ONL5JGPOUBVTXDSZ9XNF/DSC01710-2.jpg?format=1000w",
         "https://497tsv9okf5vwjia1smxzaz5-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/20-13-Bryce-Canyon-Winter-Operations-NPS-Photo-Keith-Moore.jpg",
         "https://images.squarespace-cdn.com/content/v1/5a67cfcca803bba6eefdc538/1548613283619-NSEGZ27TP2ENCXV35MKB/Hiking+the+Fairyland+Loop+in+Winter+in+Bryce+Canyon?format=1000w"
-      ]
+      ],
+      "id":"bryce"
     },
     {
-      "name": "Zion National Park",
+      "name": "Zion",
       "state": "Utah, USA",
       "address": "1 Zion Park Blvd. State Route 9 Springdale, UT 84767",
       "description": "Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures.",
@@ -134,7 +138,8 @@
         "https://bearfoottheory.com/wp-content/uploads/2013/05/Zion-National-Park-Guide.jpg",
         "https://cdn.britannica.com/45/100645-050-50E906A9/Angels-Landing-Zion-National-Park-Utah.jpg",
         "https://www.lancebcarter.com/images/xl/UT_YA0222_226.jpg"
-      ]
+      ],
+      "id":"zion"
     },
     {
       "name": "The Grand Canyon",
@@ -154,10 +159,11 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Canyon_River_Tree_%28165872763%29.jpeg/1200px-Canyon_River_Tree_%28165872763%29.jpeg",
         "https://i0.wp.com/yaleclimateconnections.org/wp-content/uploads/2021/07/072021_GrandCanyon_1600.jpg?fit=1600%2C900&ssl=1"
 
-      ]
+      ],
+      "id":"grand-canyon"
     },
     {
-      "name": "Yellowstone National Park",
+      "name": "Yellowstone",
       "state": "Wyoming, USA",
       "address": "2 Officers Row Yellowstone National Park Headquarters Yellowstone National Park, WY 82190",
       "description": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal and geologic wonders. People from around the world have been drawn to Yellowstone to witness these wonders for themselves. Now, millions of people come to Yellowstone each year.",
@@ -173,10 +179,11 @@
         "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/a5/2a.jpg",
         "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F60a77f30768434735cc94924%2FGrand-Prismatic-Spring---Yellowstone-National-Park%2F960x0.jpg%3Ffit%3Dscale",
         "https://www.nps.gov/yell/learn/news/images/Economic-Benefits_1.jpg"
-      ]
+      ],
+      "id":"yellowstone"
     },
     {
-      "name": "Sequoia National Park",
+      "name": "Sequoia",
       "state": "California, USA",
       "address": "47050 Generals Highway Three Rivers, CA 93271",
       "description": "Huge mountains, rugged foothills, deep canyons, vast caverns, and the world’s largest trees exemplify the diversity of landscapes, life, and beauty here. Explore these pages to learn about the plants and animals here and the threats they face. Our ancient giant sequoias may seem invincible, but they, too are vulnerable.",
@@ -192,10 +199,11 @@
         "https://images.squarespace-cdn.com/content/v1/5a4dbe45ace864a4b106ce3e/1579565865859-VEYHZNUC9N1J6GK9M3QS/Earth+Coco+Sequoia+National+Park-1.JPG",
         "https://sierraflyfisher.com/wp-content/uploads/2019/07/Sequoia-National-Park.jpg",
         "https://i.ytimg.com/vi/dz4r0WhG3G4/maxresdefault.jpg"
-      ]
+      ],
+      "id":"sequoia"
     },
     {
-      "name": "Olympic National Park",
+      "name": "Olympic",
       "state": "Washington, USA",
       "address": "3002 Mt Angeles Rd, Port Angeles, WA 98362",
       "description": "With its incredible range of precipitation and elevation, diversity is the hallmark of Olympic National Park. Encompassing nearly a million acres, the park protects a vast wilderness, thousands of years of human history, and several distinctly different ecosystems, including glacier-capped mountains, old-growth temperate rain forests, and over 70 miles of wild coastline. Come explore!",
@@ -212,10 +220,11 @@
         "https://bearfoottheory.com/wp-content/uploads/2016/06/Olympic-National-park.jpg",
         "https://i.pinimg.com/originals/53/43/db/5343dbfd23f4a0bc6489fa28a1e22c7b.jpg"
 
-      ]
+      ],
+      "id":"olympic"
     },
     {
-      "name": "Great Smokey Mountains National Park",
+      "name": "Great Smokey Mountains",
       "state": "TN & NC, USA",
       "address": "107 Park Headquarters Road, Gatlinburg, TN 37738",
       "description": "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park.",
@@ -232,7 +241,8 @@
         "http://i.imgur.com/kjo5y8N.jpg",
         "https://www.pinkadventuretours.com/Media/2734/shutterstock_255621250-1.jpg?width=600&height=401&mode=max"
 
-      ]
+      ],
+      "id":"smokey"
     }
   ]
   
