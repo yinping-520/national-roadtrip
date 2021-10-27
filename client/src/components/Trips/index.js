@@ -14,6 +14,7 @@ function Trips() {
     const position = [40.343182, -105.688103];
 
     return (
+        <div>
         <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
             height: "400px", width: "50%", backgroundColor: "red", marginTop: "80px", marginBottom: '90px'
         }} >
@@ -88,7 +89,7 @@ function Trips() {
     //         )}
     //     </div>
     // )
-    );
+    // );
 };
 
 export default Trips;
