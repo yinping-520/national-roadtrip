@@ -74,9 +74,9 @@ function Park() {
                     <img src={slide} alt="images" className="image" />
                   )}
                 </div>
-                <div className="slider-total">
+                {/* <div className="slider-total">
                   <img src={slide} alt="images" className="image-small" />
-                </div>
+                </div> */}
               </div>
             );
           })}
@@ -89,36 +89,32 @@ function Park() {
         <h3 className="activity-header">Activities</h3>
         <img id="bike" src={bikingArches} />
         <div className="split-act">
-          <ul className="activity-list">
-            {activities1.map((activity, index) => (
-              <div className="act-left">
+          <ul className="activity-list left">
+            {activities1.map((activities1, index) => (
                 <li key={index}>
                   <i class="fas fa-campground"></i>
-                  {activity}
+                  {activities1}
                 </li>
-              </div>
             ))}
-            {activities2.map((activity, index) => (
-              <div className="act-right">
+            </ul>
+          <ul className="activity-list right">
+            {activities2.map((activities2, index) => (
                 <li key={index}>
                   <i class="fas fa-campground"></i>
-                  {activity}
+                  {activities2}
                 </li>
-              </div>
             ))}
           </ul>
         </div>
       </div>
+      <div className='description'>
+        
+      </div>
       <div className="weather-section">
-        <h4 className="weather-headline">Seasonal Weather</h4>
+        <h4 className="weather-headline">Weather</h4>
         <div className="weather-block">
-          <p>{park.weatherInfo}</p>
+          <iframe src={park.weatherInfo} width='1000px' height='475px'></iframe>
         </div>
-
-        <p>park description:{park.description}</p>
-        <p>
-          lat:{park.lat}, long:{park.long}
-        </p>
       </div>
       <>
         <button
@@ -136,8 +132,8 @@ function Park() {
         </button>
       </>
       <div className="official-link">
-        <a href="https://www.nps.gov/arch/index.htm" target="_">
-          insert Offical Site
+        <a href={park.website} target="_">
+          Visit the Official Nationals Park Site
         </a>
       </div>
     </div>
