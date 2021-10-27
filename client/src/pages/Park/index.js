@@ -1,14 +1,14 @@
-import "../../components/css/arches.css";
-import "../../components/css/scroll.css";
-import React, { useState } from "react";
-import { useQuery, useMutation } from "@apollo/client";
-import { QUERY_PARK_BY_ID } from "../../utils/queries";
-import { ADD_ITINERARY } from "../../utils/mutations";
+import '../../components/css/arches.css';
+import '../../components/css/scroll.css';
+import React, { useState } from 'react';
+import { useQuery, useMutation } from '@apollo/client';
+import { QUERY_PARK_BY_ID } from '../../utils/queries';
+import { ADD_ITINERARY } from '../../utils/mutations';
 import { useParams } from 'react-router-dom'
-import up from "../../components/assets/up-arrow.jpg";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
-import bikingArches from "../../components/assets/biking-arches.jpg";
-import Navbar from "../../components/Navbar/index";
+import up from '../../components/assets/up-arrow.jpg';
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import bikingArches from '../../components/assets/biking-arches.jpg';
+import Navbar from '../../components/Navbar/index';
 
 function Park() {
   const { parkId } = useParams();
@@ -51,73 +51,42 @@ function Park() {
 
   return (
     <div>
-      <div id="center-all">
-        <h1 className="park-name">{park.name}</h1>
-        <h2 className="city">{park.address}</h2>
-        <div className="slider">
+      <div id='center-all'>
+        <h1 className='park-name'>{park.name}</h1>
+        <h2 className='city'>{park.state}</h2>
+        <div className='slider'>
           <FaArrowAltCircleLeft
-            className="slider-icon left-arrow"
+            className='slider-icon left-arrow'
             onClick={prevSlide}
           />
           <FaArrowAltCircleRight
-            className="slider-icon right-arrow"
+            className='slider-icon right-arrow'
             onClick={nextSlide}
           />
           {image.map((slide, index) => {
             return (
-              <div className="current-and-index">
+              <div className='current-and-index'>
                 <div
-                  className={index === current ? "slide active" : "slide"}
+                  className={index === current ? 'slide active' : 'slide'}
                   key={index}
                 >
                   {index === current && (
-                    <img src={slide} alt="images" className="image" />
+                    <img src={slide} alt='images' className='image' />
                   )}
                 </div>
-                {/* <div className="slider-total">
-                  <img src={slide} alt="images" className="image-small" />
+                {/* <div className='slider-total'>
+                  <img src={slide} alt='images' className='image-small' />
                 </div> */}
               </div>
             );
           })}
         </div>
       </div>
-      <a href="#top">
-        <img id="up-arrow" src={up} />
+      <a href='#top'>
+        <img id='up-arrow' src={up} />
       </a>
-      <div className="activities">
-        <h3 className="activity-header">Activities</h3>
-        <img id="bike" src={bikingArches} />
-        <div className="split-act">
-          <ul className="activity-list left">
-            {activities1.map((activities1, index) => (
-                <li key={index}>
-                  <i class="fas fa-campground"></i>
-                  {activities1}
-                </li>
-            ))}
-            </ul>
-          <ul className="activity-list right">
-            {activities2.map((activities2, index) => (
-                <li key={index}>
-                  <i class="fas fa-campground"></i>
-                  {activities2}
-                </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <div className='description'>
-        
-      </div>
-      <div className="weather-section">
-        <h4 className="weather-headline">Weather</h4>
-        <div className="weather-block">
-          <iframe src={park.weatherInfo} width='1000px' height='475px'></iframe>
-        </div>
-      </div>
-      <>
-        <button
+      <div>
+        <button className='add-to-trip'
           type='button'
           onClick={async () => {
             const { data } = await addItinerary({
@@ -130,11 +99,45 @@ function Park() {
         >
           Add to Trip
         </button>
-      </>
-      <div className="official-link">
-        <a href={park.website} target="_">
-          Visit the Official Nationals Park Site
+      </div>
+      <div className='activities'>
+        <h3 className='activity-header'>Activities</h3>
+        <img id='bike' src={bikingArches} />
+        <div className='split-act'>
+          <ul className='activity-list left'>
+            {activities1.map((activities1, index) => (
+              <li key={index}>
+                <i class='fas fa-campground'></i> {activities1}
+              </li>
+            ))}
+          </ul>
+          <ul className='activity-list right'>
+            {activities2.map((activities2, index) => (
+              <li key={index}>
+                <i class='fas fa-campground'></i> {activities2}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className='description'>
+        <div className='park-description'>
+          <p>{park.description}</p>
+        </div>
+        <a href={park.website} target='_'>
+          Visit the Official Park Site
         </a>
+      </div>
+      <div className='map-section'>
+        <div className='map-frame'>
+          {/* PUT MAP HERE */}
+        </div>
+      </div>
+      <div className='weather-section'>
+        <h4 className='weather-headline'>Weather</h4>
+        <div className='weather-block'>
+          <iframe src={park.weatherInfo} width='1000px' height='475px'></iframe>
+        </div>
       </div>
     </div>
   );
