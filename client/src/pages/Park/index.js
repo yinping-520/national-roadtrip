@@ -3,19 +3,20 @@ import "../../components/css/scroll.css";
 import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_PARK_BY_ID } from "../../utils/queries";
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom'
 import up from "../../components/assets/up-arrow.jpg";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import bikingArches from "../../components/assets/biking-arches.jpg";
 
 function Park() {
   const { parkId } = useParams();
+  console.log(parkId)
 
   const { loading, data } = useQuery(QUERY_PARK_BY_ID, {
     variables: { parkId: parkId },
   });
-
   const park = data?.park || {};
+  console.log(park)
   const activities1 = park.activities1 || [];
   const activities2 = park.activities2 || [];
   const image = park.images || [];

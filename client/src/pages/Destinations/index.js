@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import {QUERY_PARKS} from '../../utils/queries'
 
+
 const styles = {
     underlineRemove: {
         textDecoration: 'none',
@@ -29,75 +30,16 @@ function Destinations() {
             <a href='#top'><img id='up-arrow' src={up} /></a>
             <div id='all-destinations'>
                 <div id='locs'>
-                    {/* <div>
+                    <div>
                         {parks && parks.map((park) => (
-                            <Link to={`/arches/${park._id}`} style={styles.underlineRemove}>
-                                <div id='arches' className='card-dest'>
-                                    <p>Arches</p>
+                            <Link to={`/park/${park.id}`} style={styles.underlineRemove}>
+                                <div id={`${park.id}`} className='card-dest'>
+                                    <p>{park.name}</p>
                                 </div>
                             </Link>
                         ))}
-                    </div> */}
-                    <Link to='/arches' style={styles.underlineRemove}>
-                        <div id='arches' className='card-dest'>
-                            <p>Arches</p>
-                        </div>
-                    </Link>
-                    <Link to='/bryce' style={styles.underlineRemove}>
-                        <div id='bryce' className='card-dest'>
-                            <p>Bryce Canyon</p>
-                        </div>
-                    </Link>
-                    <Link to='/glacier' style={styles.underlineRemove}>
-                        <div id='glacier' className='card-dest'>
-                            <p>Glacier</p>
-                        </div>
-                    </Link>
-                    <Link to='/grandcanyon' style={styles.underlineRemove}>
-                        <div id='grand-canyon' className='card-dest'>
-                            <p>Grand Canyon</p>
-                        </div>
-                    </Link>
-                    <Link to='/olympic' style={styles.underlineRemove}>
-                        <div id='olympic' className='card-dest'>
-                            <p>Olympic</p>
-                        </div>
-                    </Link>
-                    <Link to='/rockymtn' style={styles.underlineRemove}>
-                        <div id='rocky-mtn' className='card-dest'>
-                            <p>Rocky Mountain</p>
-                        </div>
-                    </Link>
-                    <Link to='/sequoia' style={styles.underlineRemove}>
-                        <div id='sequoia' className='card-dest'>
-                            <p>Sequoia</p>
-                        </div>
-                    </Link>
-                    <Link to='/smokey' style={styles.underlineRemove}>
-                        <div id='smokey' className='card-dest'>
-                            <p>Smokey Mountains</p>
-                        </div>
-                    </Link>
-                    <Link to='/teton' style={styles.underlineRemove}>
-                        <div id='teton' className='card-dest'>
-                            <p>Grand Teton</p>
-                        </div>
-                    </Link>
-                    <Link to='/yellowstone' style={styles.underlineRemove}>
-                        <div id='yellowstone' className='card-dest'>
-                            <p>Yellowstone</p>
-                        </div>
-                    </Link>
-                    <Link to='/yosemite' style={styles.underlineRemove}>
-                        <div id='yosemite' className='card-dest'>
-                            <p>Yosemite</p>
-                        </div>
-                    </Link>
-                    <Link to='/zion' style={styles.underlineRemove}>
-                        <div id='zion' className='card-dest'>
-                            <p>Zion</p>
-                        </div>
-                    </Link>
+                    </div>
+                    
                 </div>
             </div>
         </div>

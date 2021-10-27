@@ -44,7 +44,7 @@ export const QUERY_PARKS = gql`
 
 
 export const QUERY_PARK_BY_ID = gql`
-  query getParkById($parkId: ID!) {
+  query getParkById($parkId: String) {
     park(parkId: $parkId){
       _id
       name 

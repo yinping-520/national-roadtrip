@@ -16,7 +16,7 @@ const resolvers = {
     },
 
     park: async (parent, { parkId }) => {
-      return Park.findOne({ _id: parkId })
+      return Park.findOne({ id: parkId })
     },
   },
 
