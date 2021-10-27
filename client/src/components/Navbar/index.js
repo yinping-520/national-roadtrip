@@ -16,7 +16,8 @@ const styles = {
   }
 }
 
-function Navbar() {
+function Navbar({parks}) {
+  
   const showNavigation = () => {
     if (Auth.loggedIn()) {
       return (

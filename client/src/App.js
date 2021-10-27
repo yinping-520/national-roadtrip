@@ -21,6 +21,9 @@ import Park from './pages/Park';
 import ScrollToTop from './components/ScrollToTop';
 import up from './components/assets/up-arrow.jpg';
 import './components/css/mainpage.css';
+import {QUERY_PARKS} from './utils/queries'
+import { useQuery } from '@apollo/client';
+import Main from './Main'
 
 
 const httpLink = createHttpLink({
@@ -44,6 +47,7 @@ const client = new ApolloClient({
 });
 
 function App() {
+  
   const [scrollActive, setScrollActive] = useState(false);
   const [progessHeight, setProgressHeight] = useState(0);
   useEffect(() => {
@@ -57,14 +61,23 @@ function App() {
     });
   }, [])
 
+
   return (
     <ApolloProvider client={client}>
-      <Router>
+      
+      <Main />
+    </ApolloProvider>
+  );
+}
+
+export default App;
+
+{/* <Router>
         <ScrollToTop />
         <div>
           <div id='progressbar' style={{height:`${progessHeight}%`}}></div>
           <a href='#top'><img id='up-arrow' className={scrollActive && 'active'} src={up} /></a>
-          <Header />
+          <Header/>
           <div>
             <Route exact path='/'>
               <Mainpage />
@@ -90,16 +103,11 @@ function App() {
             {/* <Route exact path='/users/:id'>
               <Profile />
             </Route> */}
-            <Route exact path='/park/:parkId'>
-              <Park />
-            </Route>
+      //       <Route exact path='/park/:parkId'>
+      //         <Park />
+      //       </Route>
           
-          </div>
-          <Footer />
-        </div>
-      </Router>
-    </ApolloProvider>
-  );
-}
-
-export default App;
+      //     </div>
+      //     <Footer />
+      //   </div>
+      // </Router> */}
