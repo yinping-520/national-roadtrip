@@ -22,7 +22,6 @@ import ScrollToTop from './components/ScrollToTop';
 import up from './components/assets/up-arrow.jpg';
 import './components/css/mainpage.css';
 
-
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -93,7 +92,6 @@ function App() {
             <Route exact path='/park/:parkId'>
               <Park />
             </Route>
-          
           </div>
           <Footer />
         </div>
