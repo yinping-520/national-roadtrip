@@ -32,7 +32,7 @@ function Destinations() {
                 <div id='locs'>
                     <div>
                         {parks && parks.map((park) => (
-                            <Link to={`/park/${park.id}`} style={styles.underlineRemove}>
+                            <Link to={`/${park.id}`} style={styles.underlineRemove}>
                                 <div id={`${park.id}`} className='card-dest'>
                                     <p>{park.name}</p>
                                 </div>

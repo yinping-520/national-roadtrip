@@ -86,10 +86,7 @@ function App() {
             <Route exact path='/signup'>
               <Signup />
             </Route>
-            {/* <Route exact path='/users/:id'>
-              <Profile />
-            </Route> */}
-            <Route exact path='/park/:parkId'>
+            <Route exact path='/:parkId'>
               <Park />
             </Route>
           </div>

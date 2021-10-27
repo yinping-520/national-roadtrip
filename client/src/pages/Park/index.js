@@ -1,19 +1,21 @@
 import "../../components/css/arches.css";
 import "../../components/css/scroll.css";
 import React, { useState } from "react";
-import { useQuery } from "@apollo/client";
+import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_PARK_BY_ID } from "../../utils/queries";
+import { ADD_ITINERARY } from "../../utils/mutations";
 import { useParams } from 'react-router-dom'
 import up from "../../components/assets/up-arrow.jpg";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import bikingArches from "../../components/assets/biking-arches.jpg";
+import Navbar from "../../components/Navbar/index";
 
 function Park() {
   const { parkId } = useParams();
   console.log(parkId)
 
   const { loading, data } = useQuery(QUERY_PARK_BY_ID, {
-    variables: { parkId: parkId},
+    variables: { parkId: parkId },
   });
   const park = data?.park || {};
   console.log(park)
@@ -43,6 +45,9 @@ function Park() {
   //   }
   // );
   // const {loading, data} = useQuery()
+
+  // const { addTrip } = Navbar();
+  const [addItinerary] = useMutation(ADD_ITINERARY);
 
   return (
     <div>
@@ -116,7 +121,19 @@ function Park() {
         </p>
       </div>
       <>
-        <button>Click me</button>
+        <button
+          type='button'
+          onClick={async () => {
+            const { data } = await addItinerary({
+              variables: {
+                id: park._id,
+              }
+            });
+            console.log('add itinerary response', data)
+          }}
+        >
+          Add to Trip
+        </button>
       </>
       <div className="official-link">
         <a href="https://www.nps.gov/arch/index.htm" target="_">

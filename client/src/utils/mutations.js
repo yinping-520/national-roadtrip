@@ -25,8 +25,8 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_ITINERARY = gql`
-  mutation addItinerary($ids: [ID]!) {
-  addItinerary(ids: $ids) {
+  mutation addItinerary($id: ID!) {
+  addItinerary(id: $id) {
     itinerary 
   }
 }
