@@ -26,22 +26,50 @@ function Mainpage({parks}) {
             <div className='site-section'>
                 <div id='sites1'>
                     <Link to="/park/rocky-mtn" style={styles.underlineRemove}>
-                        <div id='rocky-mtn' className='card' alt='mountains'>
+                        <div 
+                            id='rocky-mtn' 
+                            className='card' 
+                            alt='mountains'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/rocky-mtn.jpg)`
+                            }}
+                        >
                             <p>Rocky Mountain</p>
                         </div>
                     </Link>
                     <Link to="/park/glacier" style={styles.underlineRemove}>
-                        <div id='glacier' className='card' alt='mountains'>
+                        <div 
+                            id='glacier' 
+                            className='card' 
+                            alt='mountains'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/glacier.jpg)`
+                            }}
+                        >
                             <p>Glacier</p>
                         </div>
                     </Link>
                     <Link to="/park/teton" style={styles.underlineRemove}>
-                        <div id='teton' className='card' alt='mountains'>
+                        <div 
+                            id='teton' 
+                            className='card' 
+                            alt='mountains'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/teton.jpg)`
+                            }}
+                        >
                             <p>Grand Teton</p>
                         </div>
                     </Link>
                     <Link to="/park/yosemite" style={styles.underlineRemove}>
-                        <div id='yosemite' className='card' alt='mountains'>
+                        <div 
+                            id='yosemite' 
+                            className='card' 
+                            alt='mountains'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/yosemite.jpg)`
+                            }}
+                        >
                             <p>Yosemite</p>
                         </div>
                     </Link>
@@ -52,22 +80,50 @@ function Mainpage({parks}) {
                 <div className='site-section'>
                     <div id='sites2'>
                         <Link to="/park/arches" style={styles.underlineRemove}>
-                            <div id='arches' className='card' alt='canyons'>
+                            <div 
+                                id='arches' 
+                                className='card'
+                                alt='canyons'
+                                style={{
+                                    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/arches.jpg)`
+                                }}
+                            >
                                 <p>Arches</p>
                             </div>
                         </Link>
                         <Link to="/park/bryce" style={styles.underlineRemove}>
-                            <div id='bryce' className='card' alt='canyons'>
+                            <div 
+                                id='bryce' 
+                                className='card' 
+                                alt='canyons'
+                                style={{
+                                    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/bryce.jpg)`
+                                }}
+                            >
                                 <p>Bryce Canyon</p>
                             </div>
                         </Link>
                         <Link to="/park/zion" style={styles.underlineRemove}>
-                            <div id='zion' className='card' alt='canyons'>
+                            <div 
+                                id='zion' 
+                                className='card' 
+                                alt='canyons'
+                                style={{
+                                    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/zion.jpg)`
+                                }}
+                            >
                                 <p>Zion</p>
                             </div>
                         </Link>
                         <Link to="/park/grand-canyon" style={styles.underlineRemove}>
-                            <div id='grand-canyon' className='card' alt='canyons'>
+                            <div 
+                                id='grand-canyon' 
+                                className='card' 
+                                alt='canyons'
+                                style={{
+                                    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/grand-canyon.jpg)`
+                                }}
+                            >
                                 <p>Grand Canyon</p>
                             </div>
                         </Link>
@@ -78,22 +134,50 @@ function Mainpage({parks}) {
                 </div>
                 <div id='sites3'>
                     <Link to="/park/yellowstone" style={styles.underlineRemove}>
-                        <div id='yellowstone' className='card' alt='geysers'>
+                        <div 
+                            id='yellowstone' 
+                            className='card' 
+                            alt='geysers'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/yellowstone.jpg)`
+                            }}
+                        >
                             <p>Yellowstone</p>
                         </div>
                     </Link>
                     <Link to="/park/sequoia" style={styles.underlineRemove}>
-                        <div id='sequoia' className='card' alt='tall forest'>
+                        <div 
+                            id='sequoia' 
+                            className='card' 
+                            alt='tall forest'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/sequoia.jpg)`
+                            }}
+                        >
                             <p>Sequoia</p>
                         </div>
                     </Link>
                     <Link to="/park/smokey" style={styles.underlineRemove}>
-                        <div id='smokey' className='card' alt='mountains'>
+                        <div 
+                            id='smokey' 
+                            className='card' 
+                            alt='mountains'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/smokey.jpg)`
+                            }}
+                        >
                             <p>Smokey Mountains</p>
                         </div>
                     </Link>
                     <Link to="/park/olympic" style={styles.underlineRemove}>
-                        <div id='olympic' className='card' alt='island'>
+                        <div 
+                            id='olympic' 
+                            className='card' 
+                            alt='island'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/olympic.jpg)`
+                            }}
+                        >
                             <p>Olympic</p>
                         </div>
                     </Link>

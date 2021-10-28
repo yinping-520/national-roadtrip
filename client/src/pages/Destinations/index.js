@@ -30,7 +30,14 @@ function Destinations() {
                 <div id='locs'>
                     {parks && parks.map((park) => (
                         <Link to={`/park/${park.id}`} style={styles.underlineRemove}>
-                            <div id={`${park.id}`} className='card-dest' alt='pic of national park'>
+                            <div 
+                                id={`${park.id}`} 
+                                className='card-dest' 
+                                alt={park.id}
+                                style={{
+                                    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/${park.id}.jpg)`
+                                }}
+                            >
                                 <p>{park.name}</p>
                             </div>
                         </Link>
