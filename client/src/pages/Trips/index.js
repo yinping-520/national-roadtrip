@@ -4,7 +4,9 @@ import React from 'react';
 
 // import { useQueries } from '../../utils/queries';
 
+function Trips(){
 
+    return <div>hello</div>
     // const { parks, addPark, removePark } = useQueries();
     // const [newTrip, setNewTrip] = useState('');
 
@@ -64,6 +66,6 @@ import React from 'react';
     //     </div>
     // )
     // );
-};
+ };
 
 export default Trips;
