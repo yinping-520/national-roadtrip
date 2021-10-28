@@ -135,19 +135,18 @@ function Park() {
       </div>
       <div className='map-section'>
         <div className='map-frame'>
-        {loading? []: <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
-          height: "400px", width: "50%", backgroundColor: "red", marginTop: "80px", marginBottom: '90px'
-        }} >
-          <TileLayer
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-          />
-          <Marker position={position} icon={new Icon({ iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41] })} >
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer>}
+          {loading ? [] : <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
+            height: "400px", width: "900px", backgroundColor: "red"}} >
+            <TileLayer
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+            />
+            <Marker position={position} icon={new Icon({ iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41] })} >
+              <Popup>
+                A pretty CSS3 popup. <br /> Easily customizable.
+              </Popup>
+            </Marker>
+          </MapContainer>}
         </div>
       </div>
       <div className='weather-section'>

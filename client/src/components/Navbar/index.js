@@ -72,6 +72,7 @@ function Navbar() {
 
             </div>
             <div id='dropdown-set2'>
+              <Link className='dropDownLink' to='/park/olympic'>Olympic</Link>
               <Link className='dropDownLink' to='/park/rocky-mtn'>Rocky Mtn</Link>
               <Link className='dropDownLink' to='/park/sequoia'>Sequoia</Link>
               <Link className='dropDownLink' to='/park/smokey'>Smokey Mtn</Link>
