@@ -65,23 +65,22 @@ function Navbar() {
           </Link>
           <div className='dropdown-content'>
             <div id='dropdown-set1'>
-              <Link className='dropDownLink' to='/arches'>Arches</Link>
-              <Link className='dropDownLink' to='/bryce'>Bryce Canyon</Link>
-              <Link className='dropDownLink' to='/glacier'>Glacier Mtn</Link>
-              <Link className='dropDownLink' to='/grand-canyon'>Grand Canyon</Link>
+              <Link className='dropDownLink' to='/park/arches'>Arches</Link>
+              <Link className='dropDownLink' to='/park/bryce'>Bryce Canyon</Link>
+              <Link className='dropDownLink' to='/park/glacier'>Glacier Mtn</Link>
+              <Link className='dropDownLink' to='/park/grand-canyon'>Grand Canyon</Link>
 
             </div>
             <div id='dropdown-set2'>
-              <Link className='dropDownLink' to='/olympic'>Olympic</Link>
-              <Link className='dropDownLink' to='/rocky-mtn'>Rocky Mtn</Link>
-              <Link className='dropDownLink' to='/sequoia'>Sequoia</Link>
-              <Link className='dropDownLink' to='/smokey'>Smokey Mtn</Link>
+              <Link className='dropDownLink' to='/park/rocky-mtn'>Rocky Mtn</Link>
+              <Link className='dropDownLink' to='/park/sequoia'>Sequoia</Link>
+              <Link className='dropDownLink' to='/park/smokey'>Smokey Mtn</Link>
             </div>
             <div id='dropdown-set3'>
-              <Link className='dropDownLink' to='/teton'>Teton</Link>
-              <Link className='dropDownLink' to='/yellowstone'>Yellowstone</Link>
-              <Link className='dropDownLink' to='/yosemite'>Yosemite</Link>
-              <Link className='dropDownLink' to='/zion'>Zion</Link>
+              <Link className='dropDownLink' to='/park/teton'>Teton</Link>
+              <Link className='dropDownLink' to='/park/yellowstone'>Yellowstone</Link>
+              <Link className='dropDownLink' to='/park/yosemite'>Yosemite</Link>
+              <Link className='dropDownLink' to='/park/zion'>Zion</Link>
             </div>
           </div>
         </span>

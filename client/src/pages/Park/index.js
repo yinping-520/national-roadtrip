@@ -23,8 +23,8 @@ function Park() {
   const activities1 = park.activities1 || [];
   const activities2 = park.activities2 || [];
   const image = park.images || [];
-  const lat = park.lat || 38.733082;
-  const lng = park.long || -109.592514;
+  const lat = park.lat;
+  const lng = park.long;
   const [addItinerary] = useMutation(ADD_ITINERARY);
   const position = [lat, lng];
 
@@ -135,19 +135,19 @@ function Park() {
       </div>
       <div className='map-section'>
         <div className='map-frame'>
-          <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
-            height: "500px", width: "700px", backgroundColor: "red", marginTop: "80px", marginBottom: '90px'
-          }} >
-            <TileLayer
-              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-            />
-            <Marker position={position} icon={new Icon({ iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41] })} >
-              <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
-              </Popup>
-            </Marker>
-          </MapContainer>
+        {loading? []: <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
+          height: "400px", width: "50%", backgroundColor: "red", marginTop: "80px", marginBottom: '90px'
+        }} >
+          <TileLayer
+            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+          />
+          <Marker position={position} icon={new Icon({ iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41] })} >
+            <Popup>
+              A pretty CSS3 popup. <br /> Easily customizable.
+            </Popup>
+          </Marker>
+        </MapContainer>}
         </div>
       </div>
       <div className='weather-section'>
