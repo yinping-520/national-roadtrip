@@ -18,6 +18,9 @@ const resolvers = {
     park: async (parent, { parkId }) => {
       return Park.findOne({ id: parkId })
     },
+    savedPark: async (parent, { _id }) => {
+      return Park.findOne({_id: _id})
+    },
   },
 
 

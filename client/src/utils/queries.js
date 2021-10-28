@@ -19,6 +19,7 @@ export const QUERY_USER = gql`
       _id
       username
       email
+      itinerary
     }
   }`
   ;
@@ -59,6 +60,25 @@ export const QUERY_PARK_BY_ID = gql`
       lat
       long
       mainActivity
+      images
+      id
+      } 
+  }`;
+
+export const QUERY_PARK_BY_UUID = gql`
+  query getParkByUuid($uuid: ID) {
+    park(_id: $uuid){
+      _id
+      name 
+      state
+      address
+      description
+      weatherInfo
+      activities1
+      activities2
+      website
+      lat
+      long
       images
       id
       } 
