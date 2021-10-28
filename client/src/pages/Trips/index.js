@@ -29,4 +29,4 @@ function Trips() {
 })}</div>)
 };
 
-// export default Trips;
+export default Trips;
