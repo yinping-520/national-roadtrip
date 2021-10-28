@@ -16,7 +16,7 @@ function Mainpage({parks}) {
     return (
         <div>
             <div id='container'>
-                <img src={container} />
+                <img src={container} alt='forest road' />
                 <h1 id="main-text">your
                     <span id="destin-span">{/*space needed*/} <Link to="/destinations">
                         destination
@@ -27,22 +27,22 @@ function Mainpage({parks}) {
             <div className='site-section'>
                 <div id='sites1'>
                     <Link to="/rockymtn" style={styles.underlineRemove}>
-                        <div id='rocky-mtn' className='card'>
+                        <div id='rocky-mtn' className='card' alt='mountains'>
                             <p>Rocky Mountain</p>
                         </div>
                     </Link>
                     <Link to="/glacier" style={styles.underlineRemove}>
-                        <div id='glacier' className='card'>
+                        <div id='glacier' className='card' alt='mountains'>
                             <p>Glacier</p>
                         </div>
                     </Link>
                     <Link to="/teton" style={styles.underlineRemove}>
-                        <div id='teton' className='card'>
+                        <div id='teton' className='card' alt='mountains'>
                             <p>Grand Teton</p>
                         </div>
                     </Link>
                     <Link to="/yosemite" style={styles.underlineRemove}>
-                        <div id='yosemite' className='card'>
+                        <div id='yosemite' className='card' alt='mountains'>
                             <p>Yosemite</p>
                         </div>
                     </Link>
@@ -53,22 +53,22 @@ function Mainpage({parks}) {
                 <div className='site-section'>
                     <div id='sites2'>
                         <Link to="/arches" style={styles.underlineRemove}>
-                            <div id='arches' className='card'>
+                            <div id='arches' className='card' alt='canyons'>
                                 <p>Arches</p>
                             </div>
                         </Link>
                         <Link to="/bryce" style={styles.underlineRemove}>
-                            <div id='bryce' className='card'>
+                            <div id='bryce' className='card' alt='canyons'>
                                 <p>Bryce Canyon</p>
                             </div>
                         </Link>
                         <Link to="/zion" style={styles.underlineRemove}>
-                            <div id='zion' className='card'>
+                            <div id='zion' className='card' alt='canyons'>
                                 <p>Zion</p>
                             </div>
                         </Link>
                         <Link to="/grandcanyon" style={styles.underlineRemove}>
-                            <div id='grand-canyon' className='card'>
+                            <div id='grand-canyon' className='card' alt='canyons'>
                                 <p>Grand Canyon</p>
                             </div>
                         </Link>
@@ -79,22 +79,22 @@ function Mainpage({parks}) {
                 </div>
                 <div id='sites3'>
                     <Link to="/yellowstone" style={styles.underlineRemove}>
-                        <div id='yellowstone' className='card'>
+                        <div id='yellowstone' className='card' alt='geysers'>
                             <p>Yellowstone</p>
                         </div>
                     </Link>
                     <Link to="/sequoia" style={styles.underlineRemove}>
-                        <div id='sequoia' className='card'>
+                        <div id='sequoia' className='card' alt='tall forest'>
                             <p>Sequoia</p>
                         </div>
                     </Link>
                     <Link to="/smokey" style={styles.underlineRemove}>
-                        <div id='smokey' className='card'>
+                        <div id='smokey' className='card' alt='mountains'>
                             <p>Smokey Mountains</p>
                         </div>
                     </Link>
                     <Link to="/olympic" style={styles.underlineRemove}>
-                        <div id='olympic' className='card'>
+                        <div id='olympic' className='card' alt='island'>
                             <p>Olympic</p>
                         </div>
                     </Link>

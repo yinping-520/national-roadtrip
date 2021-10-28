@@ -89,7 +89,7 @@ const Login = () => {
             {renderForm()}
           </div>
           <div id='right-login'>
-            <img src={loginPic} />
+            <img src={loginPic} alt='verticle image of mountain on a lake'/>
           </div>
         </div>
       </div>
