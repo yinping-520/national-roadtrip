@@ -109,7 +109,7 @@ function Park() {
       </div>
       <div className='activities'>
         <h3 className='activity-header'>Activities</h3>
-        <div className='bike' id={park.id}></div>
+        <div className='bike' id={park.mainActivity}></div>
         <div className='split-act'>
           <ul className='activity-list left'>
             {activities1.map((activities1, index) => (

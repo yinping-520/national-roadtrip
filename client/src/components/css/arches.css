@@ -131,50 +131,50 @@
     border-radius: 10px;
 }
 
-#sequoia {
+#tree {
     background: url(../assets/big-tree.jpg);
     background-size:cover;
 }
-#zion {
+#cave {
     background: url(../assets/cave.jpg);
     background-size:cover;
 }
-#yosemite {
+#raft {
     background: url(../assets/raft.jpg);
     background-size:cover;
 }
-#yellowstone {
+#bison {
     background: url(../assets/bison.jpg);
     background-size:cover;
 }
-#teton {
+#moose {
     background: url(../assets/moose.jpg);
     background-size:cover;
 }
-#smokey {
+#bridge {
     background: url(../assets/bridge.jpg);
     background-size:cover;
 }
-#rocky-mtn {
+#fishing {
     background: url(../assets/fishing.jpg);
     background-size:cover;
 }
-#olympic {
+#forest {
     background: url(../assets/olympic-forest.jpg);
     background-size:cover;
 }
-#grand-canyon {
+#glass {
     background: url(../assets/glass-floor.jpg);
     background-size:cover;
 }
-#glacier {
+#watching {
     background: url(../assets/watching.jpg) no-repeat center;
 }
-#bryce {
+#hike {
     background: url(../assets/hike-bryce.jpg);
     background-size:cover;
 }
-#arches {
+#bike {
     background: url(../assets/biking-arches.jpg);
     background-size:cover;
 }
