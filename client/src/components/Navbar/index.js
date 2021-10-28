@@ -3,19 +3,6 @@ import { Link } from 'react-router-dom';
 import '../css/nav.css';
 import Auth from '../../utils/auth';
 
-const styles = {
-  dropContent: {
-    display: 'flex',
-    
-  },
-  dropdownLinks: {
-    textDecoration: 'none',
-    fontSize: '18px',
-    color: 'orange',
-    margin: '0px 0px 15px 0px'
-  }
-}
-
 function Navbar() {
   
   const showNavigation = () => {
@@ -26,10 +13,7 @@ function Navbar() {
             <Link to="/trips">
               your trips
             </Link>
-          </div>
-          <div className="rightnav-a">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
+            <a href="/" className="rightnav-a" onClick={() => Auth.logout()}>
               logout
             </a>
           </div>

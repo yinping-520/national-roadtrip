@@ -14,7 +14,6 @@ import Destinations from './pages/Destinations';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Mainpage from './pages/Mainpage';
-import Journey from './components/Journey';
 import Shop from './pages/Shop';
 import Trips from './pages/Trips';
 import Park from './pages/Park';
@@ -30,7 +29,6 @@ const httpLink = createHttpLink({
 
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
-  console.log(token);
   return {
     headers: {
       ...headers,
@@ -67,7 +65,7 @@ function App() {
         <ScrollToTop />
         <div>
           <div id='progressbar' style={{height:`${progessHeight}%`}}></div>
-          <a href='#top'><img id='up-arrow' className={scrollActive && 'active'} src={up} /></a>
+          <a href='#top'><img id='up-arrow' alt='arrow' className={scrollActive && 'active'} src={up} /></a>
           <Header/>
           <div>
             <Route exact path='/'>
@@ -75,9 +73,6 @@ function App() {
             </Route>
             <Route exact path='/destinations'>
               <Destinations />
-            </Route>
-            <Route exact path='/journey'>
-              <Journey />
             </Route>
             <Route exact path='/shop'>
               <Shop />

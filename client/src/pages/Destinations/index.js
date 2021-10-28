@@ -25,11 +25,11 @@ function Destinations() {
                 <img src={container} alt='long road in forest'/>
                 <h1 id='dest-text'>your next <span className='span2'>adventure</span> is a scroll away...</h1>
             </div>
-            <a href='#top'><img id='up-arrow' src={up} /></a>
+            <a href='#top'><img id='up-arrow' src={up} alt='up arrow'/></a>
             <div id='all-destinations'>
                 <div id='locs'>
                     {parks && parks.map((park) => (
-                        <Link to={`/${park.id}`} style={styles.underlineRemove}>
+                        <Link to={`/park/${park.id}`} style={styles.underlineRemove}>
                             <div id={`${park.id}`} className='card-dest' alt='pic of national park'>
                                 <p>{park.name}</p>
                             </div>

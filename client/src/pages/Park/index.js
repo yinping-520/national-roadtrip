@@ -13,13 +13,11 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 function Park() {
   const { parkId } = useParams();
-  console.log(parkId)
 
   const { loading, data } = useQuery(QUERY_PARK_BY_ID, {
     variables: { parkId: parkId },
   });
   const park = data?.park || {};
-  console.log(park)
   const activities1 = park.activities1 || [];
   const activities2 = park.activities2 || [];
   const image = park.images || [];
@@ -27,8 +25,6 @@ function Park() {
   const lng = park.long;
   const [addItinerary] = useMutation(ADD_ITINERARY);
   const position = [lat, lng];
-
-  // console.log(data);
 
   const [current, setCurrent] = useState(0); // for next & prev slides
   const length = image.length;
@@ -75,7 +71,7 @@ function Park() {
                     key={index}
                   >
                     {index === current && (
-                      <img src={slide} alt="images" className="image" alt='beautiful scenery from the national park' />
+                      <img src={slide} alt="national park scenery" className="image" />
                     )}
                   </div>
                   {/* <div className="slider-total">
@@ -88,7 +84,7 @@ function Park() {
         </div>
       </div >
       <a href='#top'>
-        <img id='up-arrow' src={up} />
+        <img id='up-arrow' alt='up arrow' src={up} />
       </a>
       <div>
         <button className='add-to-trip'
@@ -143,7 +139,7 @@ function Park() {
             />
             <Marker position={position} icon={new Icon({ iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41] })} >
               <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
+                Click for directions! <br /> <a href={`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`}>Google Maps</a>
               </Popup>
             </Marker>
           </MapContainer>}
@@ -152,7 +148,7 @@ function Park() {
       <div className='weather-section'>
         <h4 className='weather-headline'>Weather</h4>
         <div className='weather-block'>
-          <iframe src={park.weatherInfo} width='1000px' height='475px'></iframe>
+          <iframe title='weather page' src={park.weatherInfo} width='1000px' height='475px'></iframe>
         </div>
       </div>
     </div >

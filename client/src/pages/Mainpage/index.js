@@ -3,7 +3,6 @@ import '../../components/css/scroll.css';
 import React from 'react';
 import up from '../../components/assets/up-arrow.jpg';
 import container from '../../components/assets/pine.jpg';
-import road2 from '../../components/assets/road2.jpg';
 import { Link } from 'react-router-dom';
 
 const styles = {
@@ -23,7 +22,7 @@ function Mainpage({parks}) {
                     </Link></span> is calling...</h1>
                 <h2 id="main-text2">...let's hit the <span className='span2'>road</span></h2>
             </div>
-            <a href='#top'><img id='up-arrow' src={up} /></a>
+            <a href='#top'><img id='up-arrow' src={up} alt='up arrow'/></a>
             <div className='site-section'>
                 <div id='sites1'>
                     <Link to="/rockymtn" style={styles.underlineRemove}>

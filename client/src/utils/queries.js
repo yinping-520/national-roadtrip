@@ -78,8 +78,8 @@ export const QUERY_PARK_BY_ID = gql`
   }`;
 
 export const QUERY_PARK_BY_UUID = gql`
-  query getParkByUuid($uuid: ID) {
-    park(_id: $uuid){
+  query getParkByUuid($_id: ID) {
+    savedPark(_id: $_id){
       _id
       name 
       state

@@ -9,7 +9,6 @@ const resolvers = {
       return User.find();
     },
     user: async (_, args) => {
-      console.log('is this working')
       return User.findOne({ _id: args.id }).populate('itinerary');
     },
     parks: async () => {
@@ -19,8 +18,12 @@ const resolvers = {
     park: async (parent, { parkId }) => {
       return Park.findOne({ id: parkId })
     },
-    savedPark: async (parent, { _id }) => {
-      return Park.findOne({_id: _id})
+    savedPark: async (parent, { _id }, context) => {
+      if(context.user){
+        return Park.findOne({_id: _id})
+        
+      }
+
     },
   },
 
