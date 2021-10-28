@@ -14,7 +14,6 @@ import Destinations from './pages/Destinations';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Mainpage from './pages/Mainpage';
-import Journey from './components/Journey';
 import Shop from './pages/Shop';
 import Trips from './pages/Trips';
 import Park from './pages/Park';
@@ -74,9 +73,6 @@ function App() {
             </Route>
             <Route exact path='/destinations'>
               <Destinations />
-            </Route>
-            <Route exact path='/journey'>
-              <Journey />
             </Route>
             <Route exact path='/shop'>
               <Shop />
