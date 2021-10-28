@@ -9,7 +9,6 @@ const resolvers = {
       return User.find();
     },
     user: async (_, args) => {
-      console.log('is this working')
       return User.findOne({ _id: args.id }).populate('itinerary');
     },
     parks: async () => {

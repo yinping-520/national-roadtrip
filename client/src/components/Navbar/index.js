@@ -3,19 +3,6 @@ import { Link } from 'react-router-dom';
 import '../css/nav.css';
 import Auth from '../../utils/auth';
 
-const styles = {
-  dropContent: {
-    display: 'flex',
-    
-  },
-  dropdownLinks: {
-    textDecoration: 'none',
-    fontSize: '18px',
-    color: 'orange',
-    margin: '0px 0px 15px 0px'
-  }
-}
-
 function Navbar() {
   
   const showNavigation = () => {

@@ -12,7 +12,7 @@ const Signup = () => {
     email: '',
     password: '',
   });
-  const [addUser, { error, data }] = useMutation(ADD_USER);
+  const [addUser, { data }] = useMutation(ADD_USER);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -90,7 +90,7 @@ const Signup = () => {
         {renderForm()}
         </div>
           <div id='right-login'>
-            <img src={loginPic} />
+            <img src={loginPic} alt='lake'/>
           </div>
         </div>
       </div>
