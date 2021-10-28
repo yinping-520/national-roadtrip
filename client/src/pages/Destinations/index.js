@@ -23,7 +23,7 @@ function Destinations() {
     return (
         <div>
             <div id='container2'>
-                <img src={container} />
+                <img src={container} alt='long road in forest'/>
                 <h1 id='dest-text'>your next <span className='span2'>adventure</span> is a scroll away...</h1>
             </div>
             <a href='#top'><img id='up-arrow' src={up} /></a>
@@ -31,7 +31,7 @@ function Destinations() {
                 <div id='locs'>
                     {parks && parks.map((park) => (
                         <Link to={`/${park.id}`} style={styles.underlineRemove}>
-                            <div id={`${park.id}`} className='card-dest'>
+                            <div id={`${park.id}`} className='card-dest' alt='pic of national park'>
                                 <p>{park.name}</p>
                             </div>
                         </Link>

@@ -13,7 +13,7 @@ function Shop() {
             <div id="product-section">
                 <a href='#top'><img id='up-arrow' src={up} /></a>
                 <div className="product-card">
-                    <img id="mug" src={mug} />
+                    <img id="mug" src={mug} alt='coffee mug'/>
                     <div className="prod-info">
                         <div className='prod-name'>
                             <p className='item'>SOUVENIR MUG</p>
@@ -25,7 +25,7 @@ function Shop() {
                     </div>
                 </div>
                 <div className="product-card">
-                    <img id="mug" src={stamps} />
+                    <img id="mug" src={stamps} alt='collectible stamp book'/>
                     <div className="prod-info">
                         <div className='prod-name'>
                             <p className='item'>STAMP COLLECTION</p>
@@ -38,7 +38,7 @@ function Shop() {
                     </div>
                 </div>
                 <div className="product-card">
-                    <img id="mug" src={hat} />
+                    <img id="mug" src={hat} alt='ranger hat'/>
                     <div className="prod-info">
                         <div className='prod-name'>
                             <p className='item'>RANGER HAT</p>
@@ -50,7 +50,7 @@ function Shop() {
                     </div>
                 </div>
                 <div className="product-card">
-                    <img id="mug" src={book} />
+                    <img id="mug" src={book} alt='bird watching book'/>
                     <div className="prod-info">
                         <div className='prod-name'>
                             <p className='item'>BIRD BOOK</p>

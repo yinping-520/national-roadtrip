@@ -77,7 +77,7 @@ function Park() {
                     key={index}
                   >
                     {index === current && (
-                      <img src={slide} alt="images" className="image" />
+                      <img src={slide} alt="images" className="image" alt='beautiful scenery from the national park' />
                     )}
                   </div>
                   {/* <div className="slider-total">
@@ -109,7 +109,7 @@ function Park() {
       </div>
       <div className='activities'>
         <h3 className='activity-header'>Activities</h3>
-        <div className='bike' id={park.mainActivity}></div>
+        <div className='bike' id={park.mainActivity} alt='person having fun at the park'></div>
         <div className='split-act'>
           <ul className='activity-list left'>
             {activities1.map((activities1, index) => (
