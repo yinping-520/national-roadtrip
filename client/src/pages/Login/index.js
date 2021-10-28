@@ -9,7 +9,7 @@ import Auth from '../../utils/auth';
 
 const Login = () => {
   const [formState, setFormState] = useState({ email: '', password: '' });
-  const [login, { error, data }] = useMutation(LOGIN_USER);
+  const [login, { data }] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
   const handleChange = (event) => {
@@ -28,8 +28,6 @@ const Login = () => {
       const { data } = await login({
         variables: { ...formState },
       });
-
-      console.log('Data', data);
 
       Auth.login(data.login.token);
     } catch (e) {
@@ -89,7 +87,7 @@ const Login = () => {
             {renderForm()}
           </div>
           <div id='right-login'>
-            <img src={loginPic} alt='verticle image of mountain on a lake'/>
+            <img src={loginPic} alt='mountain on a lake'/>
           </div>
         </div>
       </div>

@@ -71,7 +71,7 @@ function Park() {
                     key={index}
                   >
                     {index === current && (
-                      <img src={slide} alt="images" className="image" alt='beautiful scenery from the national park' />
+                      <img src={slide} alt="national park scenery" className="image" />
                     )}
                   </div>
                   {/* <div className="slider-total">
@@ -84,7 +84,7 @@ function Park() {
         </div>
       </div >
       <a href='#top'>
-        <img id='up-arrow' src={up} />
+        <img id='up-arrow' alt='up arrow' src={up} />
       </a>
       <div>
         <button className='add-to-trip'
@@ -148,7 +148,7 @@ function Park() {
       <div className='weather-section'>
         <h4 className='weather-headline'>Weather</h4>
         <div className='weather-block'>
-          <iframe src={park.weatherInfo} width='1000px' height='475px'></iframe>
+          <iframe title='weather page' src={park.weatherInfo} width='1000px' height='475px'></iframe>
         </div>
       </div>
     </div >
