@@ -143,7 +143,7 @@ function Park() {
             />
             <Marker position={position} icon={new Icon({ iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41] })} >
               <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
+                Click for directions! <br /> <a href={`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`}>Google Maps</a>
               </Popup>
             </Marker>
           </MapContainer>}
