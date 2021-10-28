@@ -1,5 +1,4 @@
 import '../../components/css/arches.css';
-import '../../components/css/scroll.css';
 import React, { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_PARK_BY_ID } from '../../utils/queries';
@@ -11,7 +10,6 @@ import 'leaflet/dist/leaflet.css';
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { Icon } from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-
 
 function Park() {
   const { parkId } = useParams();

@@ -1,5 +1,4 @@
 import '../../components/css/destinations.css';
-import '../../components/css/scroll.css';
 import React from 'react';
 import up from '../../components/assets/up-arrow.jpg';
 import container from '../../components/assets/destinations-bg.jpg';
