@@ -26,10 +26,7 @@ function Navbar() {
             <Link to="/trips">
               your trips
             </Link>
-          </div>
-          <div className="rightnav-a">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
+            <a href="/" className="rightnav-a" onClick={() => Auth.logout()}>
               logout
             </a>
           </div>

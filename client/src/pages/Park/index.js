@@ -13,13 +13,11 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 function Park() {
   const { parkId } = useParams();
-  console.log(parkId)
 
   const { loading, data } = useQuery(QUERY_PARK_BY_ID, {
     variables: { parkId: parkId },
   });
   const park = data?.park || {};
-  console.log(park)
   const activities1 = park.activities1 || [];
   const activities2 = park.activities2 || [];
   const image = park.images || [];
@@ -27,8 +25,6 @@ function Park() {
   const lng = park.long;
   const [addItinerary] = useMutation(ADD_ITINERARY);
   const position = [lat, lng];
-
-  // console.log(data);
 
   const [current, setCurrent] = useState(0); // for next & prev slides
   const length = image.length;
