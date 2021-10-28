@@ -35,6 +35,7 @@ const typeDefs = gql`
     user(id: ID): User
     parks: [Park]
     park(parkId: String): Park
+    savedPark(_id: ID): Park
   }
 
   type Mutation {
