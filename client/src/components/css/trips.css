@@ -1,0 +1,50 @@
+.trips-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trip-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 75px;
+    min-width: 55%;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.trip-name {
+    font-size: 28px;
+}
+
+.trip-activities {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.trip-activities li {
+    margin: 0px 15px;
+}
+
+.trip-pic {
+    width: 85%;
+}
+
+.trip-pic p:hover {
+    opacity: 0;
+    cursor: default;
+}
+
+.trip-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.trip-links a {
+    margin: 0px 15px;
+}
