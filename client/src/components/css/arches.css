@@ -125,9 +125,58 @@
     margin-bottom: 10px;
 }
 
-#bike {
-    width: 50%;
+.bike {
+    width: 40%;
+    height: 125px;
     border-radius: 10px;
+}
+
+#sequoia {
+    background: url(../assets/big-tree.jpg);
+    background-size:cover;
+}
+#zion {
+    background: url(../assets/cave.jpg);
+    background-size:cover;
+}
+#yosemite {
+    background: url(../assets/raft.jpg);
+    background-size:cover;
+}
+#yellowstone {
+    background: url(../assets/bison.jpg);
+    background-size:cover;
+}
+#teton {
+    background: url(../assets/moose.jpg);
+    background-size:cover;
+}
+#smokey {
+    background: url(../assets/bridge.jpg);
+    background-size:cover;
+}
+#rocky-mtn {
+    background: url(../assets/fishing.jpg);
+    background-size:cover;
+}
+#olympic {
+    background: url(../assets/olympic-forest.jpg);
+    background-size:cover;
+}
+#grand-canyon {
+    background: url(../assets/glass-floor.jpg);
+    background-size:cover;
+}
+#glacier {
+    background: url(../assets/watching.jpg) no-repeat center;
+}
+#bryce {
+    background: url(../assets/hike-bryce.jpg);
+    background-size:cover;
+}
+#arches {
+    background: url(../assets/biking-arches.jpg);
+    background-size:cover;
 }
 
 .split-act {
@@ -173,6 +222,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    width: 100%; /**/
 }
 
 .weather-section {

@@ -21,6 +21,7 @@ const typeDefs = gql`
     website: String
     lat: Float
     long: Float
+    mainActivity: String
     images: [String]
     id: String
   }

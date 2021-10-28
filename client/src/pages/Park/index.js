@@ -7,7 +7,6 @@ import { ADD_ITINERARY } from '../../utils/mutations';
 import { useParams } from 'react-router-dom'
 import up from "../../components/assets/up-arrow.jpg";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
-import bikingArches from "../../components/assets/biking-arches.jpg";
 import 'leaflet/dist/leaflet.css';
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { Icon } from 'leaflet';
@@ -31,9 +30,7 @@ function Park() {
   const [addItinerary] = useMutation(ADD_ITINERARY);
   const position = [lat, lng];
 
-  console.log(data);
-
-
+  // console.log(data);
 
   const [current, setCurrent] = useState(0); // for next & prev slides
   const length = image.length;
@@ -112,7 +109,7 @@ function Park() {
       </div>
       <div className='activities'>
         <h3 className='activity-header'>Activities</h3>
-        <img id='bike' src={bikingArches} />
+        <div className='bike' id={park.id}></div>
         <div className='split-act'>
           <ul className='activity-list left'>
             {activities1.map((activities1, index) => (
@@ -141,7 +138,7 @@ function Park() {
       <div className='map-section'>
         <div className='map-frame'>
           <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
-            height: "400px", width: "50%", backgroundColor: "red", marginTop: "80px", marginBottom: '90px'
+            height: "500px", width: "700px", backgroundColor: "red", marginTop: "80px", marginBottom: '90px'
           }} >
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
