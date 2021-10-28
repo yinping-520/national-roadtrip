@@ -50,6 +50,7 @@ export const QUERY_PARKS = gql`
       website
       lat
       long
+      mainActivity
       images
       id
       } 
@@ -70,6 +71,7 @@ export const QUERY_PARK_BY_ID = gql`
       website
       lat
       long
+      mainActivity
       images
       id
       } 

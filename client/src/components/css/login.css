@@ -23,6 +23,13 @@
     border-style: none;
     background-color: orange;
     color: black;
+    letter-spacing: 2px;
+    transition: ease 0.2s;
+}
+
+#login-btn:hover {
+    cursor: pointer;
+    background-color: rgb(233, 151, 0);
 }
 
 #signup {
