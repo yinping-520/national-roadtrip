@@ -74,6 +74,7 @@ function Park() {
                       <img src={slide} alt="national park scenery" className="image" />
                     )}
                   </div>
+                  {/* Show all images in slider on page move from left to right */}
                   {/* <div className="slider-total">
                     <img src={slide} alt="images" className="image-small" />
                   </div> */}
@@ -139,7 +140,7 @@ function Park() {
             />
             <Marker position={position} icon={new Icon({ iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41] })} >
               <Popup>
-                Click for directions! <br /> <a href={`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`}>Google Maps</a>
+                Click for directions! <br /> <a href={`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`} target='_'>Google Maps</a>
               </Popup>
             </Marker>
           </MapContainer>}
