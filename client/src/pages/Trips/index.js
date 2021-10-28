@@ -6,7 +6,6 @@ import auth from '../../utils/auth';
 
 
 function Trips() {
-    console.log(auth.getProfile());
     const { loading, data } = useQuery(QUERY_USER, {
         variables: {
             id: auth.getProfile().data._id
@@ -15,7 +14,6 @@ function Trips() {
     if (loading) {
         return (<div>loading</div>)
     }
-    console.log(data);
     const itineraries = data.user.itinerary;
     return (<div>{itineraries.map((itinerary) => {
 
