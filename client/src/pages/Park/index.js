@@ -26,8 +26,8 @@ function Park() {
   const activities1 = park.activities1 || [];
   const activities2 = park.activities2 || [];
   const image = park.images || [];
-  const lat = park.lat || 38.733082;
-  const lng = park.long || -109.592514;
+  const lat = park.lat;
+  const lng = park.long;
   const [addItinerary] = useMutation(ADD_ITINERARY);
   const position = [lat, lng];
 
@@ -61,7 +61,7 @@ function Park() {
     <div>
       <div>
         <div id="center-all">
-          <h1 className="park-name">{park.name}</h1>
+          <h1 className="park-name">{park.name} National Park</h1>
           <h2 className="city">{park.address}</h2>
           <div className="slider">
             <FaArrowAltCircleLeft
@@ -147,7 +147,7 @@ function Park() {
         </div>
       </div>
       <div>
-        <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
+        {loading? []: <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
           height: "400px", width: "50%", backgroundColor: "red", marginTop: "80px", marginBottom: '90px'
         }} >
           <TileLayer
@@ -159,7 +159,7 @@ function Park() {
               A pretty CSS3 popup. <br /> Easily customizable.
             </Popup>
           </Marker>
-        </MapContainer>
+        </MapContainer>}
       </div>
     </div>
   );
