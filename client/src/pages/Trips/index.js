@@ -1,24 +1,32 @@
 import React from 'react';
-import { QUERY_USER, QUERY_PARK_BY_UUID } from '../../utils/queries';
+import { QUERY_USER } from '../../utils/queries';
 import { useQuery, useMutation } from "@apollo/client";
 import { DELETE_ITINERARY } from '../../utils/mutations';
+import auth from '../../utils/auth';
 
 
 function Trips() {
-    // const { data } = useQuery(QUERY_USER,
-    //     {variables: { id: id }});
-    // const itineraries = data.user.itinerary;
-   
-    const { data } = useQuery(QUERY_PARK_BY_UUID,
-        {variables: { _id: "61797637fddf67387cc29826" }});
-        const name = data.park.name
-        console.log(name)
+    console.log(auth.getProfile());
+    const { loading, data } = useQuery(QUERY_USER, {
+        variables: {
+            id: auth.getProfile().data._id
+        }
+    });
+    if (loading) {
+        return (<div>loading</div>)
+    }
+    console.log(data);
+    const itineraries = data.user.itinerary;
+    return (<div>{itineraries.map((itinerary) => {
 
-        
-        return (<div>{name}</div>
+
+          
+        return (
+
+        <div>{itinerary.name}</div>
 
         )  
-
+})}</div>)
 };
 
-export default Trips;
+// export default Trips;

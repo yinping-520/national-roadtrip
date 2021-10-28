@@ -1,45 +1,5 @@
 [
     {
-      "name": "Rocky Mountain",
-      "state": "Colorado, USA",
-      "address": "1000 US Hwy 36 Estes Park, CO 80517",
-      "description": "Rocky Mountain National Park’s 415 square miles encompass and protect spectacular mountain environments. Enjoy Trail Ridge Road – which crests at over 12,000 feet including many overlooks to experience the subalpine and alpine worlds – along with over 300 miles of hiking trails, wildflowers, wildlife, starry nights, and fun times. In a world of superlatives, Rocky is on top!",
-      "activities1": ["Hiking", "Senic Drives", "Wildlife Watching", "Picnicking", "Camping"],
-      "activities2": ["Fishing", "Horseback Riding", "Ranger-led Programs", "Visitors Centers", "Religous Sites"],
-      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=40.3333&lon=-105.7089#.YXLvEBrMJPY",
-      "website": "https://www.nps.gov/romo/index.htm",
-      "lat": 40.343182,
-      "long": -105.688103,
-      "images": [
-        "https://www.outsideonline.com/wp-content/uploads/2020/03/12/gem-lake-and-longs-peak-sunset_h.jpg",
-        "https://cdn.farmjournal.com/s3fs-public/styles/840x600/public/2021-01/landscape-1843128_1920.jpg?itok=8rhjbX3U",
-        "https://www.mycoloradoparks.com/wp-content/uploads/2020/05/RM-Entrance-sign_DP_2400.jpg",
-        "https://www.jellystoneofestes.com/wp-content/uploads/2016/12/rockymountain.jpg",
-        "https://i.natgeofe.com/k/caf9703e-c4e2-44e6-8b82-2c8b480cacc8/black-bear-cubs.jpg"
-      ],
-      "id":"rocky-mtn"
-    },
-    {
-      "name": "Grand Teton",
-      "state": "Wyoming, USA",
-      "address": "103 Headquarters Loop Moose, WY 83012",
-      "description": "Rising above a scene rich with extraordinary wildlife, pristine lakes, and alpine terrain, the Teton Range stands as a monument to the people who fought to protect it. These are mountains of the imagination. Mountains that led to the creation of Grand Teton National Park where you can explore over two hundred miles of trails, float the Snake River, and enjoy the serenity of this remarkable place.",
-      "activities1": ["Hiking", "Boat Cruises", "Rafting", "Fishing"],
-      "activities2": ["Climbing", "Biking", "Scenic Drives", "Wildlife Viewing", "Camping", "Golf"],
-      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=43.8673&lon=-110.5719#.YXLwdhrMJPY",
-      "website": "https://www.nps.gov/grte/index.htm",
-      "lat": 43.8332687,
-      "long": -110.7007671,
-      "images": [
-        "https://www.twowanderingsoles.com/wp-content/uploads/2021/07/img_60ee6cedb97f0.jpg",
-        "https://www.dirtinmyshoes.com/wp-content/uploads/2020/06/Grand-Teton-North-Fork-Cascade-Canyon-2015-e1591121134861-800x543.jpg",
-        "https://www.cruiseamerica.com/getattachment/84fbfd8c-2de0-4284-8568-cc36ac7f6710/attachment.aspx",
-        "http://jacksonhole-traveler-production.s3.amazonaws.com/wp-content/uploads/2016/10/18155720/trianglex-winter-grand-teton-1280x854.jpg",
-        "https://s1.1zoom.me/big0/419/286951-svetik.jpg"
-      ],
-      "id":"teton"
-    },
-    {
       "name": "Arches",
       "state": "Utah, USA",
       "address": "Salt Valley Rd, Moab, UT 84532",
@@ -50,6 +10,7 @@
       "website": "https://www.nps.gov/arch/index.htm",
       "lat":  38.733082,
       "long": -109.592514,
+      "mainActivity": "bike",
       "images": [
         "https://images4.alphacoders.com/663/thumb-1920-663219.jpg",
         "https://c4.wallpaperflare.com/wallpaper/957/830/337/5bd35f233e23d-wallpaper-preview.jpg",
@@ -70,6 +31,7 @@
       "website": "https://www.nps.gov/brca/index.htm",
       "lat": 37.619431,
       "long": -112.166504,
+      "mainActivity": "hike",
       "images": [
         "https://www.wendyperrin.com/wp-content/uploads/2016/09/bryce-canyon-national-park-vista2-utah-mark-campbell-1000x667.jpg",
         "http://res.cloudinary.com/simpleview/image/upload/v1579555265/clients/garfieldcountyut/Bryce_Canyon_Winter_459af879-99b6-4c15-8438-8d215f79aa36.jpg",
@@ -90,6 +52,7 @@
       "website": "https://www.nps.gov/glac/index.htm",
       "lat": 48.6960847,
       "long": -113.8070624,
+      "mainActivity": "watching",
       "images": [
         "https://npca.s3.amazonaws.com/images/9761/a9cc980c-c406-4a55-a6ea-cc77d13113ba-banner.jpg?1456501698",
         "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mountain_Goat_%284455603396%29.jpg",
@@ -111,6 +74,7 @@
       "website": "https://www.nps.gov/grca/index.htm",
       "lat": 36.056198,
       "long": -112.125198,
+      "mainActivity": "glass",
       "images":[
         "https://cdn.tourcms.com/a/11676/796/1/large.jpg",
         "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
@@ -131,27 +95,49 @@
       "website": "https://www.nps.gov/olym/index.htm",
       "lat": 47.802109,
       "long": -123.604355,
+      "mainActivity": "forest",
       "images": [
         "https://i1.wp.com/morethanjustparks.com/wp-content/uploads/2020/10/2Q3A0484.jpg?fit=1800%2C1200&ssl=1",
         "https://westcoastwayfarers.com/wp-content/uploads/2021/02/image-11-1024x682.jpeg",
         "https://www.rei.com/adventures/assets/adventures/images/trip/core/northamerica/oly_hero",
         "https://bearfoottheory.com/wp-content/uploads/2016/06/Olympic-National-park.jpg",
         "https://i.pinimg.com/originals/53/43/db/5343dbfd23f4a0bc6489fa28a1e22c7b.jpg"
-
       ],
       "id":"olympic"
+    },
+    {
+      "name": "Rocky Mountain",
+      "state": "Colorado, USA",
+      "address": "1000 US Hwy 36 Estes Park, CO 80517",
+      "description": "Rocky Mountain National Park’s 415 square miles encompass and protect spectacular mountain environments. Enjoy Trail Ridge Road – which crests at over 12,000 feet including many overlooks to experience the subalpine and alpine worlds – along with over 300 miles of hiking trails, wildflowers, wildlife, starry nights, and fun times. In a world of superlatives, Rocky is on top!",
+      "activities1": ["Hiking", "Senic Drives", "Wildlife Watching", "Picnicking", "Camping"],
+      "activities2": ["Fishing", "Horseback Riding", "Ranger-led Programs", "Visitors Centers", "Religous Sites"],
+      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=40.3333&lon=-105.7089#.YXLvEBrMJPY",
+      "website": "https://www.nps.gov/romo/index.htm",
+      "lat": 40.343182,
+      "long": -105.688103,
+      "mainActivity": "fishing",
+      "images": [
+        "https://www.outsideonline.com/wp-content/uploads/2020/03/12/gem-lake-and-longs-peak-sunset_h.jpg",
+        "https://cdn.farmjournal.com/s3fs-public/styles/840x600/public/2021-01/landscape-1843128_1920.jpg?itok=8rhjbX3U",
+        "https://www.mycoloradoparks.com/wp-content/uploads/2020/05/RM-Entrance-sign_DP_2400.jpg",
+        "https://www.jellystoneofestes.com/wp-content/uploads/2016/12/rockymountain.jpg",
+        "https://i.natgeofe.com/k/caf9703e-c4e2-44e6-8b82-2c8b480cacc8/black-bear-cubs.jpg"
+      ],
+      "id":"rocky-mtn"
     },
     {
       "name": "Sequoia",
       "state": "California, USA",
       "address": "47050 Generals Highway Three Rivers, CA 93271",
-      "description": "Huge mountains, rugged foothills, deep canyons, vast caverns, and the world’s largest trees exemplify the diversity of landscapes, life, and beauty here. Explore these pages to learn about the plants and animals here and the threats they face. Our ancient giant sequoias may seem invincible, but they, too are vulnerable.",
+      "description": "Huge mountains, rugged foothills, deep canyons, vast caverns, and the world’s largest trees exemplify the diversity of landscapes, life, and beauty here. Explore these pages to learn about the plants and animals here and the threats they face. Our ancient giant sequoias may seem invincible, but they too are vulnerable.",
       "activities1": ["Giant Sequoia Trees", "Backpacking", "Watch Wildlife", "Crystal Cave", "Climb Moro Rock"],
       "activities2": ["Horseback Riding", "Visitors Center", "Rock Climbing", "Dark Sky Festival", "Hiking"],
       "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=36.045&lon=-118.5168#.YXL8nxrMJPY",
       "website": "https://www.nps.gov/seki/index.htm",
       "lat": 36.486366,
       "long": -118.565750,
+      "mainActivity": "tree",
       "images": [
         "https://drupal8-prod.visitcalifornia.com/sites/drupal8-prod.visitcalifornia.com/files/styles/fluid_1200/public/vc_ca101_nationalparks_sequoiakingsnationalparks_rf_673066812_1280x640.jpg?itok=EVBZ0WOL",
         "https://localadventurer.com/wp-content/uploads/2015/11/things-to-do-in-sequoia-national-park.jpg",
@@ -172,6 +158,7 @@
       "website": "https://www.nps.gov/grsm/index.htm",
       "lat": 47.802109,
       "long": -123.604355,
+      "mainActivity": "bridge",
       "images": [
         "https://www.nps.gov/grsm/learn/news/images/Mingus-Mill_Photo-by-Tom-Haxby.jpg",
         "https://wgno.com/wp-content/uploads/sites/2/2020/04/hypatia-h_d43cebf10258e14c41633c59f595bf83-h_6cae19e7bbd593cbd356f248fec73a8c.jpg?w=2072&h=1166&crop=1",
@@ -181,6 +168,27 @@
 
       ],
       "id":"smokey"
+    },
+    {
+      "name": "Grand Teton",
+      "state": "Wyoming, USA",
+      "address": "103 Headquarters Loop Moose, WY 83012",
+      "description": "Rising above a scene rich with extraordinary wildlife, pristine lakes, and alpine terrain, the Teton Range stands as a monument to the people who fought to protect it. These are mountains of the imagination. Mountains that led to the creation of Grand Teton National Park where you can explore over two hundred miles of trails, float the Snake River, and enjoy the serenity of this remarkable place.",
+      "activities1": ["Hiking", "Boat Cruises", "Rafting", "Fishing", "Golf"],
+      "activities2": ["Climbing", "Biking", "Scenic Drives", "Wildlife Viewing", "Camping"],
+      "weatherInfo": "https://forecast.weather.gov/MapClick.php?lat=43.8673&lon=-110.5719#.YXLwdhrMJPY",
+      "website": "https://www.nps.gov/grte/index.htm",
+      "lat": 43.8332687,
+      "long": -110.7007671,
+      "mainActivity": "moose",
+      "images": [
+        "https://www.twowanderingsoles.com/wp-content/uploads/2021/07/img_60ee6cedb97f0.jpg",
+        "https://www.dirtinmyshoes.com/wp-content/uploads/2020/06/Grand-Teton-North-Fork-Cascade-Canyon-2015-e1591121134861-800x543.jpg",
+        "https://www.cruiseamerica.com/getattachment/84fbfd8c-2de0-4284-8568-cc36ac7f6710/attachment.aspx",
+        "http://jacksonhole-traveler-production.s3.amazonaws.com/wp-content/uploads/2016/10/18155720/trianglex-winter-grand-teton-1280x854.jpg",
+        "https://s1.1zoom.me/big0/419/286951-svetik.jpg"
+      ],
+      "id":"teton"
     },
     {
       "name": "Yellowstone",
@@ -193,6 +201,7 @@
       "website": "https://www.nps.gov/yell/index.htm",
       "lat": 44.423691,
       "long": -110.588516,
+      "mainActivity": "bison",
       "images": [
         "https://www.outsideonline.com/wp-content/uploads/2019/10/23/geyser-yelowstone-burst_h.jpg",
         "https://www.gannett-cdn.com/-mm-/b448c4bd0e6486684d5809dd0c1f1ad5460cad27/c=0-254-4928-3026/local/-/media/2017/05/18/USATODAY/usatsports/B9327681055Z.1_20170518174842_000_GCPI2D0G9.1-0.jpg",
@@ -213,6 +222,7 @@
       "website": "https://www.nps.gov/yose/index.htm",
       "lat": 37.865101,
       "long": -119.538330,
+      "mainActivity": "raft",
       "images": [
         "https://images.foxtv.com/static.foxla.com/www.foxla.com/content/uploads/2021/04/1280/720/GettyImages-1225945432.jpg?ve=1&tl=1",
         "https://activerain.com/image_store/uploads/9/0/3/4/5/ar130878990854309.JPG",
@@ -234,6 +244,7 @@
       "website": "https://www.nps.gov/zion/index.htm",
       "lat": 37.297817,
       "long": -113.028770,
+      "mainActivity": "cave",
       "images": [
         "https://www.gousa.in/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-10/Zion_0.jpg?h=345ab7ac&itok=2wsz6mCP",
         "https://ca-times.brightspotcdn.com/dims4/default/0d8fadc/2147483647/strip/true/crop/2145x1205+0+0/resize/1486x835!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F93%2Fe3%2Fdb8ab77b47bca9562e4605d48985%2Fla-tr-zion-utah-009.JPG",

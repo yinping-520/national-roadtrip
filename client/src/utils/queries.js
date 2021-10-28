@@ -1,17 +1,17 @@
 import { gql } from '@apollo/client';
 
-export const QUERY_USERS = gql`
-  query users {
-    users {
-      _id
-      username
-      email
-      itinerary{
-        name
-       }
-    }
-  }
-`;
+// export const QUERY_USERS = gql`
+//   query users {
+//     users {
+//       _id
+//       username
+//       email
+//       itinerary{
+//         name
+//        }
+//     }
+//   }
+// `;
 
 export const QUERY_USER = gql`
   query user($id: ID!) {
@@ -19,7 +19,19 @@ export const QUERY_USER = gql`
       _id
       username
       email
-      itinerary
+      itinerary {
+        _id
+        name 
+        state
+        address
+        description
+        weatherInfo
+        activities1
+        activities2
+        website
+        images
+        id
+      }
     }
   }`
   ;
@@ -38,6 +50,7 @@ export const QUERY_PARKS = gql`
       website
       lat
       long
+      mainActivity
       images
       id
       } 
@@ -58,6 +71,7 @@ export const QUERY_PARK_BY_ID = gql`
       website
       lat
       long
+      mainActivity
       images
       id
       } 

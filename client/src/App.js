@@ -91,7 +91,7 @@ function App() {
             <Route exact path='/signup'>
               <Signup />
             </Route>
-            <Route exact path='/:parkId'>
+            <Route exact path='/park/:parkId'>
               <Park />
             </Route>
           </div>

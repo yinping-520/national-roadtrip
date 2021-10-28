@@ -32,7 +32,9 @@ const parkSchema = new Schema({
     long: { 
         type: Number 
     },
-
+    mainActivity: {
+        type: String
+    },
     website: {
         type: String,
     },

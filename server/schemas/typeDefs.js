@@ -6,7 +6,7 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    itinerary:[ID]
+    itinerary:[Park]
   }
 
   type Park {
@@ -21,6 +21,7 @@ const typeDefs = gql`
     website: String
     lat: Float
     long: Float
+    mainActivity: String
     images: [String]
     id: String
   }

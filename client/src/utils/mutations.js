@@ -27,7 +27,20 @@ export const ADD_USER = gql`
 export const ADD_ITINERARY = gql`
   mutation addItinerary($id: ID!) {
   addItinerary(id: $id) {
-    itinerary 
+    username
+    itinerary {
+        _id
+        name 
+        state
+        address
+        description
+        weatherInfo
+        activities1
+        activities2
+        website
+        images
+        id
+    }
   }
 }
 `;

@@ -9,7 +9,8 @@ const resolvers = {
       return User.find();
     },
     user: async (_, args) => {
-      return User.findOne({ _id: args.id });
+      console.log('is this working')
+      return User.findOne({ _id: args.id }).populate('itinerary');
     },
     parks: async () => {
       return Park.find()
@@ -53,8 +54,7 @@ const resolvers = {
     },
 
     addItinerary: async (parent, { id }, context) => {
-      console.log(id, context.user);
-      // if (context.user) {
+      if (context.user) {
         return await User.findOneAndUpdate(
           { _id: context.user._id },
           {
@@ -64,13 +64,13 @@ const resolvers = {
             new: true,
             runValidators: true,
           }
-        )
-      // };
+        ).populate('itinerary');
+      };
     },
 
     deleteItinerary: async (parent, { itinerary }, context) => {
       return await User.findOneAndUpdate(
-        { _id: '617836192ea25a280a495b63' },
+        { _id: context.user._id },
         { $pull: { itinerary: itinerary } },
         { new: true }
       )
