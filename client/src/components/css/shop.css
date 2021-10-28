@@ -65,3 +65,9 @@
     background-color: orange;
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 1400px) {
+    .product-card {
+        flex: 2 0 50%;
+    }
+}
