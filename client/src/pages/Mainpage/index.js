@@ -26,12 +26,26 @@ function Mainpage({parks}) {
             <div className='site-section'>
                 <div id='sites1'>
                     <Link to="/park/rocky-mtn" style={styles.underlineRemove}>
-                        <div id='rocky-mtn' className='card' alt='mountains'>
+                        <div 
+                            id='rocky-mtn' 
+                            className='card' 
+                            alt='mountains'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/rocky-mtn.jpg)`
+                            }}
+                        >
                             <p>Rocky Mountain</p>
                         </div>
                     </Link>
                     <Link to="/park/glacier" style={styles.underlineRemove}>
-                        <div id='glacier' className='card' alt='mountains'>
+                        <div 
+                            id='glacier' 
+                            className='card' 
+                            alt='mountains'
+                            style={{
+                                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/glacier.jpg)`
+                            }}
+                        >
                             <p>Glacier</p>
                         </div>
                     </Link>
