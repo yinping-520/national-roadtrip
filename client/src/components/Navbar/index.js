@@ -69,9 +69,9 @@ function Navbar() {
             </div>
           </div>
         </span>
-        <Link className='rightnav-a' to='/shop'>
+        {/* <Link className='rightnav-a' to='/shop'>
           shop
-        </Link>
+        </Link> */}
         {showNavigation()}
       </div>
     </div>
