@@ -10,6 +10,7 @@ import 'leaflet/dist/leaflet.css';
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { Icon } from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import Auth from '../../utils/auth';
 
 function Park() {
   const { parkId } = useParams();
@@ -97,7 +98,11 @@ function Park() {
               }
             });
             window.location.replace('/trips')
-            console.log('add itinerary response', data)
+            if (!Auth.loggedIn()) {
+              return (
+                window.location.replace('/login')
+              )
+            }
           }}
         >
           Add to Trip
