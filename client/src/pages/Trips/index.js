@@ -58,9 +58,9 @@ function Trips() {
                             <a href={itinerary.website} target='_'>
                                 Official Park Site
                             </a>
-                            <a href={itinerary.website} target='_'>
+                            {/* <a href={itinerary.website} target='_'>
                                 Map Your Trip
-                            </a>
+                            </a> */}
                             <a href={itinerary.weatherInfo} target='_'>
                                 Weather Info
                             </a>
