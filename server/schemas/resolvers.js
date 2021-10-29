@@ -21,9 +21,7 @@ const resolvers = {
     savedPark: async (parent, { _id }, context) => {
       if(context.user){
         return Park.findOne({_id: _id})
-        
       }
-
     },
   },
 
@@ -67,10 +65,11 @@ const resolvers = {
       };
     },
 
-    deleteItinerary: async (parent, { itinerary }, context) => {
+    deleteItinerary: async (parent, { id }, context) => {
+      console.log(context.user)
       return await User.findOneAndUpdate(
         { _id: context.user._id },
-        { $pull: { itinerary: itinerary } },
+        { $pull: { itinerary: id } },
         { new: true }
       )
     },

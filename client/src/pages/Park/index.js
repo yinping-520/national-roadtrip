@@ -96,6 +96,7 @@ function Park() {
                 id: park._id,
               }
             });
+            window.location.replace('/trips')
             console.log('add itinerary response', data)
           }}
         >
