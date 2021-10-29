@@ -30,9 +30,7 @@ If you would like to contact us to make suggestions, please contact us through t
 
 ## Screenshots
 
-![screenshot](./client/src/components/assets/national.png)
-![screenshot](./client/src/components/assets/dest.png)
-![screenshot](./client/src/components/assets/shop.png)
+![screenshot](./client/src/components/assets/nat-ss.png)
 
 ## Credits
   Alex Wilson, Laura Wiener, Thurston Cox, Yinping Gao, Ashby Blakely
