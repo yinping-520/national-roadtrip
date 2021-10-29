@@ -49,11 +49,9 @@ export const ADD_ITINERARY = gql`
 export const DELETE_ITINERARY = gql`
   mutation deleteItinerary($id: ID!) {
     deleteItinerary(id: $id) {
-      park {
+      itinerary {
         _id
       }
     }
   }
 `;
-
-
