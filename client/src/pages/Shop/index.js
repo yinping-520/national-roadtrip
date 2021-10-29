@@ -11,7 +11,7 @@ function Shop() {
     return (
         <div id="shop-page">
             <div id="product-section">
-                <a href='#top'><img id='up-arrow' src={up} /></a>
+                <a href='#top'><img id='up-arrow' src={up} alt='up arrow'/></a>
                 <div className="product-card">
                     <img id="mug" src={mug} alt='coffee mug'/>
                     <div className="prod-info">

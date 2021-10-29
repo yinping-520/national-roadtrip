@@ -65,7 +65,7 @@ function App() {
         <ScrollToTop />
         <div>
           <div id='progressbar' style={{height:`${progessHeight}%`}}></div>
-          <a href='#top'><img id='up-arrow' alt='arrow' className={scrollActive && 'active'} src={up} /></a>
+          <a href='#top'><img id='up-arrow' alt='arrow' className={scrollActive ? 'active' : ''} src={up} /></a>
           <Header/>
           <div>
             <Route exact path='/'>

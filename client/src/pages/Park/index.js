@@ -22,10 +22,8 @@ function Park() {
   const activities1 = park.activities1 || [];
   const activities2 = park.activities2 || [];
   const image = park.images || [];
-  const lat = park.lat;
-  const lng = park.long;
   const [addItinerary] = useMutation(ADD_ITINERARY);
-  const position = [lat, lng];
+  const position = [park?.lat, park?.long];
 
   const [current, setCurrent] = useState(0); // for next & prev slides
   const length = image.length;
@@ -49,6 +47,25 @@ function Park() {
 
   // const { addTrip } = Navbar();
 
+  const renderMap = () => {
+    if (loading ) return null; 
+    if (!park?.lat || !park?.long) return null;
+    return (
+      <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
+        height: "400px", width: "900px", backgroundColor: "grey"}} >
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+        />
+        <Marker position={position} icon={new Icon({ iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41] })} >
+          <Popup>
+            Click for directions! <br /> <a href={`https://www.google.com/maps/search/?api=1&query=${park?.lat},${park?.long}`} target='_'>Google Maps</a>
+          </Popup>
+        </Marker>
+      </MapContainer>
+    );
+  }
+
   return (
     <div>
       <div>
@@ -66,7 +83,7 @@ function Park() {
             />
             {image.map((slide, index) => {
               return (
-                <div className="current-and-index">
+                <div key={slide} className="current-and-index">
                   <div
                     className={index === current ? "slide active" : "slide"}
                     key={index}
@@ -92,7 +109,7 @@ function Park() {
         <button className='add-to-trip'
           type='button'
           onClick={async () => {
-            const { data } = await addItinerary({
+            await addItinerary({
               variables: {
                 id: park._id,
               }
@@ -113,16 +130,16 @@ function Park() {
         <div className='bike' id={park.mainActivity} alt='person having fun at the park'></div>
         <div className='split-act'>
           <ul className='activity-list left'>
-            {activities1.map((activities1, index) => (
-              <li key={index}>
-                <i class='fas fa-campground'></i> {activities1}
+            {activities1.map((activity, index) => (
+              <li key={`${index}-${activity}`}>
+                <i className='fas fa-campground'></i> {activity}
               </li>
             ))}
           </ul>
           <ul className='activity-list right'>
-            {activities2.map((activities2, index) => (
-              <li key={index}>
-                <i class='fas fa-campground'></i> {activities2}
+            {activities2.map((activity, index) => (
+              <li key={`${index}-${activity}`}>
+                <i className='fas fa-campground'></i> {activity}
               </li>
             ))}
           </ul>
@@ -138,18 +155,7 @@ function Park() {
       </div>
       <div className='map-section'>
         <div className='map-frame'>
-          {loading ? [] : <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{
-            height: "400px", width: "900px", backgroundColor: "red"}} >
-            <TileLayer
-              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-            />
-            <Marker position={position} icon={new Icon({ iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41] })} >
-              <Popup>
-                Click for directions! <br /> <a href={`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`} target='_'>Google Maps</a>
-              </Popup>
-            </Marker>
-          </MapContainer>}
+          {renderMap()}
         </div>
       </div>
       <div className='weather-section'>
