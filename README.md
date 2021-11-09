@@ -4,16 +4,10 @@
 
 ## [Link to live site!](https://arcane-hamlet-34907.herokuapp.com/)
 
-  
-## User Story
-```
-As a national park travelling lover, 
-```
-This web application allows you to create your own itinerary based on the national parks you would like to visit. Without logging in, you can visit the parks pages and see the weather, location, and activities connected to that specific park.  We also provide beautiful photographs to help you select your next destination.  When you create your own login, you can save the parks that you would like to visit and delete the park you have already visited from your itinerary. 
- 
-  
 ## Table of Contents
-  - [Usage](#Usage)
+
+  - [User Story](#UserStory)
+  - [Features](#Features)
   - [Installation](#Installation)
   - [Usage](#Usage)
   - [Contributing](#Contributing)
@@ -21,6 +15,34 @@ This web application allows you to create your own itinerary based on the nation
   - [Credits](#Credits)
   - [License](#License)
   - [Github](#Questions)
+  
+## User Story
+```
+As a national park travelling lover, I want an application that provide me information about different national parks and allow me to add trips.
+```
+
+## Features
+This application has the following features:
+* When user open this applictions, it displays 12 US national parks photographs.
+* When user click the photographs for the specific park, it will take user to that park's website.
+* When user is in the specific park website, it displays that parks's information on park description, activities, weather conditions and map.
+* When user click "add to trip " button, this park is added to user's itinerary.
+* When user click the home button, it will take user back to the initial web page.
+* When user click the destination button, it will take user to the destination webpage which displays 12 national parks.
+* When user is logged in, the user will be able to see his/her itinerary.
+
+ ## Installation
+ 
+ This program can be run through a browser using the above link to the the deployed application. Alternatively, to run this application locally you will need to:
+
+* Clone this repository to receive all of the files
+* Set up your environment variables in a .env file
+* Run "npm install" in the command line of your terminal to set up all of the dependencies
+* Populate the existing database items by running "npm run seed" in your terminal
+* Run "npm run develop" to start the application's connection
+* Go to the url of the application (http//:localhost:3000) to begin using it
+  
+
   
 ## Usage
 Visit the applications webpage and follow the links in the header to navigate the app! 
@@ -34,7 +56,7 @@ If you would like to contact us to make suggestions, please contact us through t
 ![screenshot](./client/src/components/assets/nat-ss.png)
 
 ## Credits
-  Alex Wilson, Laura Wiener, Thurston Cox, Yinping Gao, Ashby Blakely
+  Alex Wilson, Yinping Gao, Laura Wiener, Thurston Cox,  Ashby Blakely
   
   ## License<br/>
   [Link to the MIT license used](https://opensource.org/licenses/MIT)<br/> 
