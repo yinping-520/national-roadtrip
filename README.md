@@ -2,12 +2,13 @@
     
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Link to Site
-
-[Link to live site!](https://arcane-hamlet-34907.herokuapp.com/)
+## [Link to live site!](https://arcane-hamlet-34907.herokuapp.com/)
 
   
-## Description
+## User Story
+```
+As a national park travelling lover, 
+```
 This web application allows you to create your own itinerary based on the national parks you would like to visit. Without logging in, you can visit the parks pages and see the weather, location, and activities connected to that specific park.  We also provide beautiful photographs to help you select your next destination.  When you create your own login, you can save the parks that you would like to visit and delete the park you have already visited from your itinerary. 
  
   
