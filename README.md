@@ -4,6 +4,13 @@
 
 ## [Link to live site!](https://arcane-hamlet-34907.herokuapp.com/)
 
+## trial account:
+```
+user name: test123
+password: 1234567890
+email: test123@gmail.com
+```
+
 ## Table of Contents
 
   - [User Story](#UserStory)
@@ -18,7 +25,9 @@
   
 ## User Story
 ```
-As a national park travelling lover, I want an application that provide me information about different national parks and allow me to add trips.
+As a national park travelling lover, 
+I want an application that provide me information 
+about different national parks and allow me to add trips.
 ```
 
 ## Features
