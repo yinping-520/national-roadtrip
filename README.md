@@ -14,7 +14,7 @@ email: test123@gmail.com
 ## Table of Contents
 
   - [Summary](#Summary)
-  - [User Story](#UserStory)
+  - [User Story](#User-Story)
   - [Features](#Features)
   - [Installation](#Installation)
   - [Usage](#Usage)
@@ -27,7 +27,7 @@ email: test123@gmail.com
 ## Summary
 National Roadtrip is a travel application, you can search information about national parks and save as itinerary.
   
-## User Story
+## User-Story
 ```
 As a national park travelling lover, 
 I want an application that provide me information 
